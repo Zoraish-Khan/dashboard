@@ -66,7 +66,6 @@ const thememMode = localStorage.getItem('data-bs-theme');
    })
 
  
- 
   // horizontal menu 
 
 //const dataLayout = localStorage.setItem('data-layout');
