@@ -1,0 +1,29 @@
+.bd-example-utils{
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item{
+        height: 100%;
+        width: 12%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    [class^="border"]{
+        display: inline-block;
+        width: 5rem;
+        height: 5rem;
+        margin: .25rem;
+        background-color: lighten($body-bg,2%)
+    }
+    
+}
+
+.bs-example-flex div:not(.vr) {
+    background-color: rgba($primary, .15);
+    border: 1px solid rgba($primary, .3)
+}

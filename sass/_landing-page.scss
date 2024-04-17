@@ -1,0 +1,193 @@
+.landing{
+
+    &-body{
+        background: $white;
+        min-height: 100vh;
+        position: relative;
+    }
+    &-top-header{
+        .navbar-collapse{
+            flex-grow: inherit;
+        }
+        .navbar{
+            z-index: 100;
+        }
+        .navbar-nav{
+            .nav-link{
+                padding-left: 1rem;
+                padding-right: 1rem;
+                color: rgba($white,70%);
+
+                &.active{
+                    color: $white;
+                }
+            }
+        }
+    }
+    &-sec{
+        position: relative;
+        z-index: 1;
+        margin-block-start: -240px;
+        color: $white;
+    }
+    &-banner {
+        height: 52rem;
+        width: 100%;
+        position: relative;
+        background-size: cover !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: -105px;
+
+        img{
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        &::before {
+            content: '';
+            @include inset-0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background: linear-gradient(to right, $primary 0%, $secondary 100%);
+        }
+        &::after{
+            content: '';
+            @include inset-0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("https://img.freepik.com/free-photo/abstract-futuristic-background-with-3d-design_1361-3532.jpg?w=1800&t=st=1686041074~exp=1686041674~hmac=9b93e0a9243e243f715f03f8290a71386796c85a385bcc766d0e85aa3ee61a13");
+            opacity: 0.1;
+        }
+    }
+}
+
+.template-version{
+    display: flex;
+    justify-content: center ;
+    gap: 1rem;
+
+    .nav-item{
+        position: relative;
+        background-color: $white;
+        border-radius: 50%;
+        height: calc(2.5rem + 10px);
+        width:  calc(2.5rem + 10px);
+        @include FlexCenterAll;
+
+        .nav-link {
+            background-color: $white;
+            border-radius: 50%;
+            @include h-w-100;
+            @include FlexCenterAll;
+
+            &.disabled{
+                opacity: .3;
+            }
+            
+            img{
+                position: inherit;
+                //max-width: 100%;
+                height: calc(100% - 5px);
+            }
+        }
+    }
+}
+
+.section-heading{
+    position: relative;
+
+    &::after,&::before{
+        content: "";
+        position: absolute;
+    }
+    &::before{
+        width: 55%;
+        height: 0.125rem;
+        background-image: linear-gradient(to right, rgba($primary,100%), rgba($primary, 0.1));
+        opacity: 0.5;
+        inset-block-start: -0.625rem;
+        inset-inline-end: 0;
+        left: 50%;
+    }
+    &::after{
+        width: 55%;
+        height: 0.125rem;
+        background-image: linear-gradient(to left, rgba($primary,100%), rgba($primary, 0.1));;
+        opacity: 0.5;
+        inset-block-start: -0.625rem;
+        inset-inline-end: 0;
+        right: 50%;
+    }
+}
+
+
+    
+    .sticky{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        animation-name: dropdownSlide;
+        animation-duration: 0.3s;
+        animation-fill-mode: both;
+        box-shadow: 0 1px 8px rgba($black,30%);
+        background-image: linear-gradient(to right, rgba($primary, 1), rgba($secondary, 1));
+    }
+
+.landing{
+    &-section{
+        padding: 4rem 0;
+        background-size: cover;
+        position: relative;
+    }
+}
+
+.screen-slot{
+    padding: 1.25rem 1.25rem 0 1.25rem;
+    border-radius: .75rem;
+}
+.screen-item{
+        height: calc(300px - 10px);
+        display: block;
+        //padding: 1rem 1rem 0 1rem;
+        position: relative;
+        margin-bottom: 0;
+        transition: all 0.2s ease-in-out;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+    img{
+        position: absolute;
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+        left: 0;
+        right: 0;
+        transition: all 2s;
+        top: 0px;
+        border-radius: .5rem;
+    }
+}
+.landing-footer{
+    background-color: $bg-dark;
+    p{
+        color: rgba($white, 60%);
+    }
+}
+.feature{
+    
+    &-wrap{
+        margin: 0;
+        background-color: $body-bg;
+    }
+
+    &-item{
+        img{
+            height: 4rem;
+        }
+    }
+}

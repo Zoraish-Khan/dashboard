@@ -1,0 +1,95 @@
+<div class="customizer-setting d-none d-md-block">
+    <div class="btn-primary rounded-circle shadow-lg btn btn-icon btn-lg p-2" data-bs-toggle="offcanvas"
+        data-bs-target="#theme-settings" aria-controls="theme-settings-offcanvas">
+        <i class='spinner bi-gear font-22'></i>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-end right-bar" tabindex="-1" id="theme-settings" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header bg-rgba-primary">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Settings</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                class="bi-x"></i></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="pt-0">
+            <h6 class="fw-semibold mt-4">Theme Mode</h6>
+            <hr>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="data-bs-theme" id="layout-light" value="light"
+                    onclick="handleAttributes('data-bs-theme','light')">
+                <label class="form-check-label" for="layout-light">Light Mode</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="data-bs-theme" id="layout-dark" value="dark"
+                    onclick="handleAttributes('data-bs-theme','dark')">
+                <label class="form-check-label" for="layout-dark">Dark Mode</label>
+            </div>
+        </div>
+        <div class="pt-3">
+            <h6 class="fw-semibold mt-4">Layout</h6>
+            <hr>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="data-layout" id="layout-vertical" value="vertical"
+                    onclick="handleAttributes('data-layout','vertical')">
+                <label class="form-check-label" for="layout-vertical">Vertical</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="data-layout" id="layout-horizontal"
+                    value="horizontal" onclick="handleAttributes('data-layout','horizontal')">
+                <label class="form-check-label" for="layout-horizontal">Horizontal</label>
+            </div>
+        </div>
+        <div class="pt-3">
+            <h6 class="fw-semibold mt-4">Width</h6>
+            <hr>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="width" id="boxView" value="boxWidth"
+                    onclick="handleAttributes('data-layout-width','box')">
+                <label class="form-check-label" for="boxView">Boxed View</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="width" id="fullView" value="fullWidth"
+                    onclick="handleAttributes('data-layout-width','fullSize')">
+                <label class="form-check-label" for="fullView">Full View</label>
+            </div>
+        </div>
+        <div class="pt-3">
+            <h6 class="fw-semibold mt-4">Left Sidebar</h6>
+            <hr>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="data-layout" id="ls1" value="light"
+                    onclick="handleAttributes('data-sidebar-mode','light')">
+                <label class="form-check-label" for="ls1">Light</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="data-layout" id="ls2" value="dark"
+                    onclick="handleAttributes('data-sidebar-mode','dark')">
+                <label class="form-check-label" for="ls2">Dark</label>
+            </div>
+            <div id="side-layout-position">
+                <div class="form-check mt-4">
+                    <input class="form-check-input" type="radio" name="scrollPosition" id="ls3" value="fixed"
+                        onclick="handleAttributes('data-sidebar','fixed')">
+                    <label class="form-check-label" for="ls3">Fixed</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="scrollPosition" id="ls4" value="scrollable"
+                        onclick="handleAttributes('data-sidebar','scrollable')">
+                    <label class="form-check-label" for="ls4">Scrollable</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="scrollPosition" id="ls5" value="scrollable"
+                        onclick="handleAttributes('data-sidebar','small')">
+                    <label class="form-check-label" for="ls5">Small</label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="offcanvas-footer border-top p-3">
+        <div class="text-center">
+            <button class="btn btn-warning btn-sm w-50" onclick="handleResetSettings()">RESET</button>
+        </div>
+    </div>
+</div>

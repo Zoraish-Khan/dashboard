@@ -1,0 +1,533 @@
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-wrap d-sm-flex align-items-center justify-content-between mb-3">
+            <h4 class="mb-sm-0">Checkboxs & Radios</h4>
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Advanced UI</a></li>
+                    <li class="breadcrumb-item active">Checkboxs & Radios</li>
+                </ol>
+            </div>
+
+        </div>
+    </div><!-- end col -->
+    <div class="col-lg-12"></div>
+</div><!-- row end -->
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header bg-transparent">
+                <h5 class="mb-0">Checkboxs Default</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h5>Checks</h5>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Default checkbox
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Checked checkbox
+                            </label>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-4">
+                        <h5>Indeterminate</h5>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                            <label class="form-check-label" for="flexCheckIndeterminate">
+                                Indeterminate checkbox
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5>Disabled</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDisabled"
+                                disabled>
+                            <label class="form-check-label" for="flexCheckIndeterminateDisabled">
+                                Disabled indeterminate checkbox
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled>
+                            <label class="form-check-label" for="flexCheckDisabled">
+                                Disabled checkbox
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled"
+                                checked disabled>
+                            <label class="form-check-label" for="flexCheckCheckedDisabled">
+                                Disabled checked checkbox
+                            </label>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-4">
+                        <h5>Inline</h5>
+                        <div class="form-check form-check-inline mb-3">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline mb-3">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline mb-3">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"
+                                disabled>
+                            <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-4">
+                        <h5>Without Labels</h5>
+                        <div>
+                            <input class="form-check-input" type="checkbox" id="checkboxNoLabel" checked value=""
+                                aria-label="...">
+                        </div>
+                        <div>
+                            <input class="form-check-input" type="checkbox" id="checkboxNoLabel2" value=""
+                                aria-label="...">
+                        </div>
+
+                    </div><!-- end col -->
+                    <div class="col-lg-4">
+                        <h5 class="text-lg-end">Reverse</h5>
+                        <div class="w-100"></div>
+                        <div class="form-check form-check-reverse mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="reverseCheck1">
+                            <label class="form-check-label" for="reverseCheck1">
+                                Reverse checkbox
+                            </label>
+                        </div>
+                        <div class="form-check form-check-reverse mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="reverseCheck2" disabled>
+                            <label class="form-check-label" for="reverseCheck2">
+                                Disabled reverse checkbox
+                            </label>
+                        </div>
+                    </div><!-- end col -->
+                </div>
+                <hr class="my-3">
+                <h5 class="mb-4">Custom Checkboxs</h5>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>Use <code>form-check-</code>class for </p>
+                        <div class="form-group">
+                            <div class="form-check form-check-primary">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" checked="">
+                                    Checkbox Primary
+                                    <i class="input-helper"></i></label>
+                            </div>
+                            <div class="form-check form-check-secondary">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" checked="">
+                                    Checkbox Secondary
+                                </label>
+                            </div>
+                            <div class="form-check form-check-success">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" checked="">
+                                    Checkbox Success
+                                </label>
+                            </div>
+                            <div class="form-check form-check-info">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" checked="">
+                                    Checkbox Info
+                                </label>
+                            </div>
+                            <div class="form-check form-check-danger">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" checked="">
+                                    Checkbox Danger
+                                </label>
+                            </div>
+                            <div class="form-check form-check-warning">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" checked="">
+                                    Checkbox Warning
+                                </label>
+                            </div>
+                            <div class="form-check form-check-dark">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" checked="">
+                                    Checkbox Dark
+                                </label>
+                            </div>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-6">
+                        <p>Use <code>.form-check</code> and <code>.form-check-outline-</code>class for outline checkbox
+                        </p>
+                        <div class="form-group">
+                            <div class="form-check form-check-outline-primary">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" checked="">
+                                    Checkbox Outline Primary
+                                    <i class="input-helper"></i></label>
+                            </div>
+                            <div class="form-check form-check-outline-secondary">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" checked="">
+                                    Checkbox Outline Secondary
+                                </label>
+                            </div>
+                            <div class="form-check form-check-outline-success">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" checked="">
+                                    Checkbox Outline Success
+                                </label>
+                            </div>
+                            <div class="form-check form-check-outline-info">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" checked="">
+                                    Checkbox Outline Info
+                                </label>
+                            </div>
+                            <div class="form-check form-check-outline-danger">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" checked="">
+                                    Checkbox Outline Danger
+                                </label>
+                            </div>
+                            <div class="form-check form-check-outline-warning">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" checked="">
+                                    Checkbox Outline Warning
+                                </label>
+                            </div>
+                            <div class="form-check form-check-outline-dark">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" checked="">
+                                    Checkbox Outline Dark
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- end col -->
+    <div class="col-lx-12">
+        <div class="card">
+            <div class="card-header bg-transparent">
+                <h5 class="mb-0">Default Radios</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h5>Basic</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Default radio
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Default checked radio
+                            </label>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-4">
+                        <h5>Disabled</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled"
+                                disabled>
+                            <label class="form-check-label" for="flexRadioDisabled">
+                                Disabled radio
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" name="flexRadioDisabled"
+                                id="flexRadioCheckedDisabled" checked disabled>
+                            <label class="form-check-label" for="flexRadioCheckedDisabled">
+                                Disabled checked radio
+                            </label>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-4">
+                        <h5 class="text-end">Reverse</h5>
+                        <div class="form-check form-check-reverse">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                id="flexRadioDefault01">
+                            <label class="form-check-label" for="flexRadioDefault01">
+                                Default radio
+                            </label>
+                        </div>
+                        <div class="form-check form-check-reverse mb-3">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault02"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault02">
+                                Default checked radio
+                            </label>
+                        </div>
+                    </div><!-- end col -->
+                </div>
+                <hr class="my-3">
+                <h5 class="mb-4">Custom Radios</h5>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>Use <code>form-check-</code>class for </p>
+                        <div class="form-group">
+                            <div class="form-check form-check-primary">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" checked="">
+                                    Checkbox Primary
+                                    <i class="input-helper"></i></label>
+                            </div>
+                            <div class="form-check form-check-secondary">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" checked="">
+                                    Checkbox Secondary
+                                </label>
+                            </div>
+                            <div class="form-check form-check-success">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" checked="">
+                                    Checkbox Success
+                                </label>
+                            </div>
+                            <div class="form-check form-check-info">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" checked="">
+                                    Checkbox Info
+                                </label>
+                            </div>
+                            <div class="form-check form-check-danger">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" checked="">
+                                    Checkbox Danger
+                                </label>
+                            </div>
+                            <div class="form-check form-check-warning">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" checked="">
+                                    Checkbox Warning
+                                </label>
+                            </div>
+                            <div class="form-check form-check-dark">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" checked="">
+                                    Checkbox Dark
+                                </label>
+                            </div>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-6">
+                        <p>Use <code>form-check</code> and <code>form-check-outline-</code>class for outline checkbox
+                        </p>
+                        <div class="form-group">
+                            <div class="form-check form-check-outline-primary">
+                                <label class="form-check-label" for="outline-1">
+                                    <input type="radio" class="form-check-input" id="outline-1" checked="">
+                                    Checkbox Outline Primary
+                                    <i class="input-helper"></i></label>
+                            </div>
+                            <div class="form-check form-check-outline-secondary">
+                                <label class="form-check-label" for="outline-2">
+                                    <input type="radio" class="form-check-input" id="outline-2" checked="">
+                                    Checkbox Outline Secondary
+                                </label>
+                            </div>
+                            <div class="form-check form-check-outline-success">
+                                <label class="form-check-label" for="outline-3">
+                                    <input type="radio" class="form-check-input" id="outline-3" checked="">
+                                    Checkbox Outline Success
+                                </label>
+                            </div>
+                            <div class="form-check form-check-outline-info">
+                                <label class="form-check-label" for="outline-4">
+                                    <input type="radio" class="form-check-input" id="outline-4" checked="">
+                                    Checkbox Outline Info
+                                </label>
+                            </div>
+                            <div class="form-check form-check-outline-danger">
+                                <label class="form-check-label" for="outline-5">
+                                    <input type="radio" class="form-check-input" id="outline-5" checked="">
+                                    Checkbox Outline Danger
+                                </label>
+                            </div>
+                            <div class="form-check form-check-outline-warning">
+                                <label class="form-check-label" for="outline-6">
+                                    <input type="radio" class="form-check-input" id="outline-6" checked="">
+                                    Checkbox Outline Warning
+                                </label>
+                            </div>
+                            <div class="form-check form-check-outline-dark">
+                                <label class="form-check-label" for="outline-7">
+                                    <input type="radio" class="form-check-input" id="outline-7" checked="">
+                                    Checkbox Outline Dark
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- end col -->
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header bg-transparent">
+                <h5 class="mb-0">Switches example</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h5>Basic Example</h5>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox
+                                input</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                                checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox
+                                input</label>
+                        </div>
+
+                    </div><!-- end col -->
+                    <div class="col-lg-6">
+                        <h5>Disabled</h5>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled"
+                                disabled>
+                            <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox
+                                input</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch"
+                                id="flexSwitchCheckCheckedDisabled" checked disabled>
+                            <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch
+                                checkbox input</label>
+                        </div>
+                    </div><!-- end col -->
+                    <hr class="my-3">
+                    <h5>Custom color switches</h5>
+                    <p>Use class <code>form-check-</code>class</p>
+                    <div class="col-lg-6">
+                        <div class="form-check form-switch form-check-primary">
+                            <input class="form-check-input" type="checkbox" role="switch" id="s1" checked>
+                            <label class="form-check-label" for="s1">Switch Primary</label>
+                        </div>
+                        <div class="form-check form-switch form-check-secondary">
+                            <input class="form-check-input" type="checkbox" role="switch" id="s2" checked>
+                            <label class="form-check-label" for="s2">Switch Secondary</label>
+                        </div>
+                        <div class="form-check form-switch form-check-success">
+                            <input class="form-check-input" type="checkbox" role="switch" id="s3" checked>
+                            <label class="form-check-label" for="s3">Switch Success</label>
+                        </div>
+                        <div class="form-check form-switch form-check-info">
+                            <input class="form-check-input" type="checkbox" role="switch" id="s4" checked>
+                            <label class="form-check-label" for="s4">Switch Info</label>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-6">
+                        <div class="form-check form-switch form-check-danger">
+                            <input class="form-check-input" type="checkbox" role="switch" id="s5" checked>
+                            <label class="form-check-label" for="s5">Switch Danger</label>
+                        </div>
+                        <div class="form-check form-switch form-check-warning">
+                            <input class="form-check-input" type="checkbox" role="switch" id="s6" checked>
+                            <label class="form-check-label" for="s6">Switch warning</label>
+                        </div>
+                        <div class="form-check form-switch form-check-dark">
+                            <input class="form-check-input" type="checkbox" role="switch" id="s7" checked>
+                            <label class="form-check-label" for="s7">Switch Dark</label>
+                        </div>
+                    </div><!-- end col -->
+                    <hr class="my-3">
+                    <h5 class="mb-4">Custom Switches</h5>
+                    <div class="col-lg-4">
+                        <div class="input-switch-custom form-switch-primary mb-3">
+                            <input class="switch-input" type="checkbox" id="switch1" switch="none" checked="">
+                            <label for="switch1" data-on-label="On" data-off-label="Off" class="mb-0"></label>
+                        </div>
+                        <div class="input-switch-custom form-switch-secondary mb-3">
+                            <input class="switch-input" type="checkbox" id="switch2" switch="none" checked="">
+                            <label for="switch2" data-on-label="On" data-off-label="Off" class="mb-0"></label>
+                        </div>
+
+                    </div><!-- end col -->
+                    <div class="col-lg-4">
+                        <div class="input-switch-custom form-switch-info mb-3">
+                            <input class="switch-input" type="checkbox" id="switch3" switch="none" checked="">
+                            <label for="switch3" data-on-label="On" data-off-label="Off" class="mb-0"></label>
+                        </div>
+                        <div class="input-switch-custom form-switch-success mb-3">
+                            <input class="switch-input" type="checkbox" id="switch4" switch="none" checked="">
+                            <label for="switch4" data-on-label="On" data-off-label="Off" class="mb-0"></label>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-4">
+                        <div class="input-switch-custom form-switch-warning d-flex mb-3">
+                            <input class="switch-input" type="checkbox" id="switch5" switch="none" checked="">
+                            <label for="switch5" data-on-label="On" data-off-label="Off" class="mb-0"></label>
+                            <span class="ms-2">label warning</span>
+                        </div>
+                        <div class="input-switch-custom form-switch-danger d-flex mb-3">
+                            <input class="switch-input" type="checkbox" id="switch6" switch="none" checked="">
+                            <label for="switch6" data-on-label="On" data-off-label="Off" class="mb-0"></label>
+                            <span class="ms-2">label danger</span>
+                        </div>
+                        <div class="input-switch-custom form-switch-dark d-flex mb-3">
+                            <input class="switch-input" type="checkbox" id="switch7" switch="none" checked="">
+                            <label for="switch7" data-on-label="On" data-off-label="Off" class="mb-0"></label>
+                            <span class="ms-2">label dark</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-12">
+        <div class="card">
+
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h5 class="mb-4">Radio toggle buttons</h5>
+                        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                        <label class="btn btn-primary" for="option1">Checked</label>
+
+                        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                        <label class="btn btn-primary" for="option2">Radio</label>
+
+                        <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" disabled>
+                        <label class="btn btn-primary" for="option3">Disabled</label>
+
+                        <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                        <label class="btn btn-primary" for="option4">Radio</label>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                        <label class="btn btn-outline-primary mb-3" for="btn-check-outlined">Single toggle</label>
+
+                        <input type="checkbox" class="btn-check" id="btn-check-2-outlined" checked autocomplete="off">
+                        <label class="btn btn-outline-secondary mb-3" for="btn-check-2-outlined">Checked</label>
+
+                        <input type="radio" class="btn-check" name="options-outlined" id="success-outlined"
+                            autocomplete="off" checked>
+                        <label class="btn btn-outline-success mb-3" for="success-outlined">Checked success radio</label>
+
+                        <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined"
+                            autocomplete="off">
+                        <label class="btn btn-outline-danger mb-3" for="danger-outlined">Danger radio</label>
+                    </div><!-- end col -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end row -->

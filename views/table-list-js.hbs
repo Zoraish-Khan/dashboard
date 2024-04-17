@@ -1,0 +1,279 @@
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-wrap d-sm-flex align-items-center justify-content-between mb-3">
+            <h4 class="mb-sm-0">List examples</h4>
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">List js </a></li>
+                    <li class="breadcrumb-item active">List examples</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- end col -->
+</div><!-- end row -->
+<div class="row">
+    <div class="col-xl-12 mt-4">
+        <div class="card">
+            <div class="card-header bg-transparent">
+                <h5 class="card-title mb-0 flex-grow-1">Base Example</h5>
+            </div>
+            <div class="card-body">
+                <div id="contacts">
+                    <div class="row">
+                        <div class="col-sm-auto"></div>
+                        <div class="col-sm">
+                            <div class="d-flex justify-content-end">
+                                <div>
+                                    <input type="text" class="form-control search" placeholder="Search contact" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="invalidMsg"></p>
+                    <table id="mylist" class="table">
+                        <tbody>
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder="Input First Name ..."
+                                        id="firstname" autocomplete="off"></td>
+                                <td><input type="text" class="form-control" placeholder="Input Last Name ..."
+                                        id="userAge" autocomplete="off"></td>
+                                <td><input type="text" class="form-control" placeholder="Input Last Name ..."
+                                        id="uEmail" autocomplete="off"></td>
+                                <td><input type="text" class="form-control" placeholder="Input Last Name ..."
+                                        id="uPhone" autocomplete="off"></td>
+                                <td><input type="text" class="form-control" placeholder="Input Last Name ..." id="uCity"
+                                        autocomplete="off"></td>
+                                <td><button class="btn btn-primary" onclick="return addRow();">Add</button></td>
+                            </tr>
+                        </tbody>
+                        <thead>
+                            <tr>
+                                <th class="sort" data-sort="name">Name</th>
+                                <th class="sort" data-sort="age">Age</th>
+                                <th class="sort" data-sort="email">Email</th>
+                                <th class="sort" data-sort="phone">Phone</th>
+                                <th class="sort" data-sort="city">City</th>
+                                <th>Action </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+
+
+                        </tbody>
+                    </table>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end col -->
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header bg-transparent">
+                <h5 class="card-title mb-0 flex-grow-1">Simple Sortable List</h5>
+            </div>
+            <div class="card-body">
+                <ul id="simple-list1" class="list-group">
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" checked="">
+                        <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                        <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                        <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" checked="">
+                        <label class="form-check-label" for="thirdCheckbox">Second checkbox</label>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckbox">
+                            Item in bag
+                        </div>
+                        <span class="badge bg-warning rounded-pill">pending</span>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckbox">
+                        <label class="form-check-label" for="fourthCheckbox">Third checkbox</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckbox">
+                        <label class="form-check-label" for="fourthCheckbox">Third checkbox</label>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckbox">
+                            Item in bag
+                        </div>
+                        <span class="badge bg-primary rounded-pill">2</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end col -->
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header bg-transparent">
+                <h5 class="card-title mb-0 flex-grow-1">Handle Sortable List</h5>
+            </div>
+            <div class="card-body">
+                <div id="handle-list1" class="list-group">
+                    <div class="d-flex align-items-start mt-4">
+                        <div class="flex-shrink-0 handle align-self-center me-2"><i class="bi-grip-vertical"></i></div>
+                        <div class="flex-shrink-0">
+                            <img src="/img/image-john.jpg" alt="..." class="avatar-sm rounded-2">
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <p class="mb-1">This is some content from a media component. You can replace this with any
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start mt-4">
+                        <div class="flex-shrink-0 handle align-self-center me-2"><i class="bi-grip-vertical"></i></div>
+                        <div class="flex-shrink-0">
+                            <img src="/img/image-tanya.jpg" alt="..." class="avatar-sm rounded-2">
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <p class="mb-1">This is some content from a media component.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start mt-4">
+                        <div class="flex-shrink-0 handle align-self-center me-2"><i class="bi-grip-vertical"></i></div>
+                        <div class="flex-shrink-0">
+                            <img src="/img/dog-001.jpg" alt="..." class="avatar-sm rounded-2">
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <p class="mb-1">This is some content from a media component. You can replace this with any
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start mt-4">
+                        <div class="flex-shrink-0 handle align-self-center me-2"><i class="bi-grip-vertical"></i></div>
+                        <div class="flex-shrink-0">
+                            <img src="/img/dog-006.jpg" alt="..." class="avatar-sm rounded-2">
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <p class="mb-1">This is some content from a media component. You can replace this with any
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- end col -->
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header bg-transparent">
+                <h5 class="card-title mb-0 flex-grow-1">Grid</h5>
+            </div>
+            <div class="card-body">
+                <div>
+                    <div id="gridSort" class="row">
+                        <div class="col-sm-2 mb-4">
+                            <div class="card bg-rgba-primary ax-flex-center-0 h-100">
+                                <div class="fs-30 fw-medium">1</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 mb-4">
+                            <div class="card bg-rgba-primary ax-flex-center-0 h-100">
+                                <div class="fs-30 fw-medium">2</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 mb-4">
+                            <div class="card bg-rgba-primary ax-flex-center-0 h-100">
+                                <div class="fs-30 fw-medium">3</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 mb-4">
+                            <div class="card bg-rgba-primary ax-flex-center-0 h-100">
+                                <div class="fs-30 fw-medium">4</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 mb-4">
+                            <div class="card bg-rgba-primary ax-flex-center-0 h-100">
+                                <div class="fs-30 fw-medium">5</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 mb-4">
+                            <div class="card bg-rgba-primary ax-flex-center-0 h-100">
+                                <div class="fs-30 fw-medium">6</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 mb-4">
+                            <div class="card bg-rgba-danger ax-flex-center-0 h-100">
+                                <div class="fs-30 fw-medium">7</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 mb-4">
+                            <div class="card bg-rgba-danger ax-flex-center-0 h-100">
+                                <div class="fs-30 fw-medium">8</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 mb-4">
+                            <div class="card bg-rgba-danger ax-flex-center-0 h-100">
+                                <div class="fs-30 fw-medium">9</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 mb-4">
+                            <div class="card bg-rgba-danger ax-flex-center-0 h-100">
+                                <div class="fs-30 fw-medium">10</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 mb-4">
+                            <div class="card bg-rgba-danger ax-flex-center-0 h-100">
+                                <div class="fs-30 fw-medium">11</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 mb-4">
+                            <div class="card bg-rgba-danger ax-flex-center-0 h-100">
+                                <div class="fs-30 fw-medium">12</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 mb-4">
+                            <div class="card bg-rgba-warning ax-flex-center-0 h-100">
+                                <div class="fs-30 fw-medium">13</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 mb-4">
+                            <div class="card bg-rgba-warning ax-flex-center-0 h-100">
+                                <div class="fs-30 fw-medium">14</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 mb-4">
+                            <div class="card bg-rgba-warning ax-flex-center-0 h-100">
+                                <div class="fs-30 fw-medium">15</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 mb-4">
+                            <div class="card bg-rgba-warning ax-flex-center-0 h-100">
+                                <div class="fs-30 fw-medium">16</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 mb-4">
+                            <div class="card bg-rgba-warning ax-flex-center-0 h-100">
+                                <div class="fs-30 fw-medium">17</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 mb-4">
+                            <div class="card bg-rgba-warning ax-flex-center-0 h-100">
+                                <div class="fs-30 fw-medium">18</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end col -->
+</div><!-- end row -->

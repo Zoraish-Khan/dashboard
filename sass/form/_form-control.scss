@@ -1,0 +1,251 @@
+//@use "./../variables-custom" as var;
+
+
+@import "./input-mask";
+@import "./form-advance";
+@import "./form-wizard";
+
+// .form-label{
+//     color: $subtitle-clr;  
+// }
+.form-select{
+    font-size: .875rem;
+    &,&:focus{
+        -webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+        outline: 0;	
+    }
+}
+.form-control{
+    font-size: .875rem;
+    @include border-radius($input-border-radius, 0);
+    &,&:focus{
+        -webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+        outline: 0;	
+    }
+    &::placeholder {
+        color: $input-placeholder-color;
+        // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+        opacity: 1;
+      }
+}
+[type=button]:focus,
+a:active,
+a:focus,
+a:visited,
+button::-moz-focus-inner,
+input[type=reset]::-moz-focus-inner,
+input[type=button]::-moz-focus-inner,
+input[type=submit]::-moz-focus-inner,
+input[type=file]>input[type=button]::-moz-focus-inner,
+select::-moz-focus-inner {
+    outline: 0
+}
+
+input,
+.form-control:focus,
+input:focus,
+.form-check-input:focus,
+.form-select,
+.form-select:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    outline-width: 0;
+    outline-color: transparent;
+    box-shadow: none;
+    outline-style: none;
+}
+
+// checkbox and radios
+@each $color,
+$value in $theme-colors{
+    .form-check-#{$color}{
+        &.form-check{
+            
+            .form-check-input:checked{
+                background-color: $value;
+                border-color: $value;
+            }
+        }
+    }
+}
+
+
+@each $color,
+$value in $theme-colors{
+    .form-check-outline-#{$color}{
+        &.form-check{
+            &-input{
+                position: relative;
+                
+                &:focus{
+                    box-shadow: none;
+                }
+                &:checked[type=checkbox]{
+                    color: $value;
+                    border-color: $value;
+                    background: none;
+
+                    &::before{
+                        content: '\F26E';
+                        font-family: bootstrap-icons;
+                        position: absolute;
+                        top: -4px;
+                        left: -1px;
+                    }
+                }
+                // custom radio
+                &:checked[type=radio]{
+                    color: $value;
+                    border-color: $value;
+                    background: none;
+
+                    &::before{
+                        content: '\F287';
+                            font-family: bootstrap-icons;
+                            position: absolute;
+                            top: 1px;
+                            left: 2.5px;
+                            font-size: 7px;
+                    }
+                }
+            }
+        }
+    }
+}
+// .form-check-input{
+//     &:checked,&:focus{
+//         background-size: 8px;
+//         background-image: escape-svg($form-switch-focus-bg-image);
+//     }
+// }
+@each $color,
+$value in $theme-colors {
+.form-switch{
+    .form-check-#{$color} {
+        .form-check-input {            
+            &:checked,&:focus {
+                background-color: $value;
+                border-color: $value;
+            }
+        }
+    }
+}
+
+    .form-switch-custom {
+        &.form-switch-#{$color} {
+            .form-check-input {
+                &:checked {
+                    &::before {
+                        color: $value;
+                    }
+
+                }
+            }
+        }
+    }
+}
+// custom switch input
+
+@each $color,
+$value in $theme-colors{
+    .input-switch-custom{
+        &.form-switch-#{$color}{
+            .switch-input:checked[switch]+label{
+                background-color: $value;
+
+                &::before{
+                    color: #fff;
+                    content: attr(data-on-label);
+                    right: auto;
+                    left: 3px;
+                }
+                &::after{
+                    left: 33px;
+                    background-color: #f5f6f8;
+                }
+            }
+        }
+    }
+}
+.switch-input[switch]{
+    display: none;
+}
+.input-switch-custom{
+    .switch-input[switch]+label{
+        font-size: 1em;
+        line-height: 1;
+        width: 56px;
+        height: 24px;
+        background-color: #e2e5e8;
+        background-image: none;
+        border-radius: 2rem;
+        padding: 0.16667rem;
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        font-weight: 500;
+        -webkit-transition: all .1s ease-in-out;
+        transition: all .1s ease-in-out;
+        &::before{
+            color: #343a40;
+            content: attr(data-off-label);
+            display: block;
+            font-family: inherit;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 21px;
+            position: absolute;
+            right: 1px;
+            margin: 3px;
+            top: -2px;
+            text-align: center;
+            min-width: 1.66667rem;
+            overflow: hidden;
+            -webkit-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            left: 3px;
+            background-color: #f5f6f8;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            border-radius: 2rem;
+            height: 20px;
+            width: 20px;
+            top: 2px;
+            -webkit-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+        }
+    }
+    
+}
+.choices[data-type*=select-one]{ 
+    .choices__input{
+        background-color: $input-bg;
+        border-color: $border-color;
+    }
+}
+
+
+
+[data-layout-mode="light"]{
+    .form-control,.form-select{
+        background-color: $input-bg;
+        color: inherit;
+
+        &:focus{
+            background-color: $input-bg;
+            border-color: rgba($primary,30%);
+        }
+        
+    }
+}

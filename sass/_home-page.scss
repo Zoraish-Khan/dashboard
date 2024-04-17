@@ -1,0 +1,285 @@
+
+
+.month-salling{
+    .avatar{
+        height: 150px;
+        width: 150px;
+        padding: .5rem;
+        margin: auto;
+        border-width: 2px;
+        border-color: $border-color;
+        img{        
+            max-width: 100%;
+            border-radius: 50%;
+        }
+    }
+    
+}
+.activity-list-wrap{
+    max-height: 300px;
+    list-style: none;
+        .act-item{
+            position: relative;
+            padding-left: 1rem;
+            padding-bottom: 1.5rem;
+            &::before{
+                content: '';
+                top: 0;
+                left: -2px;
+                bottom: 0;
+                position: absolute;
+                border-left: 2px solid;
+                border-color: var(--#{$prefix}border-color);
+            }
+            
+
+            &::after{
+                content: "";
+                display: block;
+                position: absolute;
+                top: 4px;
+                left: -6px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: 2px solid #5b73e8;
+                background-color: var(--#{$prefix}card-bg);
+            }
+        }
+}
+.saling-in-city{
+    .progress{
+        height: 4px;
+    }
+}
+/// dashboard 2
+
+// .project-card-sm{
+//     i{
+//         color: $white;
+//     }
+// }
+
+// calendar page
+// .fc-button-primary{
+//    background-color:$subtitle-clr !important;
+//    border-color: var(--#{$prefix}color-default) !important;
+// }
+
+.card-header{    
+    &.hover-actions{
+        min-height: 140px;
+    }
+    .hover-action{
+        position: absolute;
+        display: none;
+    }
+    &:hover .hover-action{
+        display: block;
+    }
+}
+
+.profile-bg-cover{    
+    background: linear-gradient(0deg, $black -3%, rgba($black, 0) 83%), url(../img/pattern-2.jpg)   no-repeat center;
+    background-size: cover;    
+    border-radius: .5rem .5rem 0 0;
+    width: 100%;
+    min-height: 100%;
+  //  border-radius: .3rem .3rem 0 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 0;
+
+    .cover-image-layer{
+        opacity: 0;
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        left: 0;
+        padding: 0.25rem 0.5rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+        font-size: .8rem;
+        color: #fff;
+        box-shadow: 0 0.125rem 0.25rem rgba($black,70%);
+    }
+
+}
+.avatar-profile{
+    position: absolute;
+    bottom: 0;
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+.status-online{
+    &::before{
+        content: '';
+        border-radius: 50%;
+        bottom: 0;
+        position: absolute;
+        right: 1px;
+        border: 1px solid $white;
+        background-color: $success;
+    }
+}
+
+.avatar{
+    &-xs{
+       &::before{
+        height: 8px;
+        width: 8px;
+       }
+    }
+    &-sm{
+        &::before{
+            height: 12px;
+            width: 12px;
+            border: 2px solid $white;
+        }
+    }
+    &-md{
+        &::before{
+         height: 14px;
+         width: 14px;
+         border: 2px solid $white;
+        }
+    }
+    &-lg{
+        &::before{
+         height: 20px;
+         width: 20px;
+         border: 3px solid $white;
+         bottom: 5px;
+         right: 5x;
+        }
+    }
+}
+
+.profile-pills {
+    li {
+        a {
+          //  color: $subtitle-light-clr;
+            padding: 0 .75rem;
+            display: block;
+            line-height: 30px!important;
+        }
+    }
+}
+
+.post-avatar-wrap{
+    height: 12rem !important;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    img{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+
+.bg-cover{
+    background: url(../img/g-3.jpg) no-repeat center;
+    background-size: cover;    
+}
+// amchart scss
+.amchart{
+    height: 400px;
+  }
+  .amchart-gauge{
+    height: 300px;
+  }
+  .amchart-map{
+    height: 400px;
+  }
+  .PieChart{
+    fill: orange;
+  }
+  
+  
+
+// crypto scss
+//=========================================
+.crypto-chart{
+    canvas{
+      height: 400px !important;
+    }
+  }
+  .currency {
+    position: absolute;
+    right: 25px;
+    top: 8px;
+    color: $text-muted;
+    font-size: .75rem;
+    width: auto;
+  }
+  
+  .ticker {
+    display: flex;
+    padding: .5rem;
+    background-color: var(--#{$prefix}card-bg);
+    overflow: hidden;
+  
+    &-list {
+      margin-top: 20px;
+      animation: ticker 15s infinite linear;
+      
+      >.d-flex{        
+          border-right: 1px solid $border-color;
+      }
+    }
+    &:hover{
+      .ticker-list {
+        animation-play-state: paused;
+      }
+    }
+  }
+  
+  .ticker-item {
+    margin-right: 20px;
+  }
+  @-moz-keyframes ticker {
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @-webkit-keyframes ticker {
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @-o-keyframes ticker {
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes ticker {
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+// social dashboard scss
+//===================================
+ 
+.amchart.index-social{
+  height: 100% !important;
+  canvas{
+    height: 380px !important;
+  }
+}

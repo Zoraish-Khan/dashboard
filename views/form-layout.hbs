@@ -1,0 +1,375 @@
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-wrap d-sm-flex align-items-center justify-content-between mb-3">
+            <h4 class="mb-sm-0">Validation</h4>
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Forms </a></li>
+                    <li class="breadcrumb-item active">Validation</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- end col -->
+</div><!-- end row -->
+<div class="row">
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header bg-transparent">
+                <h5 class="mb-0">Form grid</h5>
+            </div>
+            <div class="card-body">
+                <p>
+                    More complex forms can be built using our grid classes.
+                    Use these for form layouts that require multiple columns,
+                    varied widths, and additional alignment options. Requires
+                    the <code>$enable-grid-classes</code> Sass variable to be enabled (on by default).
+                </p>
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="">First Name</label>
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="">Last Name</label>
+                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <label for="">Office Address</label>
+                            <input type="text" class="form-control" placeholder="Office address"
+                                aria-label="Office address">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="">Phone Number</label>
+                            <input type="number" class="form-control" placeholder="Phone number"
+                                aria-label="Phone number">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="">Email Address</label>
+                            <input type="text" class="form-control" placeholder="Email adrress"
+                                aria-label="Email adrress">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <label for="">Message here</label>
+                            <textarea class="form-control" name="message" id=""></textarea>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <button class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- end col -->
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header bg-transparent">
+                <h5 class="mb-0">Gutters</h5>
+            </div>
+            <div class="card-body">
+                <p>
+                    By adding gutter modifier classes, you can have control over the gutter width
+                    in as well the inline as block direction. Also requires the <code>$enable-grid-classes </code>
+                    Sass variable to be enabled (on by default).
+
+                </p>
+                <form class="row g-3">
+                    <div class="col-md-12">
+                        <div class="">
+                            <label for="">Name</label>
+                            <input type="text" class="form-control" placeholder="name" aria-label="name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="">
+                            <label for="">Phone Number</label>
+                            <input type="number" class="form-control" placeholder="Phone number"
+                                aria-label="Phone number">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="">
+                            <label for="">Email Address</label>
+                            <input type="text" class="form-control" placeholder="Email adrress"
+                                aria-label="Email adrress">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="">
+                            <label for="">Address 1</label>
+                            <input type="text" class="form-control" placeholder="address1" aria-label="address1">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="">
+                            <label for="">Address 2</label>
+                            <input type="text" class="form-control" placeholder="address2" aria-label="address2">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="">
+                            <label for="">Select State </label>
+                            <select class="form-select">
+                                <option value="" selected>Select State</option>
+                                <option value="">Alabama</option>
+                                <option value="">New York</option>
+                                <option value="">Florida</option>
+                                <option value="">California</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="">
+                            <label for="">Select City </label>
+                            <select class="form-select">
+                                <option value="" selected>Select City</option>
+                                <option value="">Delhi</option>
+                                <option value="">Mumbai</option>
+                                <option value="">Kolkata</option>
+                                <option value="">Lucknow</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="">
+                            <label for="">Zip Code </label>
+                            <input class="form-control" type="text" placeholder="Ex- 12435" />
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="">
+                            <button class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!-- end col -->
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header bg-transparent">
+                <h5 class="mb-0">Horizontal form </h5>
+            </div>
+            <div class="card-body">
+                <p>Create horizontal forms with the grid by adding the <code>.row</code> class to form groups
+                    and using the <code>.col-*-*</code> classes to specify the width of your labels and controls.
+                    Be sure to add <code>.col-form-label</code> to your <code>&lt;label&gt;</code>s as well so
+                    they’re vertically centered with their associated form controls.</p>
+                <form>
+                    <div class="row mb-3">
+                        <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputName3">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3">
+                        </div>
+                    </div>
+                    <fieldset class="row mb-3">
+                        <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                    First radio
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </form>
+            </div>
+        </div>
+    </div><!-- end col -->
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header bg-transparent">
+                <h5 class="mb-0">Horizontal form label sizing</h5>
+            </div>
+            <div class="card-body">
+                <p>Be sure to use <code>.col-form-label-sm</code> or <code>.col-form-label-lg</code>
+                    to your <code>&lt;label&gt;</code>s or <code>&lt;legend&gt;</code>s to correctly follow
+                    the size of <code>.form-control-lg</code> and <code>.form-control-sm</code>.</p>
+                <div class="row mb-3">
+                    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control form-control-sm" id="colFormLabelSm"
+                            placeholder="col-form-label-sm">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control form-control-lg" id="colFormLabelLg"
+                            placeholder="col-form-label-lg">
+                    </div>
+                    <div class="col-12">
+                        <div class="my-3">
+                            <button class="btn btn-secondary btn-sm">btn small</button>
+                            <button class="btn btn-success">btn default</button>
+                            <button class="btn btn-warning btn-lg">btn large</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- end col -->
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header bg-transparent">
+                <h5 class="mb-0">Column sizing</h5>
+            </div>
+            <div class="card-body">
+                <p>As shown in the previous examples, our grid system allows you to place any
+                    number of <code>.col</code>s within a <code>.row</code>. They’ll split the
+                    available width equally between them. You may also pick a subset of your
+                    columns to take up more or less space, while the remaining <code>.col</code>s
+                    equally split the rest, with specific column classes like <code>.col-sm-7</code>.</p>
+                <div class="row g-3">
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control" placeholder="City" aria-label="City">
+                    </div>
+                    <div class="col-sm">
+                        <input type="text" class="form-control" placeholder="State" aria-label="State">
+                    </div>
+                    <div class="col-sm">
+                        <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control" placeholder="address01" aria-label="address01">
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="address02" aria-label="address02">
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="address03" aria-label="address03">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- end col -->
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header bg-transparent">
+                <h5 class="mb-0">Auto-sizing</h5>
+            </div>
+            <div class="card-body">
+                <p>The example below uses a flexbox utility to vertically center the contents and
+                    changes <code>.col</code> to <code>.col-auto</code> so that your columns only
+                    take up as much space as needed. Put another way, the column sizes itself based on the contents.</p>
+                <form class="row gy-2 gx-3 align-items-center">
+                    <div class="col-auto">
+                        <label class="visually-hidden" for="autoSizingInput">Name</label>
+                        <input type="text" class="form-control" id="autoSizingInput" placeholder="Jane Doe">
+                    </div>
+                    <div class="col-auto">
+                        <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+                        <div class="input-group">
+                            <div class="input-group-text">@</div>
+                            <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                        <select class="form-select" id="autoSizingSelect">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                            <label class="form-check-label" for="autoSizingCheck">
+                                Remember me
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!-- end col -->
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header bg-transparent">
+                <h5 class="mb-0">Inline forms</h5>
+            </div>
+            <div class="card-body">
+                <p>Use the <code>.row-cols-*</code> classes to create responsive horizontal layouts.
+                    By adding <a href="/docs/5.2/layout/gutters/">gutter modifier classes</a>, we’ll
+                    have gutters in horizontal and vertical directions. On narrow mobile viewports,
+                    the <code>.col-12</code> helps stack the form controls and more.
+                    The <code>.align-items-center</code> aligns the form elements to the middle,
+                    making the <code>.form-checkbox</code> align properly.
+                </p>
+                <form class="row row-cols-lg-auto g-3 align-items-center">
+                    <div class="col-12">
+                        <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                        <div class="input-group">
+                            <div class="input-group-text">@</div>
+                            <input type="text" class="form-control" id="inlineFormInputGroupUsername"
+                                placeholder="Username">
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                        <select class="form-select" id="inlineFormSelectPref">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                            <label class="form-check-label" for="inlineFormCheck">
+                                Remember me
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!-- end col -->
+</div><!-- end row -->

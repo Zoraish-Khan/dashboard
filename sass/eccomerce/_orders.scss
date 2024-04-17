@@ -1,0 +1,42 @@
+
+
+#orders-table{
+    .gridjs-wrapper{
+        box-shadow: none;
+        border: 0;
+    }
+    .gridjs-th{
+        padding: 8px;
+        font-size: .875rem;
+        font-weight: normal;
+    } 
+    td.gridjs-td{
+        @extend .gridjs-th;
+       color: var(--#{$prefix}color-default);
+
+        .form-check{
+            margin: 0;
+            //padding: 0;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .gridjs-footer{
+        @extend .gridjs-wrapper;
+        margin-top: 1rem;
+
+        .gridjs-pagination{
+            .gridjs-pages{
+                button{
+                    border: 0;
+                    &.gridjs-currentPage{
+                        color: $white;
+                        background-color: var(--#{$prefix}primary);
+                        border-color: var(--#{$prefix}primary);
+                    }
+                }
+            }
+        }
+    } 
+}
+

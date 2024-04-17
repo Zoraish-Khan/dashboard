@@ -1,0 +1,27 @@
+
+// projec list page scss start here
+/////////////////////////////////////////////////
+
+.card-img-h{
+    height: 12rem;
+    position: relative;
+
+    img,.card-img-top{
+        height: 100%;
+        @include img-inset-0;
+    }
+}
+.dropzone{
+    border-width: 2px !important;
+    border-radius: .25rem;
+}
+// overview page scss
+///////////////////////////////////////////////
+.legend{
+    top: 0 !important;
+    position: absolute;
+    padding: .25rem .5rem;
+    left: 2rem;
+    @include transformCenterY;
+}
+

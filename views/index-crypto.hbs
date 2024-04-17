@@ -1,0 +1,1175 @@
+{{!-- <div class="row">
+    <div class="col-12">
+        <div class="page-title-wrap d-sm-flex align-items-center justify-content-between">
+            <h4 class="mb-sm-0">Dashboard</h4>
+
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboards</a></li>
+                    <li class="breadcrumb-item active">Dashboard</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</div> --}}
+
+<div class="row">
+    <div class="h-100">
+        <div class="card">
+            <div class="card-body py-0">
+                <ul class="list-unstyled ticker mb-0">
+                    <li class="col-3 ticker-list">
+                        <div class="d-flex">
+                            <div class="w-100 mx-3">
+                                <div class="d-flex justify-content-between">
+                                    <h5>
+                                        <img class="avatar-xxs me-2" src="/img/cryptos-logo/bitcoin-btc-logo.svg"
+                                            alt="">
+                                        BTC
+                                    </h5>
+                                    <p class="text-danger mb-0">-0.5%</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="mb-0">$72.4566</h5>
+                                    <div id="btc-coin-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-3 ticker-list">
+                        <div class="d-flex">
+                            <div class="w-100 mx-3">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5>
+                                        <img class="avatar-xxs me-2" src="/img/cryptos-logo/bnb-bnb-logo.svg" alt="">
+                                        BNB
+                                    </h5>
+                                    <p class="text-danger mb-0">-0.35%</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5>$172.4566</h5>
+                                    <div id="bnb-coin-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-3 ticker-list">
+                        <div class="d-flex">
+                            <div class="w-100 mx-3">
+                                <div class="d-flex justify-content-between">
+                                    <h5>
+                                        <img class="avatar-xxs me-2" src="/img/cryptos-logo/tether-usdt-logo.svg"
+                                            alt="">
+                                        USDT
+                                    </h5>
+                                    <p class="text-success mb-0">+3.35%</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="mb-0">$1372.04566</h5>
+                                    <div id="usdt-coin-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-3 ticker-list">
+                        <div class="d-flex">
+                            <div class="w-100 mx-3">
+                                <div class="d-flex justify-content-between">
+                                    <h5>
+                                        <img class="avatar-xxs me-2" src="/img/cryptos-logo/ethereum-eth-logo.svg"
+                                            alt="">
+                                        ETH
+                                    </h5>
+                                    <p class="text-success mb-0">+5.31%</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="mb-0">$1372.04566</h5>
+                                    <div id="eth-coin-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-3 ticker-list">
+                        <div class="d-flex">
+                            <div class="w-100 mx-3">
+                                <div class="d-flex justify-content-between">
+                                    <h5>
+                                        <img class="avatar-xxs me-2" src="/img/cryptos-logo/solana-sol-logo.svg" alt="">
+                                        SOL
+                                    </h5>
+                                    <p class="text-success mb-0">+5.31%</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <h5>$1372.04566</h5>
+                                    <div id="sol-coin-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-3 ticker-list">
+                        <div class="d-flex">
+                            <div class="w-100 mx-3">
+                                <div class="d-flex justify-content-between">
+                                    <h5>
+                                        <img class="avatar-xxs me-2" src="/img/cryptos-logo/polkadot-dot-logo.svg"
+                                            alt="">
+                                        DOT
+                                    </h5>
+                                    <p class="text-danger mb-0">-2.31%</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <h5>$1372.04566</h5>
+                                    <div id="dot-coin-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="stock-live-chart" class="amchart crypto-chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-assets-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-assets" type="button" role="tab" aria-controls="pills-assets"
+                                    aria-selected="true">All Assets</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-gainers-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-gainers" type="button" role="tab"
+                                    aria-controls="pills-gainers" aria-selected="false">Gainers</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-losers-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-losers" type="button" role="tab" aria-controls="pills-losers"
+                                    aria-selected="false">Losers</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-tradable-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-tradable" type="button" role="tab"
+                                    aria-controls="pills-tradable" aria-selected="false">Tradabled</button>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content mx-n4" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-assets" role="tabpanel"
+                                aria-labelledby="pills-assets-tab" tabindex="0">
+                                <div class="table-responsive">
+                                    <table class="table table-hover mb-0">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th class="border-top-0">Asset</th>
+                                                <th class="border-top-0">Price</th>
+                                                <th class="border-top-0">Change</th>
+                                                <th class="border-top-0">Volume USDT</th>
+
+                                                <th class="border-top-0">Action</th>
+                                            </tr><!--end tr-->
+                                        </thead>
+                                        <tbody>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/bitcoin-btc-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded"
+                                                                alt="dog">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">BTC</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                Bitcoin
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$2683.59</h6>
+                                                </td>
+                                                <td class="text-success">5.10</td>
+                                                <td>$20.9B</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/bnb-bnb-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded"
+                                                                alt="dog">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">BNB</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                BNB
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$306.59</h6>
+                                                </td>
+                                                <td class="text-danger">-2.10</td>
+                                                <td>$153.9K</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/ethereum-eth-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded"
+                                                                alt="dog">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">ETH</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                Ethereum
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$1830.9</h6>
+                                                </td>
+                                                <td class="text-success">2.10</td>
+                                                <td>$54.5B</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/tether-usdt-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">USDT</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                TetherUS
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$0.99899746</h6>
+                                                </td>
+                                                <td class="text-success">+0.02%</td>
+                                                <td>$19.26B</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/solana-sol-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">SOL</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                Solana
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$19.46</h6>
+                                                </td>
+                                                <td class="text-danger">+0.93%</td>
+                                                <td>$152.59M</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/cardano-ada-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">ADA</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                Cardano
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$0.3603</h6>
+                                                </td>
+                                                <td class="text-success">+1.32%</td>
+                                                <td>$12.56B</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/polkadot-dot-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">DOT</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                Polkadot
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$5.26</h6>
+                                                </td>
+                                                <td class="text-success">+0.32%</td>
+                                                <td>$95.20M</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/usd-coin-usdc-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">USD</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                USD Coin
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$5.26</h6>
+                                                </td>
+                                                <td class="text-success">+0.32%</td>
+                                                <td>$95.20M</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/dogecoin-doge-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">DOGE</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                Dogecoin
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$.07137</h6>
+                                                </td>
+                                                <td class="text-success">+0.72%</td>
+                                                <td>$155.82M</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                        </tbody>
+                                    </table> <!--end table-->
+                                </div>
+                            </div>{{! end assets tab }}
+                            <div class="tab-pane fade" id="pills-gainers" role="tabpanel"
+                                aria-labelledby="pills-gainers-tab" tabindex="0">
+                                <div class="table-responsive">
+                                    <table class="table table-hover mb-0">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th class="border-top-0">Asset</th>
+                                                <th class="border-top-0">Price</th>
+                                                <th class="border-top-0">Change</th>
+                                                <th class="border-top-0">Volume USDT</th>
+                                                <th class="border-top-0">Action</th>
+                                            </tr><!--end tr-->
+                                        </thead>
+                                        <tbody>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/litecoin-ltc-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded"
+                                                                alt="dog">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">LTC</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                Litecoin
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$87.59</h6>
+                                                </td>
+                                                <td class="text-success">+7.10%</td>
+                                                <td>$20.9B</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/usd-coin-usdc-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded"
+                                                                alt="dog">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">USD</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                USD Coin
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$0.9998</h6>
+                                                </td>
+                                                <td class="text-success">+6.10%</td>
+                                                <td>$153.9K</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/ethereum-eth-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded"
+                                                                alt="dog">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">ETH</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                Ethereum
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$1830.9</h6>
+                                                </td>
+                                                <td class="text-success">+4.10%</td>
+                                                <td>$54.5B</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/tether-usdt-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">USDT</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                TetherUS
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$0.99899746</h6>
+                                                </td>
+                                                <td class="text-success">+0.02%</td>
+                                                <td>$19.26B</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/solana-sol-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">SOL</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                Solana
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$19.46</h6>
+                                                </td>
+                                                <td class="text-success">+6.93%</td>
+                                                <td>$152.59M</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/cardano-ada-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">ADA</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                Cardano
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$0.3603</h6>
+                                                </td>
+                                                <td class="text-success">+1.32%</td>
+                                                <td>$12.56B</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/polkadot-dot-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">DOT</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                Polkadot
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$5.26</h6>
+                                                </td>
+                                                <td class="text-success">+0.32%</td>
+                                                <td>$95.20M</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/polkadot-dot-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">DOT</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                Polkadot
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$5.26</h6>
+                                                </td>
+                                                <td class="text-success">+0.32%</td>
+                                                <td>$95.20M</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/dogecoin-doge-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">DOGE</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                Dogecoin
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$.07137</h6>
+                                                </td>
+                                                <td class="text-success">+0.72%</td>
+                                                <td>$155.82M</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                        </tbody>
+                                    </table> <!--end table-->
+                                </div>
+                            </div>{{! end gainers tab }}
+                            <div class="tab-pane fade" id="pills-losers" role="tabpanel"
+                                aria-labelledby="pills-losers-tab" tabindex="0">
+                                <div class="table-responsive">
+                                    <table class="table table-hover mb-0">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th class="border-top-0">Asset</th>
+                                                <th class="border-top-0">Price</th>
+                                                <th class="border-top-0">Change</th>
+                                                <th class="border-top-0">Volume USDT</th>
+
+                                                <th class="border-top-0">Action</th>
+                                            </tr><!--end tr-->
+                                        </thead>
+                                        <tbody>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/litecoin-ltc-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded"
+                                                                alt="dog">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">LTC</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                Litecoin
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$87.59</h6>
+                                                </td>
+                                                <td class="text-danger">-7.10%</td>
+                                                <td>$20.9B</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/usd-coin-usdc-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded"
+                                                                alt="dog">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">USD</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                USD Coin
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$0.9998</h6>
+                                                </td>
+                                                <td class="text-danger">-6.10%</td>
+                                                <td>$153.9K</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/ethereum-eth-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded"
+                                                                alt="dog">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">ETH</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                Ethereum
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$1830.9</h6>
+                                                </td>
+                                                <td class="text-danger">-4.10%</td>
+                                                <td>$54.5B</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/tether-usdt-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">USDT</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                TetherUS
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$0.99899746</h6>
+                                                </td>
+                                                <td class="text-danger">-0.02%</td>
+                                                <td>$19.26B</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/solana-sol-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">SOL</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                Solana
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$19.46</h6>
+                                                </td>
+                                                <td class="text-danger">-6.93%</td>
+                                                <td>$152.59M</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/cardano-ada-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">ADA</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                Cardano
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$0.3603</h6>
+                                                </td>
+                                                <td class="text-danger">-1.32%</td>
+                                                <td>$12.56B</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/polkadot-dot-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">DOT</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                Polkadot
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$5.26</h6>
+                                                </td>
+                                                <td class="text-danger">-0.32%</td>
+                                                <td>$95.20M</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/polkadot-dot-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">DOT</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                Polkadot
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$5.26</h6>
+                                                </td>
+                                                <td class="text-danger">-0.32%</td>
+                                                <td>$95.20M</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <img src="/img/cryptos-logo/dogecoin-doge-logo.svg"
+                                                                class="me-3 avatar-xs align-self-center rounded" alt="">
+                                                        </div>
+                                                        <div class="d-flex flex-grow-1 align-items-center">
+                                                            <h6 class="m-0 text-truncate">DOGE</h6>
+                                                            <p class="text-truncate text-muted ms-3 mb-0">
+                                                                Dogecoin
+                                                            </p>
+                                                        </div><!--end media body-->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-0">$.07137</h6>
+                                                </td>
+                                                <td class="text-danger">-0.72%</td>
+                                                <td>$155.82M</td>
+
+                                                <td>
+                                                    <a class="btn py-0 btn-sm btn-outline-custom" href="#">Detail</a>
+                                                    <a class="btn py-0 btn-sm btn-outline-primary" href="#">Trade</a>
+                                                </td>
+                                            </tr><!--end tr-->
+                                        </tbody>
+                                    </table> <!--end table-->
+                                </div>
+                            </div>{{! end losers tab }}
+                            <div class="tab-pane fade" id="pills-tradable" role="tabpanel"
+                                aria-labelledby="pills-tradable-tab" tabindex="0">...</div>{{! end tradabled tab }}
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs border-tab">
+                            <li class="nav-item"> <a href="#navpills-1" class="nav-link" data-toggle="tab"
+                                    aria-expanded="false">Market Order</a> </li>
+                            <li class="nav-item"> <a href="#navpills-2" class="nav-link active" data-toggle="tab"
+                                    aria-expanded="false">Limit Order</a> </li>
+                            <li class="nav-item"> <a href="#navpills-3" class="nav-link" data-toggle="tab"
+                                    aria-expanded="true">Stop Market</a> </li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content bg-light-subtle p-3 mt-3">
+                            <div id="navpills-1" class="tab-pane">
+                                <div class="row">
+                                    <div class="col-xl-6 col-12">
+                                        <div class="d-flex justify-content-between">
+                                            <h4>Quick Buy</h4>
+                                        </div>
+
+                                        <form class="dash-form">
+                                            <div class="form-group row mb-3">
+                                                <label class="col-md-4 col-form-label text-nowrap pe-3">I want to
+                                                    buy</label>
+                                                <div class="col-md-8">
+                                                    <input class="form-control" type="text" value="1.00000000"
+                                                        maxlength="25">
+                                                    <span class="currency">ETH</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row mb-3">
+                                                <label class="col-md-4 col-form-label text-nowrap pe-3">I will
+                                                    pay:</label>
+                                                <div class="col-md-8">
+                                                    <input class="form-control" type="text" value="0.03240000"
+                                                        maxlength="25">
+                                                    <span class="currency">PLN</span>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-success w-100">Buy</button>
+                                        </form>
+                                    </div>
+                                    <div class="col-xl-6 col-12">
+                                        <div class="d-flex justify-content-between">
+                                            <h4>QuickSell</h4>
+                                        </div>
+                                        <form class="dash-form">
+                                            <div class="form-group row mb-3">
+                                                <label class="col-md-4 col-form-label text-nowrap pe-3">I want to
+                                                    sell</label>
+                                                <div class="col-md-8">
+                                                    <input class="form-control" type="text" value="1.00000000"
+                                                        maxlength="25">
+                                                    <span class="currency">ETH</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row mb-3">
+                                                <label class="col-md-4 col-form-label text-nowrap pe-3">I want
+                                                    receive:</label>
+                                                <div class="col-md-8">
+                                                    <input class="form-control" type="text" value="0.03240000"
+                                                        maxlength="25">
+                                                    <span class="currency">PLN</span>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-danger w-100">Sell</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="navpills-2" class="tab-pane active">
+                                <div class="row">
+                                    <div class="col-xl-6 col-12">
+                                        <div class="d-flex justify-content-between">
+                                            <h4>Quick Buy</h4>
+                                        </div>
+
+                                        <form class="dash-form">
+                                            <div class="form-group row mb-3">
+                                                <label class="col-md-4 col-form-label text-nowrap pe-3">I want to
+                                                    buy</label>
+                                                <div class="col-md-8">
+                                                    <input class="form-control" type="text" value="1.00000000"
+                                                        maxlength="25">
+                                                    <span class="currency">ETH</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row mb-3">
+                                                <label class="col-md-4 col-form-label text-nowrap pe-3">I will
+                                                    pay:</label>
+                                                <div class="col-md-8">
+                                                    <input class="form-control" type="text" value="0.03240000"
+                                                        maxlength="25">
+                                                    <span class="currency">PLN</span>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-success w-100">Buy</button>
+                                        </form>
+                                    </div>
+                                    <div class="col-xl-6 col-12">
+                                        <div class="d-flex justify-content-between">
+                                            <h4>QuickSell</h4>
+                                        </div>
+                                        <form class="dash-form">
+                                            <div class="form-group row mb-3">
+                                                <label class="col-md-4 col-form-label text-nowrap pe-3">I want to
+                                                    sell</label>
+                                                <div class="col-md-8">
+                                                    <input class="form-control" type="text" value="1.00000000"
+                                                        maxlength="25">
+                                                    <span class="currency">ETH</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row mb-3">
+                                                <label class="col-md-4 col-form-label text-nowrap pe-3">I want
+                                                    receive:</label>
+                                                <div class="col-md-8">
+                                                    <input class="form-control" type="text" value="0.03240000"
+                                                        maxlength="25">
+                                                    <span class="currency">PLN</span>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-danger w-100">Sell</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="navpills-3" class="tab-pane">
+                                <div class="row">
+                                    <div class="col-xl-6 col-12">
+                                        <div class="d-flex justify-content-between">
+                                            <h4>Quick Buy</h4>
+                                        </div>
+
+                                        <form class="dash-form">
+                                            <div class="form-group row mb-3">
+                                                <label class="col-md-4 col-form-label text-nowrap pe-3">I want to
+                                                    buy</label>
+                                                <div class="col-md-8">
+                                                    <input class="form-control" type="text" value="1.00000000"
+                                                        maxlength="25">
+                                                    <span class="currency">ETH</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row mb-3">
+                                                <label class="col-md-4 col-form-label text-nowrap pe-3">I will
+                                                    pay:</label>
+                                                <div class="col-md-8">
+                                                    <input class="form-control" type="text" value="0.03240000"
+                                                        maxlength="25">
+                                                    <span class="currency">PLN</span>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-success w-100">Buy</button>
+                                        </form>
+                                    </div>
+                                    <div class="col-xl-6 col-12">
+                                        <div class="d-flex justify-content-between">
+                                            <h4>QuickSell</h4>
+                                        </div>
+                                        <form class="dash-form">
+                                            <div class="form-group row mb-3">
+                                                <label class="col-md-4 col-form-label text-nowrap pe-3">I want to
+                                                    sell</label>
+                                                <div class="col-md-8">
+                                                    <input class="form-control" type="text" value="1.00000000"
+                                                        maxlength="25">
+                                                    <span class="currency">ETH</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row mb-3">
+                                                <label class="col-md-4 col-form-label text-nowrap pe-3">I want
+                                                    receive:</label>
+                                                <div class="col-md-8">
+                                                    <input class="form-control" type="text" value="0.03240000"
+                                                        maxlength="25">
+                                                    <span class="currency">PLN</span>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-danger w-100">Sell</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 px-0">
+                <div class="row gx-3">
+                    <div class="col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p class="text-primary">BTC BALANCE</p>
+                                <h4>2124.53 <small>BTC</small></h4>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn btn-sm small btn-dark me-1">SEND</button>
+                                    <button type="button" class="btn btn-sm small btn-danger">RECEIVE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p class="text-primary">USDT BALANCE</p>
+                                <h4>1324.33 <small>USDT</small></h4>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn btn-sm btn-warning me-1">DEPOSIT</button>
+                                    <button type="button" class="btn btn-sm btn-success">WITHDRAW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-body bg-info text-white">
+                    <h6 class="text-uppercase">TODAY earning</h6>
+                    <div class="d-flex align-items-center justify-content-between mt-2">
+                        <i class="bi bi-currency-dollar fs-40"></i>
+                        <span class="fs-36">145</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,119 @@
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-wrap d-sm-flex align-items-center justify-content-between">
+            <h4 class="mb-sm-0">Rating</h4>
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Base UI</a></li>
+                    <li class="breadcrumb-item active">Rating</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</div><!-- row end -->
+
+<div class="row">
+    <div class="col-xxl-4 col-xl-6">
+        <div class="card custom-card">
+            <div class="card-header card-bg">
+                <div class="card-title"> Basic Rater </div>
+            </div>
+            <div class="card-body">
+                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                    <p class="fs-14 mb-0 fw-semibold">Show Some <span class="text-danger">❤</span> with rating :</p>
+                    <div id="rater-basic"  title="5/5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xl-6">
+        <div class="card custom-card">
+            <div class="card-header card-bg">
+                <div class="card-title"> 5 star rater with steps </div>
+            </div>
+            <div class="card-body">
+                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                    <p class="fs-14 mb-0 fw-semibold">Dont forget to rate the product :</p>
+                    <div id="rater-step"  data-rating="3.5" title="5/5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xl-12">
+        <div class="card custom-card">
+            <div class="card-header card-bg">
+                <div class="card-title"> Custom messages </div>
+            </div>
+            <div class="card-body">
+                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                    <p class="fs-14 mb-0 fw-semibold">Your rating is much appreciated :</p>
+                    <div id="rater2" title="custom rating">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-6 col-xl-6">
+        <div class="card custom-card">
+            <div class="card-header card-bg">
+                <div class="card-title"> Unlimited number of stars readOnly </div>
+            </div>
+            <div class="card-body">
+                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                    <p class="fs-14 mb-0 fw-semibold">Thanks for rating :</p>
+                    <div id="stars-unlimited" class="star-rating disabled" data-rating="6" title="6/10" style="width: 240px; height: 24px; background-size: 24px;">
+                        <div class="star-value" style="background-size: 24px; width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-6 col-xl-6">
+        <div class="card custom-card">
+            <div class="card-header card-bg">
+                <div class="card-title"> 5 Star rater with custom isBusyText and simulated backend </div>
+            </div>
+            <div class="card-body">
+                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                    <p class="fs-14 mb-0 fw-semibold">Thanks for rating :</p>
+                    <div id="rater4"  title="1/5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xl-6">
+        <div class="card custom-card">
+            <div class="card-header card-bg">
+                <div class="card-title"> On hover event </div>
+            </div>
+            <div class="card-body">
+                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                    <p class="fs-14 mb-0 fw-semibold">Please give your valuable rating :</p>
+                    <div class="d-flex flex-wrap align-items-center">
+                        <div id="rater5" >
+                            <div class="star-value"></div>
+                        </div> <span class="live-rating badge bg-success-transparent ms-3"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-xl-6">
+        <div class="card custom-card">
+            <div class="card-header card-bg">
+                <div class="card-title"> Clear/reset rater </div>
+            </div>
+            <div class="card-body">
+                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                    <p class="fs-14 mb-0 fw-semibold">Thank You so much for your support :</p>
+                    <div class="d-flex flex-wrap align-items-center">
+                        <div id="rater6" >
+                            <div class="star-value"></div>
+                        </div> <button class="btn btn-icon btn-sm btn-danger-light ms-3" id="rater-reset-button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Reset"> <i class="ri-restart-line"></i> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

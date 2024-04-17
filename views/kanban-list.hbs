@@ -1,0 +1,520 @@
+<div class="row">
+  <div class="col-12">
+    <div
+      class="page-title-wrap d-sm-flex align-items-center justify-content-between"
+    >
+      <h4 class="mb-sm-0">Dashboard</h4>
+
+      <div class="page-title-right">
+        <ol class="breadcrumb m-0">
+          <li class="breadcrumb-item"><a
+              href="javascript: void(0);"
+            >Task</a></li>
+          <li class="breadcrumb-item active">Kanban List</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-3 col-xxxl-2">
+        <div class="card">
+           <div class="card-body p-0">
+            <div class="p-3 d-flex border-bottom">
+                <div class="avatar-sm ax-flex-center-0 bg-rgba-primary rounded me-4">
+                    <i class="bi bi-file-earmark-medical fs-22"></i>
+                </div>
+                <div class="flex-grow-1">
+                    <h6>New Task <span class="float-end badge bg-primary">324</span></h6>
+                    <div class="mt-0">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h4 class="mb-0">12</h4>
+                            <span class="float-end text-muted fs-11">
+                                <span class="text-success"><i class="bi bi-arrow-up"></i> 12%</span> This month
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 d-flex border-bottom">
+                <div class="avatar-sm ax-flex-center-0 bg-rgba-warning rounded me-4">
+                    <i class="bi bi-file-earmark-text fs-22"></i>
+                </div>
+                <div class="flex-grow-1">
+                    <h6>Pending Tasks <span class="float-end badge bg-warning">124</span></h6>
+                    <div class="mt-0">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h4 class="mb-0">19</h4>
+                            <span class="float-end text-muted fs-11">
+                                <span class="text-danger"><i class="bi bi-arrow-down"></i> 7.5%</span> This month
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 d-flex border-bottom">
+                <div class="avatar-sm ax-flex-center-0 bg-rgba-info rounded me-4">
+                    <i class="bi bi-file-earmark-text fs-22"></i>
+                </div>
+                <div class="flex-grow-1">
+                    <h6>Inprogress Tasks <span class="float-end badge bg-info">124</span></h6>
+                    <div class="mt-0">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h4 class="mb-0">16</h4>
+                            <span class="float-end text-muted fs-11">
+                                <span class="text-danger"><i class="bi bi-arrow-down"></i> 4.5%</span> This month
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 d-flex border-bottom">
+                <div class="avatar-sm ax-flex-center-0 bg-rgba-success rounded me-4">
+                    <i class="bi bi-file-earmark-text fs-22"></i>
+                </div>
+                <div class="flex-grow-1">
+                    <h6>Completed Tasks <span class="float-end badge bg-success">1324</span></h6>
+                    <div class="mt-0">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h4 class="mb-0">34</h4>
+                            <span class="float-end text-muted fs-11">
+                                <span class="text-danger"><i class="bi bi-arrow-down"></i> 2%</span> This month
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3">
+                <div id="task"></div>
+            </div>
+           </div>
+        </div>
+    </div>
+    <div class="col-lg-9 col-xxxl-10">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between">
+                    <h5>All Task</h5>
+                    <div>
+                        <button class="btn btn-sm btn-primary"><i class="bi bi-plus"></i> Create Task</button>
+                        <div class="dropdown d-inline"> <a aria-label="anchor" href="javascript: void(0);" class="btn btn-sm btn-rgba-info" data-bs-toggle="dropdown" aria-expanded="false"> <i class="bi-three-dots-vertical"></i> </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="javascript: void(0);">New Task</a></li>
+                                <li><a class="dropdown-item" href="javascript: void(0);">On Going Task</a></li>
+                                <li><a class="dropdown-item" href="javascript: void(0);">Completed Task</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table nowrap table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th><div class="form-check mb-0"><input type="checkbox" class="form-check-input"></div></th>
+                                <th>Task</th>
+                                <th>Task ID</th>
+                                <th>Assigned To</th>
+                                <th>Status</th>
+                                <th>Assigned Date</th>
+                                <th>Due Date</th>
+                                <th>Preority</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="form-check mb-0"><input type="checkbox" class="form-check-input"></div>
+                                </td>
+                                <td>Design a logo</td>
+                                <td>ACT-07</td>
+                                <td>
+                                    <div id="tooltip-container" class="avatar-stacked">
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 1">
+                                            <img src="/img/user-1.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 2">
+                                            <img src="/img/User-2.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 3">
+                                            <img src="/img/user-3.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+                                        <a href="javascript:void(0);" class="rounded-circle d-inline-flex text-white ax-flex-center-0 avatar-xs bg-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Team Member 4">
+                                            +3
+                                        </a>
+                                    </div>
+                                </td>
+                                <td><div class="text-primary">New</div></td>
+                                <td>04-08-2023</td>
+                                <td>10-08-2023</td>
+                                <td><span class="badge bg-rgba-info text-capitalize">medium</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-icon text-hover-primary"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-icon text-hover-danger"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-check mb-0"><input type="checkbox" class="form-check-input"></div>
+                                </td>
+                                <td>Website SEO</td>
+                                <td>ACT-01</td>
+                                <td>
+                                    <div id="tooltip-container" class="avatar-stacked">
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 1">
+                                            <img src="/img/user-4.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 3">
+                                            <img src="/img/user-5.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+                                        <a href="javascript:void(0);" class="rounded-circle d-inline-flex text-white ax-flex-center-0 avatar-xs bg-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Team Member 4">
+                                            +3
+                                        </a>
+                                    </div>
+                                </td>
+                                <td><div class="text-info">Inprogress</div></td>
+                                <td>04-08-2023</td>
+                                <td>10-08-2023</td>
+                                <td><span class="badge bg-rgba-success text-capitalize">low</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-icon text-hover-primary"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-icon text-hover-danger"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-check mb-0"><input type="checkbox" class="form-check-input" checked></div>
+                                </td>
+                                <td>Create content for a website</td>
+                                <td>ACT-12</td>
+                                <td>
+                                    <div id="tooltip-container" class="avatar-stacked">
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 1">
+                                            <img src="/img/user-6.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 2">
+                                            <img src="/img/user-7.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 3">
+                                            <img src="/img/user-8.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+                                        <a href="javascript:void(0);" class="rounded-circle d-inline-flex text-white ax-flex-center-0 avatar-xs bg-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Team Member 4">
+                                            +2
+                                        </a>
+                                    </div>
+                                </td>
+                                <td><div class="text-warning">Pending</div></td>
+                                <td>04-08-2023</td>
+                                <td>10-08-2023</td>
+                                <td><span class="badge bg-rgba-danger text-capitalize">High</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-icon text-hover-primary"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-icon text-hover-danger"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-check mb-0"><input type="checkbox" class="form-check-input"></div>
+                                </td>
+                                <td>Design a new landing page</td>
+                                <td>ACT-01</td>
+                                <td>
+                                    <div id="tooltip-container" class="avatar-stacked">
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 1">
+                                            <img src="/img/user-1.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 2">
+                                            <img src="/img/user-2.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 3">
+                                            <img src="/img/user-3.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 3">
+                                            <img src="/img/user-4.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+                                        <a href="javascript:void(0);" class="rounded-circle d-inline-flex text-white ax-flex-center-0 avatar-xs bg-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Team Member 4">
+                                            +1
+                                        </a>
+                                    </div>
+                                </td>
+                                <td><div class="text-success">Completed</div></td>
+                                <td>04-08-2023</td>
+                                <td>10-08-2023</td>
+                                <td><span class="badge bg-rgba-info text-capitalize">medium</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-icon text-hover-primary"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-icon text-hover-danger"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-check mb-0"><input type="checkbox" class="form-check-input" checked></div>
+                                </td>
+                                <td>Develop a android application for travel</td>
+                                <td>ACT-03</td>
+                                <td>
+                                    <div id="tooltip-container" class="avatar-stacked">
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 1">
+                                            <img src="/img/user-5.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 2">
+                                            <img src="/img/user-6.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 3">
+                                            <img src="/img/user-7.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+                                        <a href="javascript:void(0);" class="rounded-circle d-inline-flex text-white ax-flex-center-0 avatar-xs bg-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Team Member 4">
+                                            +2
+                                        </a>
+                                    </div>
+                                </td>
+                                <td><div class="text-primary">New</div></td>
+                                <td>04-08-2023</td>
+                                <td>10-08-2023</td>
+                                <td><span class="badge bg-rgba-danger text-capitalize">High</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-icon text-hover-primary"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-icon text-hover-danger"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-check mb-0"><input type="checkbox" class="form-check-input"></div>
+                                </td>
+                                <td>Fixing some bug</td>
+                                <td>ACT-16</td>
+                                <td>
+                                    <div id="tooltip-container" class="avatar-stacked">
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 1">
+                                            <img src="/img/user-1.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 3">
+                                            <img src="/img/user-2.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+                                        <a href="javascript:void(0);" class="rounded-circle d-inline-flex text-white ax-flex-center-0 avatar-xs bg-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Team Member 4">
+                                            +3
+                                        </a>
+                                    </div>
+                                </td>
+                                <td><div class="text-warning">Pending</div></td>
+                                <td>04-08-2023</td>
+                                <td>10-08-2023</td>
+                                <td><span class="badge bg-rgba-success text-capitalize">low</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-icon text-hover-primary"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-icon text-hover-danger"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-check mb-0"><input type="checkbox" class="form-check-input"></div>
+                                </td>
+                                <td>Change UI of old website</td>
+                                <td>ACT-20</td>
+                                <td>
+                                    <div id="tooltip-container" class="avatar-stacked">
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 1">
+                                            <img src="/img/user-4.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 3">
+                                            <img src="/img/user-5.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+                                        <a href="javascript:void(0);" class="rounded-circle d-inline-flex text-white ax-flex-center-0 avatar-xs bg-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Team Member 4">
+                                            +3
+                                        </a>
+                                    </div>
+                                </td>
+                                <td><div class="text-info">Inprogress</div></td>
+                                <td>04-08-2023</td>
+                                <td>10-08-2023</td>
+                                <td><span class="badge bg-rgba-info text-capitalize">medium</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-icon text-hover-primary"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-icon text-hover-danger"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-check mb-0"><input type="checkbox" class="form-check-input" checked></div>
+                                </td>
+                                <td>Fixing UI issue</td>
+                                <td>ACT-22</td>
+                                <td>
+                                    <div id="tooltip-container" class="avatar-stacked">
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 1">
+                                            <img src="/img/user-2.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 3">
+                                            <img src="/img/user-3.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+                                        <a href="javascript:void(0);" class="rounded-circle d-inline-flex text-white ax-flex-center-0 avatar-xs bg-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Team Member 4">
+                                            +3
+                                        </a>
+                                    </div>
+                                </td>
+                                <td><div class="text-primary">New</div></td>
+                                <td>04-08-2023</td>
+                                <td>10-08-2023</td>
+                                <td><span class="badge bg-rgba-info text-capitalize">medium</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-icon text-hover-primary"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-icon text-hover-danger"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            {{!-- repeating tr --}}
+                            <tr>
+                                <td>
+                                    <div class="form-check mb-0"><input type="checkbox" class="form-check-input"></div>
+                                </td>
+                                <td>Design a logo</td>
+                                <td>ACT-07</td>
+                                <td>
+                                    <div id="tooltip-container" class="avatar-stacked">
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 1">
+                                            <img src="/img/user-1.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 2">
+                                            <img src="/img/User-2.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 3">
+                                            <img src="/img/user-3.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+                                        <a href="javascript:void(0);" class="rounded-circle d-inline-flex text-white ax-flex-center-0 avatar-xs bg-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Team Member 4">
+                                            +3
+                                        </a>
+                                    </div>
+                                </td>
+                                <td><div class="text-primary">New</div></td>
+                                <td>04-08-2023</td>
+                                <td>10-08-2023</td>
+                                <td><span class="badge bg-rgba-info text-capitalize">medium</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-icon text-hover-primary"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-icon text-hover-danger"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-check mb-0"><input type="checkbox" class="form-check-input"></div>
+                                </td>
+                                <td>Website SEO</td>
+                                <td>ACT-01</td>
+                                <td>
+                                    <div id="tooltip-container" class="avatar-stacked">
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 1">
+                                            <img src="/img/user-4.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 3">
+                                            <img src="/img/user-5.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+                                        <a href="javascript:void(0);" class="rounded-circle d-inline-flex text-white ax-flex-center-0 avatar-xs bg-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Team Member 4">
+                                            +3
+                                        </a>
+                                    </div>
+                                </td>
+                                <td><div class="text-info">Inprogress</div></td>
+                                <td>04-08-2023</td>
+                                <td>10-08-2023</td>
+                                <td><span class="badge bg-rgba-success text-capitalize">low</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-icon text-hover-primary"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-icon text-hover-danger"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-check mb-0"><input type="checkbox" class="form-check-input" checked></div>
+                                </td>
+                                <td>Create content for a website</td>
+                                <td>ACT-12</td>
+                                <td>
+                                    <div id="tooltip-container" class="avatar-stacked">
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 1">
+                                            <img src="/img/user-6.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 2">
+                                            <img src="/img/user-7.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 3">
+                                            <img src="/img/user-8.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+                                        <a href="javascript:void(0);" class="rounded-circle d-inline-flex text-white ax-flex-center-0 avatar-xs bg-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Team Member 4">
+                                            +2
+                                        </a>
+                                    </div>
+                                </td>
+                                <td><div class="text-warning">Pending</div></td>
+                                <td>04-08-2023</td>
+                                <td>10-08-2023</td>
+                                <td><span class="badge bg-rgba-danger text-capitalize">High</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-icon text-hover-primary"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-icon text-hover-danger"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-check mb-0"><input type="checkbox" class="form-check-input"></div>
+                                </td>
+                                <td>Design a new landing page</td>
+                                <td>ACT-01</td>
+                                <td>
+                                    <div id="tooltip-container" class="avatar-stacked">
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 1">
+                                            <img src="/img/user-1.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 2">
+                                            <img src="/img/user-2.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 3">
+                                            <img src="/img/user-3.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+                                        <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" class="d-inline-block" title="Team Member 3">
+                                            <img src="/img/user-4.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                        </a>
+                                        <a href="javascript:void(0);" class="rounded-circle d-inline-flex text-white ax-flex-center-0 avatar-xs bg-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Team Member 4">
+                                            +1
+                                        </a>
+                                    </div>
+                                </td>
+                                <td><div class="text-success">Completed</div></td>
+                                <td>04-08-2023</td>
+                                <td>10-08-2023</td>
+                                <td><span class="badge bg-rgba-info text-capitalize">medium</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-icon text-hover-primary"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-icon text-hover-danger"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

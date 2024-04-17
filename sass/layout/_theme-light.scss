@@ -1,0 +1,60 @@
+
+:root,[data-bs-theme="light"]{
+    --bs-list-group-bg: #{$base-bg};
+    --#{$prefix}base-bg: #{$base-bg};
+    //--bs-color-default: #f00;
+    --#{$prefix}color-default: #7a878b;
+
+    --bs-box-layout-width:           1300px;
+    --bs-card-cap-bg:                var(--bs-base-bg);
+    --bs-card-bg:                    var(--bs-base-bg);
+    // card
+    $card-bg:                               #{$base-bg};
+    $card-cap-bg:                           rgba(var(--#{$prefix}base-bg), .03);
+
+    .dropdown-menu{
+        --#{$prefix}card-bg: #{$base-bg};
+        background-color: var(--#{$prefix}base-bg);
+    }
+    .card,.tl-content{
+        --#{$prefix}card-bg: #{$base-bg};
+        --#{$prefix}card-footer-bg: lighten(var--#{$prefix}body-bg,3%);
+    }
+    .card-header,.card-footer{
+        background-color: var(--#{$prefix}base-bg);
+    }
+    .list-group{
+        --#{$prefix}list-group-bg: #{$card-bg} !important;
+        background-color: var(--#{$prefix}list-group-bg);
+    }
+    .list-group-item{
+        --#{$prefix}list-group-bg: #{$card-bg};
+        background-color: var(--#{$prefix}list-group-bg);
+    }
+    .card-bg{
+        --#{$prefix}card-bg: #{$base-bg};
+        background-color: var(--#{$prefix}card-bg);
+    }
+    .table{
+        --#{$prefix}table-bg: #{$base-bg};
+        background-color: var(--#{$prefix}base-bg);
+    }
+    .base-bg{
+        --#{$prefix}base-bg: #{$base-bg};
+        background-color: var(--#{$prefix}base-bg);
+    }
+    .logo-light{
+        display: none;
+    }
+
+}
+
+
+
+
+
+[data-bs-theme="auto"]{
+    .navbar-menu{
+        --bs-heading-color: #{lighten(#adb5bd,7%)} ;
+    }
+}

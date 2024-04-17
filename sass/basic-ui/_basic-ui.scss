@@ -1,0 +1,683 @@
+
+.icons-alert{
+    svg.bi{
+        height: 1em;
+        width: 1em;
+        fill: currentColor;
+    }
+}
+// tabs scss
+/////////////////////////////////////////////////
+.nav{
+    .nav-item.show{
+        .nav-link{
+            color: $primary;
+        }
+    }
+    .nav-link{
+        color: var(--#{$prefix}color-default);
+        &.active{
+            color: $primary;
+        }
+    }
+    
+}
+.nav-pills{
+    .nav-link{
+        color: var(--#{$prefix}color-default);
+        &.active{
+            color: $white;
+        }
+    }
+}
+.tab-content{
+    padding: 1rem .5rem;
+}
+.nav-tabs-v{
+    .nav-item{
+        width: 100%;
+        &.show{
+            .nav-link{
+                @extend .bg-rgba-dark;
+            }
+        }
+    }
+    .nav-link{
+        display: block;
+        border: 1px solid $border-color;
+        &.active{
+            @extend .bg-rgba-primary;
+        }
+    }
+}
+// steper tab scss
+.steps-nav{
+
+    background: var($body-bg);
+
+    &.nav-pills{
+
+        .show>.nav-link,
+        .nav-link{
+            &.active{
+                color: $white;
+                background-color: $primary;
+            }
+        }
+    }
+        
+        .nav-link{            
+            position: relative;
+            border-radius: 0;
+            color: var(--#{$prefix}color-default);
+            @include FlexCenterAll;
+
+            i{
+                @extend .fs-22;
+            }
+            
+                &::before {
+                    content: "";
+                    position: absolute;
+                    border: 7px solid transparent;
+                    right: -14px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    
+                }
+                &.active::before{
+                    border-left-color: $primary;
+                }
+        }
+    
+    .nav-item:last-child{
+        .nav-link{
+            &.active::before{
+                border: 0;
+                margin: 0;
+            }
+        }
+    }
+}
+// progress nav waizard form scss
+.progress-nav {
+    position: relative;
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+    .nav {
+        margin-top: -1rem;
+        margin-right: -1rem;
+        margin-left: -1rem;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+
+        .nav-link {
+            width: 2rem;
+            height: 2rem;
+            background-color: var(--bg-header);
+            padding: 0;
+            color: var(--vz-dark);
+            font-weight: 400;
+
+            &.active, &.done {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+        .progress {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            width: 100%;
+        }
+    }
+}
+
+
+.profile-user{
+    .profile-img-file-input {
+        display: none;
+    }
+    .user-profile-image {
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    .profile-photo-edit {
+        position: absolute;
+        right: 0;
+        left: auto;
+        bottom: 0;
+        cursor: pointer;
+    }
+    
+}
+// custom color background pill tabs
+
+.custom-nav-bg{
+    padding: .15rem ;
+    
+    &[class*="bg-"]{
+        .nav-link{
+            color: $white;
+        }
+    }
+    .nav-item.show{
+        &.active{
+            background-color: rgba(255, 255, 255, .40);
+        }
+    }
+    background-color: var($body-bg);
+    .nav-link{
+        border: 0;
+        margin-bottom: 0;
+        border-radius: 3rem;
+
+        &.active{
+            background-color: rgba(255, 255, 255, .40);
+        }
+        &:disabled{
+            opacity: .4;
+        }
+        
+    }
+}
+// border tabs scss
+
+.border-tab{
+
+    .nav-link{
+        border: 0;
+        position: relative;
+
+        &::after{
+            content: "";
+            background: $primary;
+            height: 2px;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: -1px;
+            -webkit-transition: all .3s ease 0s;
+            transition: all .3s ease 0s;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+        }
+        &.active::after{
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+}
+// accordion scss
+////////////////////////////////////////////////////////////////////////////////////
+
+.accordion{
+    a{
+        color: var(--#{$prefix}color-default);
+    }
+}
+
+.demo{
+    .offcanvas{
+        height: 200px;
+        position: static;
+        display: block;
+        visibility: visible;
+    }
+    .offcanvas-backdrop{
+        display: none;
+    }
+    .offcanvas.show:not(.hiding), .offcanvas.showing{
+        transform: none;
+    }
+}
+
+// progressbar scss 
+/////////////////////////////////////////
+
+.custom-progress{
+    border-radius: 20px;
+    .progress-bar{
+        position: relative;
+        border-radius: 20px;
+        &::before{
+            content: '';
+            width: .5rem;
+            height: .5rem;
+            right: .25rem;
+            border-radius: 50%;
+            background-color: $white;
+            @include transformCenterY;
+            position: absolute;
+        }
+        &::after{
+            content: '';
+            height: 1px;
+            right: .5rem;
+            left: .5rem;
+            position: absolute;
+            @include transformCenterY;
+            background-color: $white;
+        }
+    }  
+
+}
+.blockquote{
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+.blockquote-left{
+    padding: .5rem 1.25rem;
+    border-left: .25rem solid $border-color;
+}
+.blockquote-right{
+    padding: .5rem 1.25rem;
+    border-right: .25rem solid $border-color;
+    text-align: right;
+    .blockquote,.blockquote-footer{
+        text-align: right;
+        
+    }
+}
+
+.blockquote-footer{
+    font-size: .85rem;
+}
+//
+// list scss start
+///////////////////////////////////////////////////////
+
+
+@each $color,
+$value in $theme-colors {
+    .list-group-bg-#{$color} {
+        background-color: $value;
+        border-color: $value;
+        color: $white;
+        &:hover{
+            color: $white;
+        }
+        
+        .list-group-item {
+            &.active {
+                background-color: $value !important;
+                border-color: $value;
+            }
+        }
+    }
+}
+
+.list-group-light{
+    color: var(--#{$prefix}color-default) !important;
+}
+
+@for $i from 1 to 6 {
+ 
+    [class*="list-group-bg-"]{
+        .list-group-item{
+            &.active{
+                a,
+                h#{$i}{
+                    color:$white ;
+                }
+                
+            }
+        }
+    }
+
+}
+
+
+
+
+// ribbons scss start
+.ribbon1 {
+    position: absolute;
+    top: -6.1px;
+    span {
+        display: block;
+        padding: 6px 4px 0px;
+        border-top-right-radius: 6px;
+        width: 60px;
+        font-size: 11px;
+        font-weight: 500;
+        &::after,&::before{
+            content: '';
+            position: absolute;
+        }
+        &::after{
+            height: 6px;
+            width: 6px;
+            left: -6px;
+            top: 0;
+            border-radius: 8px 8px 0 0;
+        }
+        &::before{
+            height: 6px;
+            width: 4px;
+            left: -4px;
+            top: 0;
+        }
+    }
+
+    &::after{
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-top: 10px solid;
+    }
+    
+
+    &.float-start{
+        left: 10px;
+    }
+    &.float-end{
+        right: 10px;
+    }
+    
+}
+@each $color, $value in $theme-colors{
+    .ribbon1{
+        &.bg-#{$color}{
+            &::after{
+                border-top: 10px solid $value;
+            }
+            span::after{
+                background-color: darken($value, 15%);
+            }
+            span::before{
+                background-color: $value;
+            }
+        }
+    }
+}
+// ribbon 2
+
+.ribbon2 {
+    width: 30px;
+    padding: 8px 0;
+    position: absolute;
+    top: -6px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    &.float-start{
+        left: 8px;
+    }
+    &.float-end{
+        right: 8px;
+    }
+    &::before, &::after {
+        content: "";
+        position: absolute;
+    }
+    &::before {
+        height: 0;
+        width: 0;
+        right: -5.5px;
+        top: 0.1px;
+        border-right: 6px solid transparent;
+    }
+    &::after {
+        height: 0;
+        width: 0;
+        bottom: -18px;
+        left: 0;
+        border-bottom: 18px solid transparent;
+    }
+
+}
+@each $color, $value in $theme-colors{
+    .ribbon2{
+        &.bg-#{$color}{
+            &::before{
+                border-bottom: 6px solid darken($value,20%)
+            }
+            &::after{
+                border-left: 15px solid $value;
+                border-right: 15px solid $value;
+            }
+        }
+    }
+}
+  
+   // ribbon-3
+   @each $color, $value in $theme-colors{
+    .ribbon3{
+        &.float-start{
+            &.bg-#{$color}{
+                &::before{
+                    left: 0;
+                    border-top: transparent;
+                    border-top: 9px solid darken($value,20%);
+                    border-left: 9px solid transparent;
+                    border-right: transparent;
+                }
+                &::after{
+                    right: -14.5px;
+                    left: auto;
+                    border-left:15px solid $value;
+                    border-right: transparent;
+                    border-top: 13px solid transparent;
+                    border-bottom: 13px solid transparent;
+                }
+            }
+        }
+        &.float-end.bg-#{$color}{
+            background: $value;
+            &::before{
+                border-top: 9px solid darken($value, 15%);
+          }
+          &::after{
+                border-right: 15px solid $value;
+          }
+        }
+    }
+   } 
+   .ribbon3 {
+        text-align: center;
+        width: auto;
+        max-width: 100px;
+        height: 26px;
+        line-height: 26px;
+        padding-right: 12px;
+        position: absolute;
+        right: -8px;
+        top: 10px;
+        font-size: 11px;
+        font-weight: 500;
+    span{
+        display: inline-flex;
+    }
+        &.float-start{
+            left: -8px;
+
+        }
+    &:before, 
+    &:after {
+        content: "";
+        position: absolute;
+    }
+    &:before {
+        height: 0;
+        width: 0;
+        bottom: -8.5px;
+        right: 0.1px;   
+        border-right: 9px solid transparent;
+    }
+    &:after {
+        height: 0;
+        width: 0;
+        left: -14.5px;
+        border-bottom: 13px solid transparent;
+        border-top: 13px solid transparent;
+    }
+    
+
+
+    
+  }
+  .ribbon4{
+    width: 100%;
+    height: 188px;
+    top: -8px;
+    left: 8px;
+    overflow: hidden;
+    position: absolute;
+
+    &::before, &::after {
+        content: "";
+        position: absolute;
+    }
+    &::before {
+        width: 40px;
+        height: 8px;
+        right: 44px;
+        border-radius: 8px 8px 0px 0px;
+    }
+    
+   
+
+    
+    &.float-end{
+        &::after {
+            width: 8px;
+            height: 40px;
+            right: 0px;
+            top: 44px;
+            border-radius: 0px 8px 8px 0px;
+        }
+        &::before {
+            width: 40px;
+            height: 8px;
+            right: 44px;
+            border-radius: 8px 8px 0px 0px;
+        }
+        .band {
+            width: 170px;
+            height: 20px;
+            line-height: 20px;
+            position: absolute;
+            top: 16px;
+            right: -50px;
+            z-index: 2;
+            overflow: hidden;
+            transform: rotate(45deg);
+            border: 1px dashed;
+            text-align: center;
+            font-size: 11px;
+            font-weight: 500;
+        }
+        
+    }
+    &.float-start{
+        left: -8px;
+        &::after {
+            width: 8px;
+            height: 40px;
+            left: 0px;
+            top: 44px;
+            border-radius: 0px 8px 8px 0px;
+        }
+        &::before {
+            width: 40px;
+            height: 8px;
+            left: 44px;
+            border-radius: 8px 8px 0px 0px;
+        }
+        .band {
+            width: 170px;
+            height: 20px;
+            line-height: 20px;
+            position: absolute;
+            top: 16px;
+            left: -50px;
+            z-index: 2;
+            overflow: hidden;
+            transform: rotate(-45deg);
+            border: 1px dashed;
+            text-align: center;
+            font-size: 11px;
+            font-weight: 500;
+        }
+        
+    }
+}
+  @each $color, $value in $theme-colors{
+    .ribbon4{
+        &.bg-#{$color}{
+            background-color: transparent !important;
+            &::before, &::after{
+                background-color: darken($value,10%);
+            }
+            .band{
+                background-color: $value;
+                box-shadow: 0 0 0 3px $value, 0px 21px 5px -18px darken($value, 60);
+            }
+        }
+    }
+  
+    
+  }
+
+// scroll spy scss 
+.scrollspy-content{
+    height: 300px;
+    overflow: auto;
+}
+// swiper pagination
+
+.swiper-pagination{
+    color: $white;
+    
+    &.page-bg-overlay-d{
+        background-color: rgba(0, 0, 0, .40);
+    }
+    &.page-bg-overlay-l{
+        background-color: rgba(255, 255, 255, .40);
+    }
+}
+// swipe custom pagination
+.pagination-custom{
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: $primary;
+  }
+}
+.vertical-swiper{
+    .swiper-pagination{
+        background-color: transparent
+    }
+}
+.swiper-slide{
+    img{
+        border-radius: 0;
+    }
+}
+.toast-header{
+    color: $white;
+}
+// .blockquote,
+// .toast-body{
+//     color: rgba($white,60%) !important;
+// }
+// [data-layout-mode="light"]{
+    
+// }

@@ -1,0 +1,80 @@
+
+.accordion {
+    .accordion-button {
+      //  background-color: $accordion-btn-bg;
+        &:focus{
+            box-shadow: none;
+        }
+    }
+
+    .accordion-body {
+        color: $text-muted;
+    }
+
+    &.accordion-icon-none {
+        .accordion-button {
+            &::after {
+                content: "";
+                background-image: none !important;
+            }
+
+            &:not(.collapsed) {
+                &::after {
+                    content: "";
+                }
+            }
+        }
+    }
+}
+
+
+//accordion Color 
+
+@each $color,
+$value in $theme-colors {
+    .accordion-#{$color} {
+        .accordion-item {
+            border-color: rgba($value, 0.6);
+
+            .accordion-button {
+                box-shadow: none;
+
+                &:not(.collapsed) {
+                    color: $value;
+                    background-color: rgba($value, 0.1) !important;
+                }
+
+                &::after {
+                    color: $value;
+                }
+            }
+        }
+    }
+
+    .accordion-fill-#{$color} {
+        .accordion-item {
+            .accordion-button {
+                box-shadow: none;
+                
+
+                &:not(.collapsed) {
+                    color: $white;
+                    background-color: $value !important;
+                }
+            }
+        }
+    }
+}
+
+
+// theme dark
+
+
+
+[dir="rtl"]{
+    .custom-accordionwithicon {
+        .accordion-button::after{
+            transform: rotate(180deg);
+        }
+    }
+}

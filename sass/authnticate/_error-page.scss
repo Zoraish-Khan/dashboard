@@ -1,0 +1,295 @@
+////////////////
+.error-404-wrap{
+    height: 100vh;
+    position: relative;
+    svg#error-svg-404{
+      width: 600px;
+  
+      #bg-shape{
+        fill: $primary !important;
+        opacity: .1;
+  
+      }
+     #elg0her12gx4c,#number-shadow{
+        fill: $primary !important;
+     }
+    }
+  }
+  svg#error-svg-404:not(.animated) .animable {
+    opacity: 0;
+    
+  }
+  
+  svg#error-svg-404.animated{
+      #freepik--background-simple--inject-2 {
+        animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) lightSpeedLeft;
+        animation-delay: 0s;
+        
+      }
+  
+      #freepik--Floor--inject-2 {
+        animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) fadeIn;
+        animation-delay: 0s;
+      }
+      #freepik--Plants--inject-2 {
+        animation: rotaHoja 4.5s infinite linear alternate;
+        transform-origin: left left;
+        transform: translate(0);
+
+        path{
+            fill: $primary !important;
+        }
+        
+      }
+      #freepik--Clouds--inject-2 {
+        animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) lightSpeedLeft;
+        animation-delay: 0s;
+        animation: cloudmove 4.5s infinite linear alternate;
+        transform-origin: bottom left;
+        transform: rotate(0deg);
+      }
+      #freepik--character-3--inject-2 {
+        animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) lightSpeedRight;
+        animation-delay: 0s;
+       
+      }
+      #freepik--character-2--inject-2 {
+        animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) lightSpeedRight;
+        animation-delay: 0s;
+      }
+      #freepik--character-1--inject-2 {
+        animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideUp;
+        animation-delay: 0s;
+      }
+  } 
+  
+  
+  @keyframes lightSpeedLeft {
+    from {
+      transform: translate3d(-50%, 0, 0) skewX(20deg);
+      opacity: 0;
+    }
+  
+    60% {
+      transform: skewX(-10deg);
+      opacity: 1;
+    }
+  
+    80% {
+      transform: skewX(2deg);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes lightSpeedRight {
+    from {
+      transform: translate3d(50%, 0, 0) skewX(-20deg);
+      opacity: 0;
+    }
+  
+    60% {
+      transform: skewX(10deg);
+      opacity: 1;
+    }
+  
+    80% {
+      transform: skewX(-2deg);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: inherit;
+    }
+  }
+  // plants animation
+   @keyframes rotaHoja{
+     0%{
+     transform: rotate(0deg);
+     }
+     100%{
+     transform: rotate(2deg);
+     }
+   }
+  // cloud animation
+   @keyframes cloudmove{
+    0%{
+      transform: translate(0);
+    }
+    100%{
+      transform: translate(7%);
+    }
+   }
+   
+// error 500
+//////////////////////////////////////////////////////////
+.error-500-wrap{
+  height: 100vh;
+  position: relative;
+  svg{
+    &#error-500-svg{
+      height: 500px;
+      margin-top: -5rem;
+
+      &:not(.animated){
+          .animable{
+            opacity: 0;
+          }
+      }
+
+      &.animated{
+        #freepik--background-simple--inject-64 {
+          animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) lightSpeedLeft;
+          animation-delay: 0s;
+        }
+        #freepik--planet-3--inject-64 {
+          animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideUp;
+          animation-delay: 0s;
+          -webkit-animation: Rotation 10s linear infinite reverse;
+         animation: Rotation 10s linear infinite reverse;
+        }
+        #freepik--planet-2--inject-64 {
+          animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) lightSpeedRight;
+          animation-delay: 0s;
+          
+          #innerplanet{
+            -webkit-animation: Rotation 10s linear infinite;
+         animation: Rotation 10s linear infinite;
+          }
+        }
+        #freepik--planet-1--inject-64 {
+         // animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) zoomOut;
+          
+          
+         -webkit-animation: Rotation 10s linear infinite reverse;
+         animation: Rotation 10s linear infinite reverse;
+        }
+        #freepik--Text--inject-64 {
+          animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideUp;
+          animation-delay: 0s;
+        }
+        #freepik--Character--inject-64 {
+          animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideUp;
+          animation-delay: 0s;
+          animation: astronaut 4.5s infinite linear alternate;
+          transform-origin: bottom top;
+        
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes lightSpeedLeft {
+  from {
+    transform: translate3d(-50%, 0, 0) skewX(20deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: skewX(-10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: skewX(2deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: inherit;
+  }
+}
+
+@keyframes lightSpeedRight {
+  from {
+    transform: translate3d(50%, 0, 0) skewX(-20deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: skewX(10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: skewX(-2deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes Rotation {
+	from {-webkit-transform: rotate(0);transform: rotate(0);}
+	to {-webkit-transform: rotate(360deg);transform: rotate(360deg);}	
+}
+
+@keyframes Rotation {
+	from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+	to {-webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }	
+}
+@keyframes astronaut{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(7%);
+  }
+}

@@ -1,0 +1,236 @@
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-wrap d-sm-flex align-items-center justify-content-between">
+            <h4 class="mb-sm-0">Notifications</h4>
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Base UI</a></li>
+                    <li class="breadcrumb-item active">Notifications</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</div><!-- row end -->
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header bg-transparent p-3">
+                <h5 class="mb-0">Bootstrap Toasts Example</h5>
+            </div>
+            <div class="card-body">
+
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="p-3">
+                            <h5>Basic</h5>
+                            <p class="text-muted">
+                                To encourage extensible and predictable toasts, we recommend a header and body.
+                            </p>
+
+                            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="toast-header">
+                                    <i class="bi-emoji-smile me-2 text-primary fs-18"></i>
+                                    <strong class="me-auto">Bootstrap</strong>
+                                    <small>11 mins ago</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="toast-body">
+                                    Hello, world! This is a toast message.
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-xl-6">
+                        <div class="p-3">
+                            <h5>Translucent</h5>
+                            <p class="text-muted">
+                                Toasts are slightly translucent to blend in with what’s below them.
+                            </p>
+                        </div>
+                        <div class="card-body bg-dark">
+                            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="toast-header">
+                                    <img src="/img/slack.png" class="rounded me-2" alt="..." height="25px">
+                                    <strong class="me-auto">Slack</strong>
+                                    <small class="text-muted">11 mins ago</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="toast-body">
+                                    Hello, world! This is a toast message.
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end col -->
+                    <hr class="my-3">
+                    <div class="col-xl-6">
+                        <div class="p-3">
+                            <h5>Stacking</h5>
+                            <p class="text-muted">
+                                You can stack toasts by wrapping them in a toast container, which will vertically add
+                                some spacing.
+                            </p>
+                            <div class="toast-container position-static">
+                                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                                    <div class="toast-header">
+                                        <i class="bi-bootstrap me-2 text-secondary"></i>
+                                        <strong class="me-auto">Bootstrap</strong>
+                                        <small class="text-muted">just now</small>
+                                        <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="toast-body">
+                                        See? Just like this.
+                                    </div>
+                                </div>
+
+                                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                                    <div class="toast-header">
+                                        <i class="bi-bootstrap me-2 text-secondary"></i>
+                                        <strong class="me-auto">Bootstrap</strong>
+                                        <small class="text-muted">2 seconds ago</small>
+                                        <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="toast-body">
+                                        Heads up, toasts will stack automatically
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- end col -->
+                    <div class="col-xl-6">
+                        <div class="p-3">
+                            <h5>Custom</h5>
+                            <p class="text-muted">
+                                You can stack toasts by wrapping them in a toast container, which will vertically add
+                                some spacing.
+                            </p>
+                            <div class="toast-container">
+                                <div class="toast align-items-center show" role="alert" aria-live="assertive"
+                                    aria-atomic="true">
+                                    <div class="d-flex">
+                                        <div class="toast-body">
+                                            Hello, world! This is a toast message.
+                                        </div>
+                                        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"
+                                            aria-label="Close"></button>
+                                    </div>
+                                </div>
+                                <div class="toast align-items-center show" role="alert" aria-live="assertive"
+                                    aria-atomic="true">
+                                    <div class="toast-header">
+                                        <img src="/img/dribble.png" alt="" height="25" class="me-2">
+                                        <strong>Dribble</strong>
+                                        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="toast-body">
+                                        Hello, world! This is a toast message.
+                                        <button class="btn btn-primary btn-sm mt-2">Take Action</button>
+                                        <button type="button" class="btn btn-danger btn-sm mt-2 m-auto"
+                                            data-bs-dismiss="toast" aria-label="Close"><i class="bi-x"></i> Close
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- end col -->
+
+                </div>
+            </div>
+        </div>
+    </div><!-- end col -->
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header bg-transparent p-3">
+                <h5 class="mb-0">Bootstrap Toasts Example</h5>
+            </div>
+            <div class="card-body">
+
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="p-3">
+                            <h5>Color</h5>
+                            <p class="text-muted">
+                                Building on the above example, you can create different toast color schemes with our
+                                color and background utilities.
+                                Here we’ve added <code>.text-bg-primary</code> to the .toast, and then added
+                                .btn-close-white to our close button.
+                            </p>
+
+                            <div class="toast-container position-relative">
+                                <div class="toast align-items-center text-bg-primary border-0 show" role="alert"
+                                    aria-live="assertive" aria-atomic="true">
+                                    <div class="d-flex">
+                                        <div class="toast-body">
+                                            Hello, world! This is a toast message.
+                                        </div>
+                                        <button type="button" class="btn-close btn-close-white me-2 m-auto"
+                                            data-bs-dismiss="toast" aria-label="Close"></button>
+                                    </div>
+                                </div>
+                                <div class="toast align-items-center text-bg-secondary border-0 show" role="alert"
+                                    aria-live="assertive" aria-atomic="true">
+                                    <div class="d-flex">
+                                        <div class="toast-body">
+                                            Hello, world! This is a toast message.
+                                        </div>
+                                        <button type="button" class="btn-close btn-close-white me-2 m-auto"
+                                            data-bs-dismiss="toast" aria-label="Close"></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-xl-6">
+                        <div class="p-3">
+                            <h5>Placement</h5>
+                            <p class="text-muted">
+                                Building on the above example, you can create different toast color schemes with our
+                                color and background utilities.
+                                Here we’ve added <code>.text-bg-primary</code> to the .toast, and then added
+                                .btn-close-white to our close button.
+                            </p>
+
+                            <div class="card-body bg-rgba-dark position-relative " style="min-height: 260px;">
+                                <div aria-live="polite" aria-atomic="true" class="position-relative">
+                                    <!-- Position it: -->
+                                    <!-- - `.toast-container` for spacing between toasts -->
+                                    <!-- - `top-0` & `end-0` to position the toasts in the upper right corner -->
+                                    <!-- - `.p-3` to prevent the toasts from sticking to the edge of the container  -->
+                                    <div class="toast-container top-0 end-0 p-3">
+
+                                        <!-- Then put toasts within -->
+                                        <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                                            <div class="toast-header">
+                                                <i class="bi-bootstrap text-primary me-2"></i>
+                                                <strong class="me-auto">Bootstrap</strong>
+                                                <small class="text-muted">just now</small>
+                                                <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="toast-body">
+                                                See? Just like this.
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div><!-- end col -->
+
+                </div>
+            </div>
+        </div>
+    </div><!-- end col -->
+</div>

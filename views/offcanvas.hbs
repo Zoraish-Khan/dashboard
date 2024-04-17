@@ -1,0 +1,1099 @@
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-wrap d-sm-flex align-items-center justify-content-between">
+            <h4 class="mb-sm-0">Offcanvas</h4>
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Base UI</a></li>
+                    <li class="breadcrumb-item active">Offcanvas</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</div><!-- row end -->
+<div class="row">
+
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header bg-transparent p-3">
+                <h5 class="mb-0">Default offcanvas example</h5>
+            </div>
+
+            <div class="p-4">
+                <p>You can use a link with the <code>href</code> attribute, or a button with the
+                    <code>data-bs-target</code> attribute. In both cases, the <code>data-bs-toggle="offcanvas"</code> is
+                    required.
+                </p>
+                <div class="d-flex gap-3">
+                    <a class="btn btn-secondary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        Link with href
+                    </a>
+                    <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        Button with data-bs-target
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="p-4 card-body">
+                            <div class="header-search">
+                                <p class="text-muted">Search</p>
+                                <div class="position-relative">
+                                    <input type="text" class="form-control rounded bg-light" placeholder="Search...">
+                                    <i class="bi-search ax-icon-wgt"></i>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted">Categories</p>
+                                <ul class="list-unstyled fw-medium">
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Design </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Development
+                                            <span class="badge bi-rgba-success  float-end ms-1 fs-12">04</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Business </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Project </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Travel
+                                            <span class="badge bi-rgba-success  ms-1 float-end fs-12">12</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted">Archive</p>
+                                <ul class="list-unstyled fw-medium">
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> 2021
+                                            <span class="badge bg-rgba-success float-end ms-1 fs-12">03</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> 2019
+                                            <span class="badge bg-rgba-success float-end ms-1 fs-12">06</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> 2022
+                                            <span class="badge bg-rgba-success float-end ms-1 fs-12">05</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted mb-2">Popular Posts</p>
+                                <div class="list-group list-group-flush">
+                                    <a href="#" class="list-group-item text-muted py-3 px-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-3">
+                                                <img src="/img/dog-006.jpg" alt=""
+                                                    class="avatar-md h-auto d-block rounded">
+                                            </div>
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <h5 class="fs-13 text-truncate">Beautiful Day with Friends</h5>
+                                                <p class="mb-0 text-truncate">10 Apr, 2022</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item text-muted py-3 px-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-3">
+                                                <img src="/img/dog-005.jpg" alt=""
+                                                    class="avatar-md h-auto d-block rounded">
+                                            </div>
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <h5 class="fs-13 text-truncate">Drawing a sketch</h5>
+                                                <p class="mb-0 text-truncate">24 May, 2022</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item text-muted py-3 px-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-3">
+                                                <img src="/img/dog-004.jpg" alt=""
+                                                    class="avatar-md h-auto d-block rounded">
+                                            </div>
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <h5 class="fs-13 text-truncate">Project discussion with team</h5>
+                                                <p class="mb-0 text-truncate">11 Jul, 2022</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted">Tags</p>
+                                <div class="d-flex flex-wrap gap-2 widget-tag">
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Design</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Development</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Business</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Project</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Travel</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Lifestyle</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Photography</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- end col -->
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header bg-transparent p-3">
+                <h5 class="mb-0">Placement offcanvas example</h5>
+            </div>
+            <!-- offcanvas top -->
+            <div class="p-4">
+                <p>There’s no default placement for offcanvas components, so you must add one of the modifier classes
+                    below.</p>
+                <div class="d-flex gap-3">
+                    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasTop" role="button"
+                        aria-controls="offcanvasTop">
+                        Toggle Top Offcanvas
+                    </a>
+                    <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        Toggle Right Offcanvas
+                    </button>
+                    <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                        Toggle Bottom Offcanvas
+                    </button>
+                    <button class="btn btn-info" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
+                        Toggle Left Offcanvas
+                    </button>
+                </div>
+                <!-- start offcanvas top -->
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+                    aria-labelledby="offcanvasTopLabel">
+                    <div class="offcanvas-header card-shadow">
+                        <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="p-4 card-body">
+
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="card text-white bg-info">
+                                        <div class="card-body">
+                                            <blockquote class="card-bodyquote">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                                    posuere
+                                                    erat a ante.</p>
+                                                <footer>Someone famous in <cite title="Source Title">Source Title</cite>
+                                                </footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="card text-white bg-warning">
+                                        <div class="card-body">
+                                            <blockquote class="card-bodyquote">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                                    posuere
+                                                    erat a ante.</p>
+                                                <footer>Someone famous in <cite title="Source Title">Source Title</cite>
+                                                </footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="card text-white bg-danger">
+                                        <div class="card-body">
+                                            <blockquote class="card-bodyquote">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                                    posuere
+                                                    erat a ante.</p>
+                                                <footer>Someone famous in <cite title="Source Title">Source Title</cite>
+                                                </footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div> <!-- end offcanvas top -->
+                <!-- start offcanvas right -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="p-4 card-body">
+                            <div class="header-search">
+                                <p class="text-muted">Search</p>
+                                <div class="position-relative">
+                                    <input type="text" class="form-control rounded bg-light" placeholder="Search...">
+                                    <i class="bi-search ax-icon-wgt"></i>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted">Categories</p>
+                                <ul class="list-unstyled fw-medium">
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Design </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Development
+                                            <span class="badge bi-rgba-success  float-end ms-1 fs-12">04</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Business </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Project </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Travel
+                                            <span class="badge bi-rgba-success  ms-1 float-end fs-12">12</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted">Archive</p>
+                                <ul class="list-unstyled fw-medium">
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> 2021
+                                            <span class="badge bg-rgba-success float-end ms-1 fs-12">03</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> 2019
+                                            <span class="badge bg-rgba-success float-end ms-1 fs-12">06</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> 2022
+                                            <span class="badge bg-rgba-success float-end ms-1 fs-12">05</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted mb-2">Popular Posts</p>
+                                <div class="list-group list-group-flush">
+                                    <a href="#" class="list-group-item text-muted py-3 px-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-3">
+                                                <img src="/img/dog-006.jpg" alt=""
+                                                    class="avatar-md h-auto d-block rounded">
+                                            </div>
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <h5 class="fs-13 text-truncate">Beautiful Day with Friends</h5>
+                                                <p class="mb-0 text-truncate">10 Apr, 2022</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item text-muted py-3 px-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-3">
+                                                <img src="/img/dog-005.jpg" alt=""
+                                                    class="avatar-md h-auto d-block rounded">
+                                            </div>
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <h5 class="fs-13 text-truncate">Drawing a sketch</h5>
+                                                <p class="mb-0 text-truncate">24 May, 2022</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item text-muted py-3 px-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-3">
+                                                <img src="/img/dog-004.jpg" alt=""
+                                                    class="avatar-md h-auto d-block rounded">
+                                            </div>
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <h5 class="fs-13 text-truncate">Project discussion with team</h5>
+                                                <p class="mb-0 text-truncate">11 Jul, 2022</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted">Tags</p>
+                                <div class="d-flex flex-wrap gap-2 widget-tag">
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Design</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Development</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Business</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Project</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Travel</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Lifestyle</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Photography</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!-- end offcanvas right -->
+                <!-- start offcanvas bottom -->
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header card-shadow">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="p-4 card-body">
+
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="card text-white bg-info">
+                                        <div class="card-body">
+                                            <blockquote class="card-bodyquote">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                                    posuere
+                                                    erat a ante.</p>
+                                                <footer>Someone famous in <cite title="Source Title">Source Title</cite>
+                                                </footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="card text-white bg-warning">
+                                        <div class="card-body">
+                                            <blockquote class="card-bodyquote">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                                    posuere
+                                                    erat a ante.</p>
+                                                <footer>Someone famous in <cite title="Source Title">Source Title</cite>
+                                                </footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="card text-white bg-danger">
+                                        <div class="card-body">
+                                            <blockquote class="card-bodyquote">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                                    posuere
+                                                    erat a ante.</p>
+                                                <footer>Someone famous in <cite title="Source Title">Source Title</cite>
+                                                </footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div> <!-- end offcanvas bottom -->
+                <!-- start offcanvas left -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft"
+                    aria-labelledby="offcanvasLeftLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasLeftLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="p-4 card-body">
+                            <div class="header-search">
+                                <p class="text-muted">Search</p>
+                                <div class="position-relative">
+                                    <input type="text" class="form-control rounded bg-light" placeholder="Search...">
+                                    <i class="bi-search ax-icon-wgt"></i>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted">Categories</p>
+                                <ul class="list-unstyled fw-medium">
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Design </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Development
+                                            <span class="badge bi-rgba-success  float-end ms-1 fs-12">04</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Business </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Project </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Travel
+                                            <span class="badge bi-rgba-success  ms-1 float-end fs-12">12</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted">Archive</p>
+                                <ul class="list-unstyled fw-medium">
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> 2021
+                                            <span class="badge bg-rgba-success float-end ms-1 fs-12">03</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> 2019
+                                            <span class="badge bg-rgba-success float-end ms-1 fs-12">06</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> 2022
+                                            <span class="badge bg-rgba-success float-end ms-1 fs-12">05</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted mb-2">Popular Posts</p>
+                                <div class="list-group list-group-flush">
+                                    <a href="#" class="list-group-item text-muted py-3 px-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-3">
+                                                <img src="/img/dog-006.jpg" alt=""
+                                                    class="avatar-md h-auto d-block rounded">
+                                            </div>
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <h5 class="fs-13 text-truncate">Beautiful Day with Friends</h5>
+                                                <p class="mb-0 text-truncate">10 Apr, 2022</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item text-muted py-3 px-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-3">
+                                                <img src="/img/dog-005.jpg" alt=""
+                                                    class="avatar-md h-auto d-block rounded">
+                                            </div>
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <h5 class="fs-13 text-truncate">Drawing a sketch</h5>
+                                                <p class="mb-0 text-truncate">24 May, 2022</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item text-muted py-3 px-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-3">
+                                                <img src="/img/dog-004.jpg" alt=""
+                                                    class="avatar-md h-auto d-block rounded">
+                                            </div>
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <h5 class="fs-13 text-truncate">Project discussion with team</h5>
+                                                <p class="mb-0 text-truncate">11 Jul, 2022</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted">Tags</p>
+                                <div class="d-flex flex-wrap gap-2 widget-tag">
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Design</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Development</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Business</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Project</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Travel</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Lifestyle</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Photography</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!-- end offcanvas left -->
+            </div>
+        </div>
+    </div><!-- end col -->
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header bg-transparent p-3">
+                <h5 class="mb-0">Backdrop offcanvas example</h5>
+            </div>
+            <!-- offcanvas backdrop -->
+            <div class="p-4">
+                <p>You can also enable <code>&lt;body&gt;</code> scrolling with a visible backdrop.</p>
+                <div class="d-flex gap-3">
+                    <a class="btn btn-outline-primary" data-bs-toggle="offcanvas" href="#offcanvasScrolling"
+                        role="button" aria-controls="offcanvasScrolling">
+                        Enable Body Scrolling
+                    </a>
+                    <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBackdrop" aria-controls="offcanvasBackdrop">
+                        Enable Backdrop (Default)
+                    </button>
+                    <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                        Enable Both Scrolling & Backdrop
+                    </button>
+
+                </div>
+
+
+
+                <!-- start offcanvas body scroll -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasScrolling" data-bs-scroll="true"
+                    data-bs-backdrop="false" aria-labelledby="offcanvasScroll01Label">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="p-4 card-body">
+                            <div class="header-search">
+                                <p class="text-muted">Search</p>
+                                <div class="position-relative">
+                                    <input type="text" class="form-control rounded bg-light" placeholder="Search...">
+                                    <i class="bi-search ax-icon-wgt"></i>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted">Categories</p>
+                                <ul class="list-unstyled fw-medium">
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Design </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Development
+                                            <span class="badge bi-rgba-success  float-end ms-1 fs-12">04</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Business </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Project </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Travel
+                                            <span class="badge bi-rgba-success  ms-1 float-end fs-12">12</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted">Archive</p>
+                                <ul class="list-unstyled fw-medium">
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> 2021
+                                            <span class="badge bg-rgba-success float-end ms-1 fs-12">03</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> 2019
+                                            <span class="badge bg-rgba-success float-end ms-1 fs-12">06</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> 2022
+                                            <span class="badge bg-rgba-success float-end ms-1 fs-12">05</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted mb-2">Popular Posts</p>
+                                <div class="list-group list-group-flush">
+                                    <a href="#" class="list-group-item text-muted py-3 px-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-3">
+                                                <img src="/img/dog-006.jpg" alt=""
+                                                    class="avatar-md h-auto d-block rounded">
+                                            </div>
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <h5 class="fs-13 text-truncate">Beautiful Day with Friends</h5>
+                                                <p class="mb-0 text-truncate">10 Apr, 2022</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item text-muted py-3 px-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-3">
+                                                <img src="/img/dog-005.jpg" alt=""
+                                                    class="avatar-md h-auto d-block rounded">
+                                            </div>
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <h5 class="fs-13 text-truncate">Drawing a sketch</h5>
+                                                <p class="mb-0 text-truncate">24 May, 2022</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item text-muted py-3 px-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-3">
+                                                <img src="/img/dog-004.jpg" alt=""
+                                                    class="avatar-md h-auto d-block rounded">
+                                            </div>
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <h5 class="fs-13 text-truncate">Project discussion with team</h5>
+                                                <p class="mb-0 text-truncate">11 Jul, 2022</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted">Tags</p>
+                                <div class="d-flex flex-wrap gap-2 widget-tag">
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Design</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Development</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Business</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Project</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Travel</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Lifestyle</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Photography</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!-- end offcanvas body scroll -->
+                <!-- start offcanvas default backdrop -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasBackdrop"
+                    aria-labelledby="offcanvasBackdropLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBackdropLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="p-4 card-body">
+                            <div class="header-search">
+                                <p class="text-muted">Search</p>
+                                <div class="position-relative">
+                                    <input type="text" class="form-control rounded bg-light" placeholder="Search...">
+                                    <i class="bi-search ax-icon-wgt"></i>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted">Categories</p>
+                                <ul class="list-unstyled fw-medium">
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Design </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Development
+                                            <span class="badge bi-rgba-success  float-end ms-1 fs-12">04</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Business </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Project </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Travel
+                                            <span class="badge bi-rgba-success  ms-1 float-end fs-12">12</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted">Archive</p>
+                                <ul class="list-unstyled fw-medium">
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> 2021
+                                            <span class="badge bg-rgba-success float-end ms-1 fs-12">03</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> 2019
+                                            <span class="badge bg-rgba-success float-end ms-1 fs-12">06</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> 2022
+                                            <span class="badge bg-rgba-success float-end ms-1 fs-12">05</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted mb-2">Popular Posts</p>
+                                <div class="list-group list-group-flush">
+                                    <a href="#" class="list-group-item text-muted py-3 px-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-3">
+                                                <img src="/img/dog-006.jpg" alt=""
+                                                    class="avatar-md h-auto d-block rounded">
+                                            </div>
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <h5 class="fs-13 text-truncate">Beautiful Day with Friends</h5>
+                                                <p class="mb-0 text-truncate">10 Apr, 2022</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item text-muted py-3 px-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-3">
+                                                <img src="/img/dog-005.jpg" alt=""
+                                                    class="avatar-md h-auto d-block rounded">
+                                            </div>
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <h5 class="fs-13 text-truncate">Drawing a sketch</h5>
+                                                <p class="mb-0 text-truncate">24 May, 2022</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item text-muted py-3 px-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-3">
+                                                <img src="/img/dog-004.jpg" alt=""
+                                                    class="avatar-md h-auto d-block rounded">
+                                            </div>
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <h5 class="fs-13 text-truncate">Project discussion with team</h5>
+                                                <p class="mb-0 text-truncate">11 Jul, 2022</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted">Tags</p>
+                                <div class="d-flex flex-wrap gap-2 widget-tag">
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Design</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Development</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Business</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Project</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Travel</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Lifestyle</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Photography</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!-- end offcanvas default backdrop -->
+                <!-- start offcanvas default backdrop -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBothOptions" data-bs-scroll="true"
+                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="p-4 card-body">
+                            <div class="header-search">
+                                <p class="text-muted">Search</p>
+                                <div class="position-relative">
+                                    <input type="text" class="form-control rounded bg-light" placeholder="Search...">
+                                    <i class="bi-search ax-icon-wgt"></i>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted">Categories</p>
+                                <ul class="list-unstyled fw-medium">
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Design </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Development
+                                            <span class="badge bi-rgba-success  float-end ms-1 fs-12">04</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Business </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Project </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> Travel
+                                            <span class="badge bi-rgba-success  ms-1 float-end fs-12">12</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted">Archive</p>
+                                <ul class="list-unstyled fw-medium">
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> 2021
+                                            <span class="badge bg-rgba-success float-end ms-1 fs-12">03</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> 2019
+                                            <span class="badge bg-rgba-success float-end ms-1 fs-12">06</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-muted py-2 d-block">
+                                            <i class="bi-chevron-right me-1"></i> 2022
+                                            <span class="badge bg-rgba-success float-end ms-1 fs-12">05</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted mb-2">Popular Posts</p>
+                                <div class="list-group list-group-flush">
+                                    <a href="#" class="list-group-item text-muted py-3 px-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-3">
+                                                <img src="/img/dog-006.jpg" alt=""
+                                                    class="avatar-md h-auto d-block rounded">
+                                            </div>
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <h5 class="fs-13 text-truncate">Beautiful Day with Friends</h5>
+                                                <p class="mb-0 text-truncate">10 Apr, 2022</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item text-muted py-3 px-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-3">
+                                                <img src="/img/dog-005.jpg" alt=""
+                                                    class="avatar-md h-auto d-block rounded">
+                                            </div>
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <h5 class="fs-13 text-truncate">Drawing a sketch</h5>
+                                                <p class="mb-0 text-truncate">24 May, 2022</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item text-muted py-3 px-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0 me-3">
+                                                <img src="/img/dog-004.jpg" alt=""
+                                                    class="avatar-md h-auto d-block rounded">
+                                            </div>
+                                            <div class="flex-grow-1 overflow-hidden">
+                                                <h5 class="fs-13 text-truncate">Project discussion with team</h5>
+                                                <p class="mb-0 text-truncate">11 Jul, 2022</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <div>
+                                <p class="text-muted">Tags</p>
+                                <div class="d-flex flex-wrap gap-2 widget-tag">
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Design</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Development</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Business</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Project</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Travel</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Lifestyle</a>
+                                    </div>
+                                    <div>
+                                        <a href="/#" class="link-default badge bg-light fs-12">Photography</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!-- end offcanvas default backdrop -->
+            </div>
+        </div>
+    </div><!-- end col -->
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header bg-transparent p-3">
+                <h5 class=" mb-0">Dummy Content</h5>
+            </div>
+            <div class="card-body">
+                <h4>What is Lorem Ipsum?</h4>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into electronic typesetting,
+                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                    containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                    PageMaker including versions of Lorem Ipsum.
+                </p>
+                <h4>Why do we use it?</h4>
+
+                <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout.
+                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                    opposed to using 'Content here,
+                    content here', making it look like readable English. Many desktop publishing packages and web page
+                    editors now use Lorem Ipsum as their default model text,
+                    and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions
+                    have evolved over the years,
+                    sometimes by accident, sometimes on purpose (injected humour and the like).
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

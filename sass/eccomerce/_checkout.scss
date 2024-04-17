@@ -1,0 +1,49 @@
+
+.form-stepper{
+    
+    label{
+        font-size: .875rem;
+    }
+    .form-control{
+        font-size: .875rem;
+       // color: $heading-clr;
+    }
+}
+
+
+// card checkbox
+.card-radiocheck-label{
+    display: block;    
+}
+.edit-address-btn{
+    position: absolute;
+    bottom: .8rem;
+    right: 1.5rem;
+}
+.card-radiocheck{
+    border: 2px solid var(--#{$prefix}border-color);
+    border-radius: 0.75rem;
+    padding: 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    background-color: var(--#{$prefix}base-bg);
+}
+.card-radiocheck-input{
+    display: none;
+    &:checked+.card-radiocheck{
+        border-color: $primary;
+
+        &::before{
+            content: '\F272';
+            color: $primary;
+            font-family: bootstrap-icons;
+            position: absolute;
+            top: .2rem;
+            right: 1.5rem;
+            @extend .fs-20;
+        }
+    }
+}
+

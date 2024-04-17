@@ -1,0 +1,146 @@
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+// pricing page scss start
+.ax-pricing-card{
+    [class*="avatar-"]{
+
+        @extend .bg-rgba-info;
+        i{
+            @extend .fs-20;
+        }
+    }
+}
+.ax-pricing-price{
+    padding: 2rem 0 0 0;
+}
+
+.ax-pricing-wrap{
+    list-style: none;
+
+    li{
+        padding: .5rem;
+        display: flex;
+    }
+}
+// pricing page scss end
+
+
+
+// timeline page scss start here
+//////////////////////////////////////////////////////////////
+
+
+.timeline{
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.tl-style-1{
+    &::before{
+        content: '';
+        width: 2px;
+        top: 4rem;
+        bottom: 0;
+        background: var(--#{$prefix}border-color);
+        @include transformCenterX; 
+    }
+    .tl-item{
+
+        margin-top: 2rem;
+        &.right{
+            padding-left: calc(50% + 45px);
+        }
+        &.left{
+            padding-right: calc(50% + 45px);
+
+            .tl-icon{
+                right: -70px;
+                left: auto;
+            }
+
+            .tl-content::before{
+                left: inherit;
+                right: -8px;
+            }
+        }
+        .tl-item-detailed{
+            border-bottom: 1px solid var(--#{$prefix}border-color);
+        }
+    }
+}
+.tl-icon{
+    position: absolute;
+    @extend .avatar-sm;
+    @extend .fs-24;
+    @include FlexCenterAll;
+    color: $white;
+    left: -70px;
+    border-radius: 50%;
+    background: $primary;
+    border: 2px solid var(--#{$prefix}border-color);
+}
+.tl-content{
+    padding: 1.25rem 1.75rem;
+    background-color: var(--#{$prefix}card-bg);
+    position: relative;
+
+    .tl-avatar{
+        margin-right: .5rem;
+    }
+    .tl-header{
+        padding-bottom: .5rem;;
+    }
+    .tl-activity{
+        display: inline;
+        margin: 0;
+    }
+    .tl-author{
+        @extend .tl-activity;
+        //color: $heading-clr;
+        font-weight: 600;
+    }
+    .tl-time{
+        @extend .fs-13;
+       // color: $subtitle-light-clr  ;
+    }
+    .custom-col{
+        width: auto;
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-color: var(--#{$prefix}card-bg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: 37.5px;
+        left: -8px;
+    }
+}
+
+.tl-month{
+    text-align: center;
+    margin: 2rem 0 1rem;
+    padding: .75rem 0 .75rem;
+    @extend .fs-18;
+}
+
+.tl-gallery{
+    display: inline-flex;
+    flex-wrap: wrap;
+
+    .tl-gallery-item{
+        width: 25%;
+        flex: 0 0 auto;
+        padding: .25rem;
+    }
+    .gallery-thumbnail{
+        @include img-fluid;
+    }
+}
+.tl-loadmore{
+    text-align: center;
+}

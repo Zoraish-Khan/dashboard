@@ -1,0 +1,139 @@
+//@use "../utilies-css" as ut;
+
+.profile-cover-wrap{
+    position: relative;
+}
+.profile-cover-bg-lg{
+    //height: 13rem;
+    padding: 13rem  1rem 1rem;
+    overflow: hidden;
+    background-image: url(https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2200&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &::before{
+        content: '';
+        @include inset-0;
+        background: linear-gradient(to top, rgba(0, 0, 0, .4), rgba(0, 0, 0, .1));
+    }
+}
+.profile-cover-content{
+    margin-top: -1.25rem;
+    padding-left: 3rem;
+    
+    align-items: center;
+    @include flex;
+
+        .profile-cover-user-img{
+            border-radius: 50%;
+            border: .25rem solid var(--#{$prefix}white);
+        }
+}
+.tabs-style1{
+    &.nav-tabs{
+        .nav-link{
+            color: var(--#{$prefix}color-default);
+            &:hover{
+                border-color: transparent; 
+                background: none;
+                box-shadow: none
+            }
+            &.active{
+                @extend .btn-rgba-success;
+            }
+        }
+    }
+}
+// team page scss
+
+//card image height class start from 4 to 10
+.team-card{
+    .card-body{
+        z-index: 1;
+    }
+    .form-check{
+        .star-checkbox,.heart-checkbox{        
+            color: $white;
+            &:checked::before{
+                color: $primary;
+            }
+        }
+    }
+}
+
+.card-img-overlay-before{
+    position: relative;
+    margin-bottom: -10rem;
+
+    &::before{
+        content: '';
+        @include inset-0;
+        z-index: 1;
+        border-radius: .25rem .25rem 0 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4));
+    }
+    
+}
+.profile-pic{
+    margin-top: 4rem;
+}
+
+.form-check{
+    .star-checkbox,.heart-checkbox{        
+        transition: background-position 0.15s ease-in-out;
+        background-position: center center;
+        background-repeat: no-repeat;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        margin-left: -1.5rem;
+        padding-right: 1.5rem;
+        border: 0;
+        font-family: "bootstrap-icons" !important;
+    }
+}
+
+.heart-checkbox{
+    
+    &:checked{
+        background-image: url(../img/heart-fill.svg);
+    }
+}
+
+.star-checkbox{
+    
+    &::before{
+        content: '\F588';    
+    }
+    &:checked::before{
+        content: '\F586';
+    }
+}
+
+// pricing card scss
+.ax-pricing-card{
+    [class*="avatar-"]{
+
+        @extend .bg-rgba-info;
+        i{
+            @extend .fs-20;
+        }
+    }
+}
+.ax-pricing-price{
+    padding: 2rem 0 0 0;
+}
+
+.ax-pricing-wrap{
+    list-style: none;
+
+    li{
+        padding: .5rem;
+        display: flex;
+    }
+}
+

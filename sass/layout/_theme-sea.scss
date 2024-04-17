@@ -1,0 +1,82 @@
+
+// @if $enable-dark-mode {
+//     @include color-mode(dark, true) {
+//       color-scheme: dark;
+
+
+//     }
+// }
+
+[data-bs-theme="sea"]{
+   
+    $base-bg:  #146163;
+    $body-bg:  #207172;
+    
+
+    --bs-body-bg: #{$body-bg} !important;
+    --bs-heading-color: #{lighten(#adb5bd,7%)} !important;
+    --bs-light-bg-subtle:#{darken($body-bg,4%)} !important;
+    --#{$prefix}border-color: #227779 !important;
+    --#{$prefix}base-bg: #{$base-bg} !important;
+    --#{$prefix}color-default: #a5cdcc;
+    --#{$prefix}body-color: #b2d7d6 !important;
+    --#{$prefix}secondary-color:rgb(120 133 148) !important;
+    
+    .text-muted{
+        --#{$prefix}secondary-color:rgb(141, 188, 187);
+    }
+
+    .card-bg{
+        --#{$prefix}card-bg: #{$base-bg};
+        background-color: var(--#{$prefix}card-bg);
+    }
+    .card,.offcanvas,.tl-content{
+        --#{$prefix}card-bg: #{lighten($base-bg, 0)} !important;
+        background-color: var(--#{$prefix}card-bg);
+    } 
+    .header-main{
+        background-color: darken($base-bg,2%);
+    }
+    .navbar-menu{
+        --#{$prefix}card-bg: #{lighten($base-bg,0%)} ;
+    }
+    .list-group{
+        --#{$prefix}list-group-bg: #{$card-bg} !important;
+        background-color: var(--#{$prefix}list-group-bg);
+    }
+    .list-group-item{
+        background-color: var(--#{$prefix}card-bg);
+    }
+    .table{
+        --#{$prefix}table-bg: #{lighten($base-bg,1%)};
+        background-color: var(--#{$prefix}base-bg);
+        
+
+        &-light{
+            --#{$prefix}table-bg: #{lighten($base-bg,5%)};
+            --#{$prefix}table-color: #{$table-color};
+            --#{$prefix}table-border-color: #{rgba($border-color,30%)};
+            
+        }
+    } 
+    
+    .text-dark{
+        color: var(--#{$prefix}heading-color) !important;
+    }
+    .base-bg{
+        --#{$prefix}base-bg: #{$base-bg};
+        background-color: var(--#{$prefix}card-bg);
+    }
+    .logo-dark{
+        display: none;
+    }
+
+ .header-main{
+    .dropdown-menu{
+        --#{$prefix}card-bg: #{lighten($base-bg, 2%)};
+        background-color: var(--#{$prefix}card-bg) !important;
+       
+    }
+ }
+ 
+}

@@ -1,0 +1,405 @@
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-wrap d-sm-flex align-items-center justify-content-between">
+            <h4 class="mb-sm-0">Checkout</h4>
+
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Ecommerce</a></li>
+                    <li class="breadcrumb-item active">Checkout</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xl-8 mt-4">
+        <div class="card">
+            <div class="card-body">
+                <form class="form-stepper" action="#">
+                    <div class="mb-4">
+
+                        <ul class="nav nav-pills steps-nav nav-justified" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="stepper-billing-info" data-bs-toggle="pill"
+                                    data-bs-target="#billing-info" type="button" role="tab"
+                                    aria-controls="steparrow-gen-info" aria-selected="false" data-position="0">
+                                    <i class="bi-receipt-cutoff me-2"></i>
+                                    Billing Info</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="stepper-shipping-info" data-bs-toggle="pill"
+                                    data-bs-target="#shipping-info" type="button" role="tab"
+                                    aria-controls="stepper-shipping-info" aria-selected="true" data-position="1">
+                                    <i class="bi-truck me-2"></i>
+                                    Shipping Info</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="stepper-payment-info-tab" data-bs-toggle="pill"
+                                    data-bs-target="#payment-info" type="button" role="tab" aria-controls="payment-info"
+                                    aria-selected="false" data-position="2">
+                                    <i class="bi-credit-card me-2"></i>
+                                    Payment Info</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="billing-info" role="tabpanel"
+                            aria-labelledby="stepper-billing-info">
+                            <div class="feed-item-list">
+                                <div>
+                                    <h5 class="fs-16 mb-1">Billing Info</h5>
+                                    <p class="text-muted text-truncate mb-4">Sed ut perspiciatis unde omnis iste</p>
+                                    <div class="mb-3">
+                                        <form>
+                                            <div>
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label class="form-label" for="billing-name">Name</label>
+                                                            <input type="text" class="form-control" id="billing-name"
+                                                                placeholder="Enter name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label class="form-label" for="billing-email-address">Email
+                                                                Address</label>
+                                                            <input type="email" class="form-control"
+                                                                id="billing-email-address" placeholder="Enter email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-3">
+                                                            <label class="form-label" for="billing-phone">Phone</label>
+                                                            <input type="text" class="form-control" id="billing-phone"
+                                                                placeholder="Enter Phone no.">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="billing-address">Address</label>
+                                                    <textarea class="form-control" id="billing-address" rows="3"
+                                                        placeholder="Enter full address"></textarea>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-4 mb-lg-0">
+                                                            <label class="form-label">Country</label>
+                                                            <select class="form-control form-select" title="Country">
+                                                                <option value="0">Select Country</option>
+                                                                <option value="AF">Afghanistan</option>
+                                                                <option value="AL">Albania</option>
+                                                                <option value="DZ">Algeria</option>
+                                                                <option value="AS">American Samoa</option>
+
+                                                                <option value="ZW">Zimbabwe</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-4 mb-lg-0">
+                                                            <label class="form-label" for="billing-city">City</label>
+                                                            <input type="text" class="form-control" id="billing-city"
+                                                                placeholder="Enter City">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="mb-0">
+                                                            <label class="form-label" for="zip-code">Zip / Postal
+                                                                code</label>
+                                                            <input type="text" class="form-control" id="zip-code"
+                                                                placeholder="Enter Postal code">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start gap-3 mt-4">
+                                <button type="button" class="btn btn-success btn-label right ms-auto nexttab"
+                                    data-nexttab="stepper-shipping-info">
+                                    Shipping Info <i class="bi bi-arrow-right align-middle  ms-2"></i></button>
+                            </div>
+                        </div>
+                        <!-- end tab pane -->
+
+                        <div class="tab-pane fade" id="shipping-info" role="tabpanel"
+                            aria-labelledby="stepper-shipping-info">
+                            <div class="feed-item-list">
+                                <div>
+                                    <h5 class="fs-16 mb-1">Shipping Info</h5>
+                                    <p class="text-muted text-truncate mb-4">Neque porro quisquam est</p>
+                                    <div class="mb-3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-sm-6">
+                                                <label class="card-radiocheck-label mb-0">
+                                                    <input type="radio" name="address" id="info-address1"
+                                                        class="card-radiocheck-input" checked="">
+                                                    <div class="card-radiocheck text-truncate p-3">
+                                                        <span class="fs-14 mb-4 d-block">Address 1</span>
+                                                        <span class="fs-14 mb-2 d-block">John Doe</span>
+                                                        <span class="text-muted fw-normal text-wrap mb-1 d-block">E3/47
+                                                            Victoria Park Road Ind, KO 85901</span>
+
+                                                        <span class="text-muted fw-normal d-block">Mo. 012 345 67
+                                                            89</span>
+                                                    </div>
+                                                </label>
+                                                <div
+                                                    class="edit-address-btn avatar-xs d-flex align-items-center justify-content-center bg-light rounded-circle">
+                                                    <a class="previestab" href="#" data-bs-toggle="tooltip"
+                                                        data-previous="stepper-billing-info">
+                                                        <i class="bi-pencil fs-16"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6">
+                                                <label class="card-radiocheck-label mb-0">
+                                                    <input type="radio" name="address" id="info-address1"
+                                                        class="card-radiocheck-input" checked="">
+                                                    <div class="card-radiocheck text-truncate p-3">
+                                                        <span class="fs-14 mb-4 d-block">Address 2</span>
+                                                        <span class="fs-14 mb-2 d-block">Allen Wood</span>
+                                                        <span class="text-muted fw-normal text-wrap mb-1 d-block">E3/47
+                                                            Victoria Park Road Ind, KO 85901</span>
+
+                                                        <span class="text-muted fw-normal d-block">Mo. 012 345 67
+                                                            89</span>
+                                                    </div>
+                                                </label>
+                                                <div
+                                                    class="edit-address-btn avatar-xs d-flex align-items-center justify-content-center bg-light rounded-circle">
+                                                    <a class="previestab" href="#" data-bs-toggle="tooltip"
+                                                        data-previous="stepper-billing-info">
+                                                        <i class="bi-pencil fs-16"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6">
+                                                <label class="card-radiocheck-label mb-0">
+                                                    <input type="radio" name="address" id="info-address1"
+                                                        class="card-radiocheck-input">
+                                                    <div class="card-radiocheck text-truncate p-3">
+                                                        <span class="fs-14 mb-4 d-block">Address 3</span>
+                                                        <span class="fs-14 mb-2 d-block">John Doe</span>
+                                                        <span class="text-muted fw-normal text-wrap mb-1 d-block">E3/47
+                                                            Victoria Park Road Ind, KO 85901</span>
+
+                                                        <span class="text-muted fw-normal d-block">Mo. 012 345 67
+                                                            89</span>
+                                                    </div>
+                                                </label>
+                                                <div
+                                                    class="edit-address-btn avatar-xs d-flex align-items-center justify-content-center bg-light rounded-circle">
+                                                    <a class="previestab" href="#" data-bs-toggle="tooltip"
+                                                        data-previous="stepper-billing-info">
+                                                        <i class="bi-pencil fs-16"></i>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start gap-3 mt-4">
+                                <button type="button" class="btn btn-light btn-label previestab"
+                                    data-previous="stepper-billing-info">
+                                    <i class="bi bi-arrow-left  align-middle  me-2"></i> Back</button>
+                                <button type="button" class="btn btn-success btn-label right ms-auto nexttab"
+                                    data-nexttab="stepper-payment-info-tab">
+                                    Payment Info <i class="bi bi-arrow-right  align-middle  ms-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- end tab pane -->
+
+                        <div class="tab-pane fade" id="payment-info" role="tabpanel">
+                            <div class="mb-4">
+                                <h5 class="fs-16 mb-1">Payment info</h5>
+                                <p class="text-muted text-truncate mb-4">Lorem ipsum dummy text</p>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h5 class="fs-13 mb-3">Payment Method:</h5>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <label class="card-radiocheck-label mb-0">
+                                            <input type="radio" name="payment" id="paymentMethod1"
+                                                class="card-radiocheck-input" checked="">
+                                            <span class="card-radiocheck text-center text-truncate p-3">
+                                                <h1>
+                                                    <i class="bi-credit-card mb-3"></i>
+                                                </h1>
+                                                Credit/Debit Card
+                                                </sapn>
+                                        </label>
+
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <label class="card-radiocheck-label mb-0">
+                                            <input type="radio" name="payment" id="paymentMethod1"
+                                                class="card-radiocheck-input" checked="">
+                                            <span class="card-radiocheck text-center text-truncate p-3">
+                                                <h1>
+                                                    <i class="bi-paypal mb-3"></i>
+                                                </h1>
+                                                Paypal
+                                                </sapn>
+                                        </label>
+
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <label class="card-radiocheck-label mb-0">
+                                            <input type="radio" name="payment" id="paymentMethod1"
+                                                class="card-radiocheck-input" checked="">
+                                            <span class="card-radiocheck text-center text-truncate p-3">
+                                                <h1>
+                                                    <i class="bi-wallet2 mb-3"></i>
+                                                </h1>
+                                                Cash On Delivery
+                                                </sapn>
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start gap-3 mt-4">
+                                <a rhef="product-details.html" class="btn btn-light btn-label">
+                                    <i class="bi bi-arrow-left  align-middle  me-2"></i> Continue Shopping</a>
+                                <button type="button" class="btn btn-success btn-label right ms-auto nexttab"
+                                    data-nexttab="stepper-payment-info-tab">
+                                    Proceeed <i class="bi-cart  align-middle  ms-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- end col -->
+    <div class="col-xl-4">
+        <div class="card checkout-order-summary">
+            <div class="card-body">
+                <div class="p-3 bg-light mb-3">
+                    <h5 class="fs-16 mb-0">Order Summary <span class="float-end ms-2">#MN0124</span></h5>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-centered mb-0 table-nowrap">
+                        <thead>
+                            <tr>
+                                <th class="border-top-0" style="width: 110px;" scope="col">Product</th>
+                                <th class="border-top-0" scope="col">Product Desc</th>
+                                <th class="border-top-0" scope="col">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <img src="/img/iphone-13-01.jpg" alt="product-img" title="product-img"
+                                        class="avatar-lg rounded">
+                                </th>
+                                <td>
+                                    <h5 class="fs-16 text-truncate mb-1">
+                                        <a href="product-details.html" class="text-dark">iphone 13 Pro Max</a>
+                                    </h5>
+                                    <p class="text-muted small mb-0">color: Alpine Green</p>
+                                    <p class="text-muted mb-0">
+                                        <i class="bi-star-fill text-warning"></i>
+                                        <i class="bi-star-fill text-warning"></i>
+                                        <i class="bi-star-fill text-warning"></i>
+                                        <i class="bi-star-fill text-warning"></i>
+                                        <i class="bi-star-fill-half text-warning"></i>
+                                    </p>
+                                    <p class="text-muted mb-0">$ 999 x 1</p>
+                                </td>
+                                <td>$ 999</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><img src="/img/iphone-13-03.jpg" alt="product-img" title="product-img"
+                                        class="avatar-lg rounded"></th>
+                                <td>
+                                    <h5 class="fs-16 text-truncate mb-1">
+                                        <a href="product-details.html" class="text-dark">iphone 13 Pro Max</a>
+                                    </h5>
+                                    <p class="text-muted small mb-0">color: Silver</p>
+                                    <p class="text-muted mb-0">
+                                        <i class="bi-star-fill text-warning"></i>
+                                        <i class="bi-star-fill text-warning"></i>
+                                        <i class="bi-star-fill text-warning"></i>
+                                        <i class="bi-star-fill text-warning"></i>
+                                    </p>
+                                    <p class="text-muted mb-0 mt-1">$ 999 x 1</p>
+                                </td>
+                                <td>$ 999</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <h5 class="fs-14 mb-0">Sub Total :</h5>
+                                </td>
+                                <td>
+                                    $ 1998
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <h5 class="fs-14 mb-0">Discount :</h5>
+                                </td>
+                                <td>
+                                    - $ 70
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2">
+                                    <h5 class="fs-14 mb-0">Shipping Charge :</h5>
+                                </td>
+                                <td>
+                                    $ 25
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <h5 class="fs-14 mb-0">Estimated Tax :</h5>
+                                </td>
+                                <td>
+                                    $ 18.20
+                                </td>
+                            </tr>
+
+                            <tr class="bg-rgba-success">
+                                <td colspan="3">
+                                    <div class="d-flex">
+                                        <div class="flex-grow-1">
+                                            <h5 class="fs-14 mb-0">Total:</h5>
+                                        </div>
+                                        <div class="flex-shrink-0">
+                                            <b>$ 1971.2</b>
+                                        </div>
+
+                                    </div>
+
+
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end col -->
+
+</div>

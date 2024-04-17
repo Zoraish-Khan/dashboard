@@ -1,0 +1,156 @@
+// signin basic page scss start here
+/////////////////////////////////////////////////
+
+.auth-bg{
+    background-image: url(../../img/line-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 100vh;
+    
+    >.container-fluid{
+      display: flex;
+      align-items: center;
+    }
+}
+
+
+// signin cover page scss start here
+/////////////////////////////////////////////////
+
+.auth-cover-bg{
+  min-height: 100vh;
+  position: relative;
+  background-image: url(../../img/bg-1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  .card{
+    border-radius: .5rem;
+    overflow: hidden;
+    border: 0;
+    .card{
+      border: 0;
+      .card-img-overlay{
+        border-radius: 0;
+      }
+      .card-header{
+        border-radius: 0;
+      }
+      border-radius: 0;
+    }
+  }    
+}
+canvas {
+    display: block;
+  }
+  
+  /* ---- particles.js container ---- */
+  
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* ---- stats.js ---- */
+  .particles-js-canvas-el{
+    @include position-all-0;
+    position: absolute;
+  }
+  .count-particles{
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .js-count-particles{
+    font-size: 1.1em;
+  }
+  
+  #stats,
+  .count-particles{
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  #stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  
+  .count-particles{
+    border-radius: 0 0 3px 3px;
+  }
+
+  .cover-card-bg{
+    background-image: url(../../img/using-laptop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+
+      .card-body{
+        position: relative;
+        z-index: 1;
+      }
+      .card-img-overlay{
+        background: rgba($black, 70%);
+      }
+        .card-header{
+          z-index: 1;
+          position: relative;
+          border-color: #{rgba($border-color,30%)};
+        }
+  }
+  .icon-box-style{
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem auto;
+    position: relative;    
+    @include FlexCenterAll;
+    background-color: rgba(219, 237, 235,  .9);
+    @include boxshadow-custom(0px, 0px, 2px, rgba(0, 0, 0, .1) );
+
+      i{
+        @extend .fs-40;
+        position: relative;
+        color: $primary;
+      }
+        &::before{
+          content: '';
+          width: 6.7rem;
+          height: 6.7rem;
+          border-radius: 50%;
+          @include transformCenter;
+          background-color: rgba(219, 237, 235,  .7);
+          @include boxshadow-custom(0px, 0px, 2px, rgba(0, 0, 0, .1) );
+        }
+  }
+.signin-to-social{
+  .legend{
+    background-color: var(--#{$prefix}card-bg);
+    @include transformCenter;
+  }  
+    .social-item{
+      height: 2rem;
+      width: 2rem;
+      @include FlexCenterAll;
+    }
+}
+
+#__lottie_element_2,
+#__lottie_element_12{
+  stroke: red !important;
+  fill: red !important;
+}

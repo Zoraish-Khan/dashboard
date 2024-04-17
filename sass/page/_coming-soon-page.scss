@@ -1,0 +1,53 @@
+
+
+// coming soon page scss
+///////////////////////////////////////////////////
+
+
+.cs-cover-bg{
+    
+    position: relative;
+    background-image: url(../../img/bg-2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include for-sm-device{
+        height: 100vh;
+    }
+
+    h1{
+        font-size: 4.5rem;
+        font-weight: 600;
+    }
+}
+.countdown-container{
+    display: flex;
+    justify-content: center;
+
+    .col-el{
+        width: 100%;
+        padding: .5rem;
+        
+        @include for-sm-device{
+            width: 25%;
+            flex: 0 0 auto;
+        }
+    }
+    .el-item{
+        padding:  .5rem;
+        background:$white;
+        border-radius: .25rem;
+        line-height: 1.2;
+        mix-blend-mode: hard-light;
+        @include FlexCenterAll;
+        flex-direction: column;
+    }
+    .big-text{
+        font-size: 1rem;
+        margin-bottom: 0;
+
+        @include for-sm-device{
+            font-size: 3rem;
+        }
+    }
+}

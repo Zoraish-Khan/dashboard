@@ -1,0 +1,149 @@
+
+.stepper-input-wrap{
+    display: inline-flex;
+    height: 38px;
+    padding: .25rem;
+    position: relative;
+    border: 1px solid var(--#{$prefix}border-color);;
+    border-radius: $border-radius;
+    // full size stepper
+    &.full-size{
+        width: 100%;
+        display: flex;
+    }
+    .form-control{
+        border: 0;
+        text-align: center;
+        box-shadow: none;
+        background-color: var(--#{$prefix}card-bg);;
+    }
+    .btn:hover,.btn:focus{
+        border-color: transparent;
+        //box-shadow: none;
+        outline: none;
+    }
+
+    .stepper-btn{
+        height: 100%;
+        width: 2rem;
+        border: 0;
+        display: flex;
+        align-items: center;
+        border-radius: $border-radius;
+        background-color: #{darken($light-bg-subtle,3%)};
+    }
+    // light stepper
+    &.stepper-light{
+        background-color: var(--#{$prefix}card-bg);
+        .stepper-btn{
+            color: $dark !important;
+           // background-color: $white !important;
+        }
+        // .form-control{
+        //     background-color: $gray-100;
+        // }
+    }
+
+    
+
+    // rounded stepper
+    &.rounded{
+        border-radius: 2rem !important;
+        .stepper-btn{
+            border-radius: 2rem;
+        }
+    }
+
+}
+@each $color,
+$value in $theme-colors{
+    .stepper-input-wrap{
+        &.stepper-#{$color}{
+            .stepper-btn{
+                color: $white;
+                background-color: $value;
+            }
+        }
+    }
+}
+
+/// dropzone scss
+//
+
+.dropzone {
+    width: 100%;
+    border: 2px dashed $border-color;
+    border-radius: 5px;
+    background-color: $input-bg !important;
+  }
+
+  //  flatpicker scss
+  
+
+  .flatpickr-day{
+        &.today{
+            border-color: $primary;
+            &:hover,&:focus{
+                color: $white;
+                background-color: $primary;
+                border-color: $primary;
+            }
+        }
+        &.endRange,&.selected{
+            background-color: $primary;
+                border-color: $primary;
+        }
+  }
+  .flatpickr-months{
+    background-color: $primary;
+    .flatpickr-next-month,
+    .flatpickr-prev-month{
+        color: $white;
+        fill: $white;
+    }
+   
+    
+   .flatpickr-month{
+        color: $white;
+    }
+  }
+  .flatpickr-weekdays{
+    background-color: $primary;
+  .flatpickr-weekdaycontainer{
+    .flatpickr-weekday{
+        color: var(--#{$prefix}heading-color);
+    }
+  }
+}
+// full size calendar
+.flatpicke-full-size{
+    .flatpickr-calendar.open, 
+    .flatpickr-calendar.inline{
+        width: 100%;
+    }
+.flatpickr-innerContainer{
+    .flatpickr-days{
+        width: 100%;
+        .dayContainer{
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            .flatpickr-day{
+                max-width: 100%;
+                border-radius: .3rem;
+            }
+        }
+    }
+}
+}
+
+[data-bs-theme="dark"]{
+    .stepper-btn{
+        background-color: var(--#{$prefix}light-bg-subtle);
+        &:hover{
+            color: var(--#{$prefix}heading-color);
+            background-color: #{lighten($dark,12%)};
+            background-image: var(--#{$prefix}gradinet);
+        }
+    }
+}

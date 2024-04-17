@@ -1,0 +1,246 @@
+
+
+
+.chat-sidebar{
+    @include for-lg-device{
+        min-width: 300px;
+    }
+}
+.chat-msg-list{
+    height: calc(100vh - 346px);
+    @include for-lg-device{
+        height:  calc(100vh - 340px);
+    }
+
+    .chat-list{
+        li{
+            .user-img{
+                position: relative;
+                &.online{
+                    .status-sign{
+                        background-color: $success;
+                    }
+                }
+                &.away{
+                    .status-sign{
+                        background-color: $warning;
+                    }
+                }
+                .status-sign{
+                    width: .5rem;
+                    height: .5rem;
+                   // background-color: $subtitle-clr;
+                    border-radius: 50%;
+                    border: 1px solid $white;
+                    position: absolute;
+                    left: 0;
+                    bottom: .5rem;
+                }
+            }
+            .unread-msg {
+                position: absolute;
+                display: inline-block;
+                right: 16px;
+                top: 33px;
+            }
+            a{
+                .avatar-title{
+                    @include h-w-100;
+                    @include FlexCenterAll;
+                    font-size: 1.5rem;
+                }
+                position: relative;
+                display: block;
+                padding: 1rem 1.15rem;
+                //color: var(--#{$prefix}color-default);
+                border-top: 1px solid var(--#{$prefix}border-color);
+                @include anim-default;
+                border-radius: .2rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-size: .9rem;
+
+                    p{
+                        font-size: .75rem;
+                        //color: var(--#{$prefix}color-default);
+                    }
+            }
+        }
+    }
+}
+.contact-search-box{
+    .form-control{
+        font-size: .875rem;
+        padding-left: 2.25rem;
+    }
+    .chat-icon-box{
+        font-size: .875rem;
+        position: absolute;
+        left: .5rem;
+        top: .5rem;
+        color: var(--#{$prefix}color-default);
+        
+    }
+}
+
+
+.chat-communicate-wrap{
+    height: calc(100vh - 300px);
+    @include for-lg-device{
+        height: calc(100vh - 268px);
+    }
+    .chat-date-title{
+        position: relative;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        border: none;
+
+        .title{
+            display: inline-block;
+            background-color: var(--#{$prefix}body-bg);
+            position: relative;
+            z-index: 1;
+            padding: 4px 16px;
+            border-radius: 7px;
+        }
+    }
+.message-img{
+    img{
+        max-width: 6rem;
+    }
+}
+    // right side
+    .right{
+        @include flexEnd;
+        
+        .communicate-list{
+            text-align: right;
+            .dropdown{
+                order: 1;
+                -webkit-box-ordinal-group:2;
+            }
+            .cmnt-text-wrap{
+                .cmnt-text-content{
+                    -webkit-box-ordinal-group: 3;
+                    order: 2;
+                    padding: 0.75rem 3.5rem .75rem 1.25rem;
+                   // background-color: $body-bg;
+                    border-radius: .35rem 0px .35rem .35rem;
+                   // color: $heading-clr;
+                    position: relative;
+                    margin-left: 0px;
+                    margin-right: 10px;
+
+                    &::before{
+                        border: 5px solid transparent;
+                        border-top-color: var(--#{$prefix}body-bg);
+                        border-left-color: var(--#{$prefix}body-bg);
+                        left: auto;
+                        right: -10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .communicate-list{
+        margin-bottom: 24px;
+        position: relative;
+        max-width: 85%;
+        .dropdown{
+            padding: .35rem;
+        }
+
+        .cmnt-text-wrap{        
+            @include flex;    
+            margin-bottom: 10px;
+
+            .cmnt-text-content{
+                padding: 0.75rem 3.5rem .75rem 1.25rem;
+                background-color: var(--#{$prefix}body-bg);
+                border-radius: 0 .35rem .35rem .35rem;
+                //color: $heading-clr;
+                position: relative;
+                margin-left: 10px;
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    border: 5px solid transparent;
+                    border-right-color: var(--#{$prefix}body-bg);
+                    border-top-color: var(--#{$prefix}body-bg);
+                    left: -10px;
+                    top: 0;
+                }
+
+                .time{
+                    font-size: 10px;
+                    position: absolute;
+                    right: .35rem;
+                    bottom: .15rem;
+                    color: var(--#{$prefix}color-default);
+                    font-weight: 400;
+                    -webkit-transition: all .4s;
+                    transition: all .4s;
+                }
+            }
+            }
+        }
+    }
+
+
+   
+
+    [data-layout-mode="light"]{
+        .chat-sidebar{
+            .bg-light{
+                background-color: rgba($bg-gray,5%) !important;
+            }
+        }
+        
+        .contact-search-box{
+            .chat-icon-box{
+                color: rgba($black,70%);
+            }
+        }
+        .nav-pills{
+            .nav-link{
+                color: inherit;
+            }
+        }
+        .chat-communicate-wrap {
+            .chat-date-title{
+                .title{
+                    background-color: rgba($bg-gray,15%);
+                }
+            }
+            .communicate-list {
+                .cmnt-text-wrap {
+                    .cmnt-text-content{
+                        color: inherit;
+                        background-color: rgba($bg-gray,10%);
+
+                        &::before{
+                            border-top-color: rgba($bg-gray,10%);
+                            border-right-color: rgba($bg-gray,10%);
+                        }
+                        .time{
+                            color: rgba($bg-gray,50%);
+                        }
+                    }
+                }
+            }
+            .right {
+                .communicate-list{
+                    .cmnt-text-wrap{
+                        .cmnt-text-content::before{
+                            border-top-color: rgba($bg-gray,10%);
+                            border-left-color: rgba($bg-gray,10%);
+                            border-right-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }

@@ -1,0 +1,32 @@
+
+.navbar-nav{
+    .nav-link{
+        &.active,&.show{
+            color: var(--#{$prefix}primary);
+        }
+        
+    }
+
+}
+
+@each $color, $value in $theme-colors{
+    .navbar-#{$color}{
+        background-color: $value;
+        
+        .nav-link{
+            color: rgba($white,.7);
+            &.active,&.show{
+                color: var(--#{$prefix}white);
+            }
+        }
+    }
+    .navbar-rgba-#{$color}{
+        background-color: rgba($value,.2);
+        .nav-link{
+           // color: rgba($white,.7);
+            &.active,&.show{
+                color: $value;
+            }
+        }
+    }
+}

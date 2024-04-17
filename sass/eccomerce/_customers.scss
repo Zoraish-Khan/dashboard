@@ -1,0 +1,41 @@
+
+.customers-table{
+    // border-collapse: separate;
+    // border-spacing: 0 12px;
+    th{
+       // color: $heading-clr;
+    }
+    th,td{
+        vertical-align: middle;
+        font-size: .875rem;
+        font-weight: 400;
+
+    }
+    td{
+        color: var(--#{$prefix}color-default);
+    }
+    .customer-name{
+        color: var(--#{$prefix}color-default);
+    }
+    .customer-contact{
+        a{
+            @extend .customer-name;
+        }
+        
+    }
+
+    .page-link{
+        color: var(--#{$prefix}color-default);
+        border: 0;
+        min-width: 30px;
+        height: 30px;
+        text-align: center;
+
+        &.active{
+            color: $white;
+            background-color: $primary;
+            border-color: $primary;
+        }
+    }
+}
+

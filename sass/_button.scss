@@ -1,0 +1,339 @@
+button,a {
+    outline: none !important;
+    position: relative;
+    
+}
+
+.btn{
+  font-size: .875rem;
+    border-color: transparent;
+    background-image: none;
+    box-shadow: none;
+      &:hover{
+        border-color: transparent;
+      }
+    &:focus,&:focus-visible{
+        --#{$prefix}btn-focus-shadow-rgb: #{transparent};
+        box-shadow: none;
+        border-color: transparent;
+    }
+    &-icon{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(1.5em + 1.5rem + 2px);
+        width: calc(1.5em + 1.5rem + 2px);
+
+      &.btn-sm{
+          height: calc(.75em + .75rem + 2px);
+          width: calc(.75em + .75rem + 2px);
+      }
+    }
+
+  &-xs{
+      padding: .125rem .25rem;
+      font-size: .75rem;
+      border-radius: 0.175rem;
+  }
+  
+  
+}
+
+
+// btn outline
+////////////////////////////////////////
+@each $color,
+$value in $theme-colors{
+    .btn-outline-#{$color}{
+        color: $value ;
+        border-color: $value;
+        background-color: transparent ;
+        box-shadow: none !important;
+        background-image: none !important;
+
+        &:focus,&:hover,&:checked{
+            color: $white;
+            background: $value;
+        }
+    }
+    .btn-outline-light{
+      &:focus, &:hover, &:checked{
+        color: $gray-300 !important;
+      }
+    }
+}
+
+
+@each $color,
+$value in $theme-colors{
+    .btn-#{$color}{
+        color: $white;
+        &:focus,&:hover,&:checked{
+            color: $white;
+        }
+    }
+    .btn-light{
+      color: inherit !important;
+    }
+}
+
+@each $color,
+$value in $theme-colors{
+    .btn-hidden-#{$color}{
+        &:focus,&:hover,&:checked,&:active,
+        &.btn-check:checked + &.btn, :not(.btn-check) + &.btn:active, &:first-child:active, &.btn.active, &.btn.show{
+            color: $value;
+            background-color: rgba($value, 10%);
+            border-color: transparent !important; 
+        }
+    }
+    .btn-light{
+      color: inherit !important;
+    }
+}
+@each $color, $value in $theme-colors{
+  .btn-rgba-#{$color}{
+    color: $value;
+    background-color: rgba($value,10%);
+    border-color: transparent;
+
+    &:active,&:focus,&:hover{
+      color: $white !important;
+      background-color: $value;
+  }
+  }
+}
+
+
+///////////////////////////////////////////////////
+ @each $color, $value in $theme-colors{
+  .btn-rgba-hover-#{$color}{
+    color: $value;
+    &:active,&:focus,&:hover,&.active{
+      background-color: rgba($value,10%);
+    }
+  }
+ }
+
+// btn label scss
+///////////////////////////////
+/// 
+
+.btn-label-wrap{
+
+    .btn-label{
+        position: relative;
+        padding-left: 2.75rem;
+
+        .label-icon{
+            position: absolute;
+            width: 35.5px;
+            left: -1px;
+            top: -1px;
+            bottom: -1px;
+            background-color: rgba(255, 255, 255, 0.1);
+            font-size: 16px;
+            @include FlexCenterAll;
+        }
+        &.right{
+            padding-left: .9rem;
+            padding-right: 2.75rem;
+
+            .label-icon{
+                right: -1px;
+                left: inherit;
+            }
+        }
+    }
+}
+
+// gradient button scss
+///////////////////////////////////////////////////////////////////////
+
+
+
+@mixin gradient-btn-anim {
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.btn-gradient{
+  font-weight: 600;
+  color: $white;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%; 
+  @include gradient-btn-anim;
+
+  
+}
+@each $color, $value in $theme-colors{
+  .btn-gradient-#{$color}{
+    background-image: linear-gradient(to right, $value, lighten($value,9%), adjust-hue($value,15%));
+    box-shadow: 0 4px 15px 0 rgba($value,75%);
+
+    &:hover, &:focus, &.btn:active, &.active, &.show, &:first-child:active{
+      background-position: 100% 0;
+        @include gradient-btn-anim;
+        outline: none;
+        color: $white;
+        box-shadow: 0 4px 9px 0 rgba($value,75%);
+        background-image: linear-gradient(to right, $value, lighten($value,9%), adjust-hue($value,15%));
+    }
+  }
+}
+.btn-hover {
+    font-weight: 600;
+    color: $white;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    margin: .5rem;
+    background-size: 300% 100%; 
+    @include gradient-btn-anim;
+
+    &:hover {
+        background-position: 100% 0;
+        @include gradient-btn-anim;
+      }
+      &:focus {
+        outline: none;
+      }
+  }
+  
+  
+  
+  .btn-hover.grd-1 {
+    background-image: linear-gradient(
+      to right,#25aae1,#40e495,#30dd8a,#2bb673
+    );
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  }
+  .btn-hover.grd-2 {
+    background-image: linear-gradient(
+      to right,
+      #f5ce62,
+      #e43603,
+      #fa7199,
+      #e85a19
+    );
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+  }
+  .btn-hover.grd-3 {
+    background-image: linear-gradient(
+      to right,
+      #667eea,
+      #764ba2,
+      #6b8dd6,
+      #8e37d7
+    );
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+  }
+  .btn-hover.grd-4 {
+    background-image: linear-gradient(
+      to right,
+      #fc6076,
+      #ff9a44,
+      #ef9d43,
+      #e75516
+    );
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+  }
+  .btn-hover.grd-5 {
+    background-image: linear-gradient(
+      to right,
+      #0ba360,
+      #3cba92,
+      #30dd8a,
+      #2bb673
+    );
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+  }
+  .btn-hover.grd-6 {
+    background-image: linear-gradient(
+      to right,
+      #009245,
+      #fcee21,
+      #00a8c5,
+      #d9e021
+    );
+    box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+  }
+  .btn-hover.grd-7 {
+    background-image: linear-gradient(
+      to right,
+      #6253e1,
+      #852d91,
+      #a3a1ff,
+      #f24645
+    );
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+  }
+  .btn-hover.grd-8 {
+    background-image: linear-gradient(
+      to right,
+      #29323c,
+      #485563,
+      #2b5876,
+      #4e4376
+    );
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+  }
+  .btn-hover.grd-9 {
+    background-image: linear-gradient(
+      to right,
+      #25aae1,
+      #4481eb,
+      #04befe,
+      #3f86ed
+    );
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  }
+  .btn-hover.grd-10 {
+    background-image: linear-gradient(
+      to right,
+      #ed6ea0,
+      #ec8c69,
+      #f7186a,
+      #fbb03b
+    );
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+  }
+  .btn-hover.grd-11 {
+    background-image: linear-gradient(
+      to right,
+      #eb3941,
+      #f15e64,
+      #e14e53,
+      #e2373f
+    );
+    box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+  }
+  [class*="grd-"].btn-hover{
+    color: $white;
+  }
+// dropdown scss
+
+.dropdown-toggle-split{
+  position: relative;
+    &::before{
+      content: '';
+      @include inset-0-n;
+      background: rgba(255, 255, 255, .35);
+    }
+}
+
+
+.btn-check:checked + .btn, 
+:not(.btn-check) + .btn:active, 
+.btn:first-child:active, .btn.active, .btn.show{
+  color: var(--#{$variable-prefix}white);
+}
+
+.btn-check:checked + .btn-outline, 
+:not(.btn-check) + .btn.btn-outline-custom:active, 
+.btn.btn-outline-custom:first-child:active, .btn.btn-outline-custom.active, .btn.btn-outline-custom.show{
+  color: var(--#{$variable-prefix}btn-color);
+}

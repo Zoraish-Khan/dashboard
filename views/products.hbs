@@ -1,0 +1,441 @@
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-wrap d-sm-flex align-items-center justify-content-between">
+            <h4 class="mb-sm-0">Dashboard</h4>
+
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Ecommerce</a></li>
+                    <li class="breadcrumb-item active">Products</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- filter -->
+    <div class="col-xl-3 col-lg-4">
+        <div class="card product-sidebar">
+            <div class="d-flex border-bottom p-3">
+                <h5 class="mb-0">Filter</h5>
+            </div>
+            <div class="card-body">
+                <h5 class="mb-3">
+                    <a href="#filterCategories" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="filterCategories">
+                        Categories
+                        <i class="bi-chevron-up float-end anchor-rotate"></i>
+                    </a>
+                </h5>
+                <ul class="list-unstyled collapse m-0 p-0 show" id="filterCategories">
+                    <li>
+                        <a href="#" class="d-flex py-1 align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="fs-13 mb-0 listname">Mobile</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex py-1 align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="fs-13 mb-0 listname">Shose</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex py-1 align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="fs-13 mb-0 listname">Vegetable</h5>
+                            </div>
+                            <div class="flex-shrink-0 ms-2">
+                                <span class="badge bg-rgba-success">Fresh</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex py-1 align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="fs-13 mb-0 listname">Computer/Laptops</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex py-1 align-items-center">
+                            <div class="flex-grow-1">
+                                <h5 class="fs-13 mb-0 listname">Fashion</h5>
+                            </div>
+                            <div class="flex-shrink-0 ms-2">
+                                <span class="badge bg-light text-muted">5</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="py-3">
+                    <div class="border-top border-0 border-dashed"></div>
+                </div>
+
+                <div class="filter-price-wrap mb-3">
+                    <div class="mb-3">
+                        <h5 class="mb-0">Price</h5>
+                    </div>
+                    <div class="slider-keypress mb-3"></div>
+                    <div class="row mt-4">
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control input-with-keypress-0">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control input-with-keypress-1">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="py-3">
+                    <div class="border-top border-0 border-dashed"></div>
+                </div>
+                <h5 class="mb-3">
+                    <a href="#filterRating" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="filterRating">
+                        Customer Rating
+                        <i class="bi-chevron-up float-end anchor-rotate"></i>
+                    </a>
+                </h5>
+
+                <div class="collapse show" id="filterRating">
+                    <div class="form-check mb-2">
+                        <input type="radio" id="productratingRadio1" name="productratingRadio1"
+                            class="form-check-input">
+                        <label class="form-check-label" for="productratingRadio1">4
+                            <i class="bi-star text-warning"></i> &amp; Above
+                        </label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input type="radio" id="productratingRadio2" name="productratingRadio1"
+                            class="form-check-input">
+                        <label class="form-check-label" for="productratingRadio2">3
+                            <i class="bi-star text-warning"></i> &amp; Above
+                        </label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input type="radio" id="productratingRadio3" name="productratingRadio1"
+                            class="form-check-input">
+                        <label class="form-check-label" for="productratingRadio3">2
+                            <i class="bi-star text-warning"></i> &amp; Above
+                        </label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input type="radio" id="productratingRadio4" name="productratingRadio1"
+                            class="form-check-input">
+                        <label class="form-check-label" for="productratingRadio4">1
+                            <i class="bi-star text-warning"></i>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-9 col-lg-8">
+        <div class="row">
+            <div class="col-xl-4 mb-3">
+                <div class="card product-card">
+                    <div class="overflow-hidden">
+                        <div class="product-img">
+                            <img src="/img/pattern-1.jpg" alt="" />
+                            <div class="icon-box">
+                                <div class="icon-transition">
+                                    <i class="bi-eye"></i>
+                                </div>
+
+                                <div class="icon-transition">
+                                    <i class="bi-pencil"></i>
+                                </div>
+
+                                <div class="icon-transition">
+                                    <i class="bi-x"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="product-content text-center">
+                            <h2 class="title fs-20">
+                                <a href="javascript: void(0)">Item Name</a>
+                            </h2>
+                            <div class="mb-2 text-warning">
+                                <i class="bi-star-fill text-warning"></i>
+                                <i class="bi-star-fill text-warning"></i>
+                                <i class="bi-star-fill text-warning"></i>
+                                <i class="bi-star-half text-warning"></i>
+                                <i class="bi-star-half text-warning"></i>
+                            </div>
+                            <div class="price">$599
+                                <span class="text-decoration-line-through ms-4">$799</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer pt-3 text-center">
+                        <a href="javascript: void(0)" class="btn btn-primary mb-1">
+                            <i class="bi-cart mx-2"></i>
+                            Add to cart
+                        </a>
+                        <a href="javascript: void(0)" class="btn btn-rgba-warning mb-1">
+                            <i class="bi-heart mx-2 wishlist-icon"></i>
+                            Add to wishlist
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 mb-3">
+                <div class="card product-card">
+                    <div class="overflow-hidden">
+                        <div class="product-img">
+                            <img src="/img/pattern-2.jpg" alt="" />
+                            <div class="icon-box">
+                                <div class="icon-transition">
+                                    <i class="bi-eye"></i>
+                                </div>
+
+                                <div class="icon-transition">
+                                    <i class="bi-pencil"></i>
+                                </div>
+
+                                <div class="icon-transition">
+                                    <i class="bi-x"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="product-content text-center">
+                            <h2 class="title fs-20">
+                                <a href="javascript: void(0)">Item Name</a>
+                            </h2>
+                            <div class="mb-2 text-warning">
+                                <i class="bi-star-fill text-warning"></i>
+                                <i class="bi-star-fill text-warning"></i>
+                                <i class="bi-star-fill text-warning"></i>
+                                <i class="bi-star-half text-warning"></i>
+                                <i class="bi-star-half text-warning"></i>
+                            </div>
+                            <div class="price">$599
+                                <span class="text-decoration-line-through ms-4">$799</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer pt-3 text-center">
+                        <a href="javascript: void(0)" class="btn btn-primary mb-1">
+                            <i class="bi-cart mx-2"></i>
+                            Add to cart
+                        </a>
+                        <a href="javascript: void(0)" class="btn btn-rgba-warning mb-1">
+                            <i class="bi-heart mx-2 wishlist-icon"></i>
+                            Add to wishlist
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 mb-3">
+                <div class="card product-card">
+                    <div class="overflow-hidden">
+                        <div class="product-img">
+                            <img src="/img/pattern-3.jpg" alt="" />
+                            <div class="icon-box">
+                                <div class="icon-transition">
+                                    <i class="bi-eye"></i>
+                                </div>
+                                <div class="icon-transition">
+                                    <i class="bi-pencil"></i>
+                                </div>
+                                <div class="icon-transition">
+                                    <i class="bi-x"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="product-content text-center">
+                            <h2 class="title fs-20">
+                                <a href="javascript: void(0)">Item Name</a>
+                            </h2>
+                            <div class="mb-2 text-warning">
+                                <i class="bi-star-fill text-warning"></i>
+                                <i class="bi-star-fill text-warning"></i>
+                                <i class="bi-star-fill text-warning"></i>
+                                <i class="bi-star-half text-warning"></i>
+                                <i class="bi-star-half text-warning"></i>
+                            </div>
+                            <div class="price">$599
+                                <span class="text-decoration-line-through ms-4">$799</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer pt-3 text-center">
+                        <a href="javascript: void(0)" class="btn btn-primary mb-1">
+                            <i class="bi-cart mx-2"></i>
+                            Add to cart
+                        </a>
+                        <a href="javascript: void(0)" class="btn btn-rgba-warning mb-1">
+                            <i class="bi-heart mx-2 wishlist-icon"></i>
+                            Add to wishlist
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 mb-3">
+                <div class="card product-card">
+                    <div class="overflow-hidden">
+                        <div class="product-img">
+                            <img src="/img/dog-003.jpg" alt="" />
+                            <div class="icon-box">
+                                <div class="icon-transition">
+                                    <i class="bi-eye"></i>
+                                </div>
+
+                                <div class="icon-transition">
+                                    <i class="bi-pencil"></i>
+                                </div>
+
+                                <div class="icon-transition">
+                                    <i class="bi-x"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="product-content text-center">
+                            <h2 class="title fs-20">
+                                <a href="javascript: void(0)">Item Name</a>
+                            </h2>
+                            <div class="mb-2 text-warning">
+                                <i class="bi-star-fill text-warning"></i>
+                                <i class="bi-star-fill text-warning"></i>
+                                <i class="bi-star-fill text-warning"></i>
+                                <i class="bi-star-half text-warning"></i>
+                                <i class="bi-star-half text-warning"></i>
+                            </div>
+                            <div class="price">$599
+                                <span class="text-decoration-line-through ms-4">$799</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer pt-3 text-center">
+                        <a href="javascript: void(0)" class="btn btn-primary mb-1">
+                            <i class="bi-cart mx-2"></i>
+                            Add to cart
+                        </a>
+                        <a href="javascript: void(0)" class="btn btn-rgba-warning mb-1">
+                            <i class="bi-heart mx-2 wishlist-icon"></i>
+                            Add to wishlist
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 mb-3">
+                <div class="card product-card">
+                    <div class="overflow-hidden">
+                        <div class="product-img">
+                            <img src="/img/pattern-3.jpg" alt="" />
+                            <div class="icon-box">
+                                <div class="icon-transition">
+                                    <i class="bi-eye"></i>
+                                </div>
+
+                                <div class="icon-transition">
+                                    <i class="bi-pencil"></i>
+                                </div>
+
+                                <div class="icon-transition">
+                                    <i class="bi-x"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="product-content text-center">
+                            <h2 class="title fs-20">
+                                <a href="javascript: void(0)">Item Name</a>
+                            </h2>
+                            <div class="mb-2 text-warning">
+                                <i class="bi-star-fill text-warning"></i>
+                                <i class="bi-star-fill text-warning"></i>
+                                <i class="bi-star-fill text-warning"></i>
+                                <i class="bi-star-half text-warning"></i>
+                                <i class="bi-star-half text-warning"></i>
+                            </div>
+                            <div class="price">$599
+                                <span class="text-decoration-line-through ms-4">$799</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer pt-3 text-center">
+                        <a href="javascript: void(0)" class="btn btn-primary mb-1">
+                            <i class="bi-cart mx-2"></i>
+                            Add to cart
+                        </a>
+                        <a href="javascript: void(0)" class="btn btn-rgba-warning mb-1">
+                            <i class="bi-heart mx-2 wishlist-icon"></i>
+                            Add to wishlist
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 mb-3">
+                <div class="card product-card">
+                    <div class="overflow-hidden">
+                        <div class="product-img">
+                            <img src="/img/pattern-2.jpg" alt="" />
+                            <div class="icon-box">
+                                <div class="icon-transition">
+                                    <i class="bi-eye"></i>
+                                </div>
+
+                                <div class="icon-transition">
+                                    <i class="bi-pencil"></i>
+                                </div>
+
+                                <div class="icon-transition">
+                                    <i class="bi-x"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="product-content text-center">
+                            <h2 class="title fs-20">
+                                <a href="javascript: void(0)">Item Name</a>
+                            </h2>
+                            <div class="mb-2 text-warning">
+                                <i class="bi-star-fill text-warning"></i>
+                                <i class="bi-star-fill text-warning"></i>
+                                <i class="bi-star-fill text-warning"></i>
+                                <i class="bi-star-half text-warning"></i>
+                                <i class="bi-star-half text-warning"></i>
+                            </div>
+                            <div class="price">$599
+                                <span class="text-decoration-line-through ms-4">$799</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer pt-3 text-center">
+                        <a href="javascript: void(0)" class="btn btn-primary mb-1">
+                            <i class="bi-cart mx-2"></i>
+                            Add to cart
+                        </a>
+                        <a href="javascript: void(0)" class="btn btn-rgba-warning mb-1">
+                            <i class="bi-heart mx-2 wishlist-icon"></i>
+                            Add to wishlist
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,81 @@
+.gallery-card{
+    position: relative;
+    //overflow: hidden;
+    box-shadow: none;
+    border-color: transparent;    
+    background-color: transparent;
+    padding: .5rem;
+
+        &::before{
+            content: '';
+            @include inset-0;
+            transition: all .6s;
+            -webkit-transition: all .6s;           
+            background: $card-bg;
+            transform: scale(0);
+        }
+        &:hover::before{
+            transform: scale(1);
+        }
+
+    .glightbox{
+        position: relative;
+        display: block;
+        overflow: hidden;
+        @extend .card-img-h-3;
+    }
+    .gallery-box{
+        img{
+            border-radius: .25rem;
+            @include img-inset-0;
+            height: calc(100% + 1rem );
+            width: 100%;
+        }
+    }
+    .g-img-overlay{
+        @include inset-0;
+        @include flex;
+        align-items: flex-end;
+        padding: .5rem 1rem;
+        border-radius: .25rem;
+        opacity: 0;
+        transition: all .5s;
+        -webkit-transition: all .5s;  
+        background: linear-gradient(to top, rgba(0, 0, 0, .6), transparent) ;
+    }
+    &:hover .g-img-overlay{
+        opacity: 1;
+    }
+    .g-caption{
+        color: $white;
+    }
+}
+
+.gslide iframe body{
+    img{
+        max-width: 100% !important;
+    }
+}
+.filters-menu-group{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    li{
+        margin-bottom: .5rem;
+    }
+    .f-link{
+        padding: .5rem 1rem;
+        color: var(--#{$prefix}color-default);
+            &.is-checked{
+                color: $white;
+                background-color: $success;
+                border-radius: .25rem;
+            }
+    }
+}
+.gallery-content{
+    .text-muted{
+        z-index: 1;
+    }
+}
+

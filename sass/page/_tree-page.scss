@@ -1,0 +1,134 @@
+
+// tree page scss
+///////////////////////////////////////////////////
+
+.horizontal-tree{
+    ul{
+        padding-top: 1rem;
+        text-align: center;
+
+        li{
+            position: relative;
+            
+            @include for-sm-device{
+                padding-top: 1.85rem;
+            }
+            @include for-sm-device{
+                &::before{
+                    content: '';
+                    height: 1.85rem;
+                    width: 0;
+                    @include  inset-0;                
+                    margin: 0 auto;
+                    border-right: 2px dashed $border-color;
+                }
+                &::after{
+                    content: '';
+                    width: 100%;
+                    top: 0;
+                    left: 50%;
+                    position: absolute;
+                    border-top: 2px dashed $border-color;
+                }
+                &:last-of-type{
+                    &::after{
+                        display: none;
+                    }
+                }
+                &.main-title{
+                    &::after,&::before{
+                       display: none;
+                    }                
+                }
+                .tree-title{
+                    &::before{
+                        content: '';
+                        height: 1.5rem;
+                        width: 0;
+                        top: 1.5rem !important;
+                        @include  inset-0;                
+                        margin: 0 auto;
+                        border-right: 2px dashed var($body-bg);
+                    }
+                }
+            }
+            
+            
+            
+
+                a{
+                    display: block;
+                    @extend .fs-13;
+                   // color: $heading-clr;
+                    
+                }
+                .tree-title{
+                    position: relative;
+                    font-weight: 500;
+                    @extend .fs-15;
+
+                }
+        }
+    }
+    
+    .inner-list-group{
+        @include for-sm-device{
+            padding-top: 1.85rem;
+        }
+        
+    }
+
+    .sub-list-group{
+        padding-top: 1.85rem;
+    }
+}
+// vertical list group
+///////////////////////////////////////////////////////////////////////
+.vertical-tree{
+    position: relative;
+    .tree-list-group{
+        position: relative;
+        padding-top: .75rem;
+        
+        
+        .tree-link{
+            color: $primary !important;
+        }
+        .list-container, li{
+
+            a{
+                position: relative;
+                padding: .5rem 1rem .35rem 2rem;
+                color: var(--#{$prefix}color-default);
+
+                    &::before{
+                        content: '';
+                        width: 1.5rem;
+                        @include transformCenterY;
+                        left: 0;
+                        border-top: 2px dashed $border-color;
+                    }
+            }
+        }
+    }
+    .inner-list-group,.inner-list-group-2{
+        margin-left: 2.8rem;
+
+        li{
+            position: relative;
+            &::before{
+                content: '';
+                height: 100%;
+                @include inset-0;
+                right: inherit !important;
+                border-left: 2px dashed $border-color;
+            }
+            &:last-child::before{
+                height: .75rem;
+            }
+        }
+    }
+    a{
+        display: block;
+    }
+}

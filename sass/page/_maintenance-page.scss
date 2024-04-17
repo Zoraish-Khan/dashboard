@@ -1,0 +1,120 @@
+// maintenance page scss
+@mixin gear-rotate ($rotate, $time, $looptime, $type ){
+    -webkit-animation: $rotate $time $looptime $type;
+    -moz-animation: $rotate $time $looptime $type;
+    -o-animation: $rotate $time $looptime $type;
+    animation: $rotate $time $looptime $type;
+}
+@mixin origin-value($Ovalue) {
+    -webkit-transform-origin: $Ovalue;
+    -ms-transform-origin: $Ovalue;
+    transform-origin: $Ovalue; 
+}
+.maintenance-page-wrap{
+    height: 100vh;
+    position: relative;
+
+        svg{
+            height: 500px;
+            margin-top: -3rem;
+        }
+
+        .rotate-c{
+         -webkit-animation: spin 5s  infinite;
+         animation: spin 5s  infinite;
+         transform-origin: 412px 233px;
+        fill: yellow;
+        }
+        .rotate-ac{
+            -webkit-animation: spin 5s  infinite;
+            animation: spin 5s  infinite;
+            transform-origin: 366px 166px;
+           }
+
+        .small {
+            @include gear-rotate(counter-rotation, 12.5s, infinite, linear);
+            @include origin-value(100.136px 225.345px);
+             
+        }
+        
+        .small-shadow {
+            @include gear-rotate(counter-rotation, 12.5s, infinite, linear);
+            @include origin-value(110.136px 235.345px)
+           
+        }
+        
+        .medium {
+            @include gear-rotate(counter-rotation, 13.75s, infinite, linear);
+            @include origin-value(254.675px 379.447px);
+        }
+        
+        .medium-shadow {
+            @include gear-rotate(counter-rotation, 13.75s, infinite, linear);
+            @include origin-value(264.675px 389.447px);
+        }
+            
+        
+        .large {
+            @include gear-rotate(counter-rotation, 15s, infinite, linear);
+            @include origin-value(461.37px 173.694px);
+        }
+        
+        .large-shadow {  
+          @include gear-rotate(counter-rotation, 15s, infinite, linear);
+          @include origin-value(471.37px 183.694px);
+        }
+}
+
+@keyframes spin{
+0%{
+        transform: rotate(360deg) translateZ(0px);
+    }
+    
+}
+.icon-position-2{
+    transform: translate(50px, 69px)
+}
+.svg-gear{
+    height: 100px;
+}
+.small-shadow, .medium-shadow, .large-shadow {
+    fill: rgba(0, 0, 0, 0.05); 
+}
+
+
+
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}
+@-moz-keyframes rotation {
+    from {-moz-transform: rotate(0deg);}
+    to   {-moz-transform: rotate(359deg);}
+}
+@-o-keyframes rotation {
+    from {-o-transform: rotate(0deg);}
+    to   {-o-transform: rotate(359deg);}
+}
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to   {transform: rotate(359deg);}
+}
+
+@-webkit-keyframes counter-rotation {
+    from {-webkit-transform: rotate(359deg);}
+    to   {-webkit-transform: rotate(0deg);}
+}
+@-moz-keyframes counter-rotation {
+    from {-moz-transform: rotate(359deg);}
+    to   {-moz-transform: rotate(0deg);}
+}
+@-o-keyframes counter-rotation {
+    from {-o-transform: rotate(359deg);}
+    to   {-o-transform: rotate(0deg);}
+}
+@keyframes counter-rotation {
+    from {transform: rotate(359deg);}
+    to   {transform: rotate(0deg);}
+}
+

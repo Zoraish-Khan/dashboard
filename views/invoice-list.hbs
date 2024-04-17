@@ -1,0 +1,227 @@
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-wrap d-sm-flex align-items-center justify-content-between">
+            <h4 class="mb-sm-0">Invoice List</h4>
+
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Pages</a></li>
+                    <li class="breadcrumb-item active">Invoice</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+    <div class="card-header d-flex align-items-center justify-content-between">
+        <h4 class="card-title mb-0"> Manage Invoices </h4>
+        <div class="d-flex"> <button class="btn btn-sm btn-primary"><i class="bi bi-plus align-middle me-1"></i> Create Invoice</button>
+            <div class="dropdown ms-2"> <button class="btn btn-rgba-secondary btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="bi bi-three-dots-vertical"></i> </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="javascript:void(0);">All Invoices</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">Paid Invoices</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">Pending Invoices</a></li>
+                    <li><a class="dropdown-item" href="javascript:void(0);">Overdue Invoices</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table text-nowrap table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Client</th>
+                        <th scope="col">Invoice ID</th>
+                        <th scope="col">Issued Date</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Due Date</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="invoice-list">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="me-2 lh-1"> <div class="avatar avatar-sm rounded"> <img class="rounded" src="/img/user-2.jpg" alt=""> </div> </div>
+                                <div>
+                                    <p class="mb-0 fw-semibold">Json Doe</p>
+                                    <p class="mb-0 fs-11 text-muted">john.doe1@gmail.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td> <a href="javascript:void(0);" class="fw-semibold text-primary"> #ACT12032123 </a> </td>
+                        <td> 25,Nov 2023 </td>
+                        <td> $212.45 </td>
+                        <td> <span class="badge bg-rgba-success">Paid</span> </td>
+                        <td> 25,Dec 2023 </td>
+                        <td> <button class="btn btn-rgba-primary btn-icon btn-sm"><i class="bi bi-printer"></i></button> 
+                        <button class="btn btn-rgba-danger btn-icon ms-1 btn-sm invoice-btn"><i class="bi bi-trash"></i></button> </td>
+                    </tr>
+                    <tr class="invoice-list">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="me-2 lh-1"> <div class="avatar avatar-sm rounded"> <img class="rounded" src="/img/user-7.jpg" alt=""> </div> </div>
+                                <div>
+                                    <p class="mb-0 fw-semibold">Samual Stallone</p>
+                                    <p class="mb-0 fs-11 text-muted">samual.stallone01@gmail.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td> <a href="javascript:void(0);" class="fw-semibold text-primary"> #ACT12132922 </a> </td>
+                        <td> 13,Nov 2023 </td>
+                        <td> $612.99 </td>
+                        <td> <span class="badge bg-rgba-warning">Pending</span> </td>
+                        <td> 23,Dec 2023 </td>
+                        <td> <button class="btn btn-rgba-primary btn-icon btn-sm"><i class="bi bi-printer"></i></button> 
+                        <button class="btn btn-rgba-danger btn-icon ms-1 btn-sm invoice-btn"><i class="bi bi-trash"></i></button> </td>
+                    </tr>
+                    <tr class="invoice-list">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="me-2 lh-1"> <div class="avatar avatar-sm rounded"> <img class="rounded" src="/img/user-5.jpg" alt=""> </div> </div>
+                                <div>
+                                    <p class="mb-0 fw-semibold">clinton cerejo</p>
+                                    <p class="mb-0 fs-11 text-muted">clinton.07@gmail.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td> <a href="javascript:void(0);" class="fw-semibold text-primary"> #ACT12032945 </a> </td>
+                        <td> 30,Nov 2023 </td>
+                        <td> $2959.49 </td>
+                        <td> <span class="badge bg-rgba-danger">Overdue</span> </td>
+                        <td> 30,Dec 2023 </td>
+                        <td> <button class="btn btn-rgba-primary btn-icon btn-sm"><i class="bi bi-printer"></i></button> 
+                        <button class="btn btn-rgba-danger btn-icon ms-1 btn-sm invoice-btn"><i class="bi bi-trash"></i></button> </td>
+                    </tr>
+                    <tr class="invoice-list">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="me-2 lh-1"> <div class="avatar avatar-sm rounded"> <img class="rounded" src="/img/user-6.jpg" alt=""> </div> </div>
+                                <div>
+                                    <p class="mb-0 fw-semibold">Viv Richards</p>
+                                    <p class="mb-0 fs-11 text-muted">richard.viv@gmail.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td> <a href="javascript:void(0);" class="fw-semibold text-primary"> #ACT12032922 </a> </td>
+                        <td> 18,Dec 2023 </td>
+                        <td> $1372.99 </td>
+                        <td> <span class="badge bg-rgba-success">Paid</span> </td>
+                        <td> 28,Dec 2023 </td>
+                        <td> <button class="btn btn-rgba-primary btn-icon btn-sm"><i class="bi bi-printer"></i></button> 
+                        <button class="btn btn-rgba-danger btn-icon ms-1 btn-sm invoice-btn"><i class="bi bi-trash"></i></button> </td>
+                    </tr>
+                    <tr class="invoice-list">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="me-2 lh-1"> <div class="avatar avatar-sm rounded"> <img class="rounded" src="/img/user-4.jpg" alt=""> </div> </div>
+                                <div>
+                                    <p class="mb-0 fw-semibold">Taylor Swift</p>
+                                    <p class="mb-0 fs-11 text-muted">taylorswift333@gmail.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td> <a href="javascript:void(0);" class="fw-semibold text-primary"> #ACT23124037 </a> </td>
+                        <td> 18,Nov 2023 </td>
+                        <td> $3,873.99 </td>
+                        <td> <span class="badge bg-rgba-primary">Due By 2 Day</span> </td>
+                        <td> 21,Dec 2023 </td>
+                        <td> <button class="btn btn-rgba-primary btn-icon btn-sm"><i class="bi bi-printer"></i></button> 
+                        <button class="btn btn-rgba-danger btn-icon ms-1 btn-sm invoice-btn"><i class="bi bi-trash"></i></button> </td>
+                    </tr>
+                    <tr class="invoice-list">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="me-2 lh-1"> <div class="avatar avatar-sm rounded"> <img class="rounded" src="/img/user-7.jpg" alt=""> </div> </div>
+                                <div>
+                                    <p class="mb-0 fw-semibold">kane williamson</p>
+                                    <p class="mb-0 fs-11 text-muted">kanewilliamson22@gmail.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td> <a href="javascript:void(0);" class="fw-semibold text-primary"> #ACT120321 </a> </td>
+                        <td> 02,Nov 2023 </td>
+                        <td> $1923.99 </td>
+                        <td> <span class="badge bg-rgba-success">Paid</span> </td>
+                        <td> 18,Dec 2023 </td>
+                        <td> <button class="btn btn-rgba-primary btn-icon btn-sm"><i class="bi bi-printer"></i></button> 
+                        <button class="btn btn-rgba-danger btn-icon ms-1 btn-sm invoice-btn"><i class="bi bi-trash"></i></button> </td>
+                    </tr>
+                    <tr class="invoice-list">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="me-2 lh-1"> <div class="avatar avatar-sm rounded"> <img class="rounded" src="/img/user-8.jpg" alt=""> </div> </div>
+                                <div>
+                                    <p class="mb-0 fw-semibold">Jackson Wang</p>
+                                    <p class="mb-0 fs-11 text-muted">jacksonwang123@gmail.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td> <a href="javascript:void(0);" class="fw-semibold text-primary"> #ACT32036622 </a> </td>
+                        <td> 15,Nov 2023 </td>
+                        <td> $2,432.99 </td>
+                        <td> <span class="badge bg-rgba-success">Paid</span> </td>
+                        <td> 10,Jan 2024 </td>
+                        <td> <button class="btn btn-rgba-primary btn-icon btn-sm"><i class="bi bi-printer"></i></button> 
+                        <button class="btn btn-rgba-danger btn-icon ms-1 btn-sm invoice-btn"><i class="bi bi-trash"></i></button> </td>
+                    </tr>
+                    <tr class="invoice-list">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="me-2 lh-1"> <div class="avatar avatar-sm rounded"> <img class="rounded" src="/img/user-1.jpg" alt=""> </div> </div>
+                                <div>
+                                    <p class="mb-0 fw-semibold">Katty Perry</p>
+                                    <p class="mb-0 fs-11 text-muted">kattyperry01@gmail.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td> <a href="javascript:void(0);" class="fw-semibold text-primary"> #ACT32098931 </a> </td>
+                        <td> 11,Dec 2023 </td>
+                        <td> $1,422.99 </td>
+                        <td> <span class="badge bg-rgba-warning">Pending</span> </td>
+                        <td> 31,Dec 2023 </td>
+                        <td> <button class="btn btn-rgba-primary btn-icon btn-sm"><i class="bi bi-printer"></i></button> 
+                        <button class="btn btn-rgba-danger btn-icon ms-1 btn-sm invoice-btn"><i class="bi bi-trash"></i></button> </td>
+                    </tr>
+                    <tr class="invoice-list">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="me-2 lh-1"> <div class="avatar avatar-sm rounded"> <img class="rounded" src="/img/user-8.jpg" alt=""> </div> </div>
+                                <div>
+                                    <p class="mb-0 fw-semibold">David Clinton</p>
+                                    <p class="mb-0 fs-11 text-muted">davidclinton77@gmail.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td> <a href="javascript:void(0);" class="fw-semibold text-primary"> #ACT12032958 </a> </td>
+                        <td> 15,Dec 2023 </td>
+                        <td> $2,112.99 </td>
+                        <td> <span class="badge bg-rgba-success">Paid</span> </td>
+                        <td> 15,Jan 2024 </td>
+                        <td> <button class="btn btn-rgba-primary btn-icon btn-sm"><i class="bi bi-printer"></i></button> 
+                        <button class="btn btn-rgba-danger btn-icon ms-1 btn-sm invoice-btn"><i class="bi bi-trash"></i></button> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="card-footer">
+        <nav aria-label="Page navigation">
+            <ul class="pagination pagination-custom mb-0 float-end">
+                <li class="page-item disabled"> <a class="page-link">Previous</a> </li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                <li class="page-item active" aria-current="page"> <a class="page-link" href="javascript:void(0);">2</a> </li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                <li class="page-item"> <a class="page-link" href="javascript:void(0);">Next</a> </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+    </div>
+</div>

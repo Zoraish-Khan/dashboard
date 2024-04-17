@@ -1,0 +1,52 @@
+[data-bs-theme="dark"]{
+    .fc-theme-standard{
+         .fc-scrollgrid{
+            border-color: var(--#{$prefix}border-color);
+         }
+    }
+    .fc-theme-standard {
+        th,td{
+            border-color: var(--#{$prefix}border-color);
+        }
+    }
+ }
+
+#crm-calendar{
+    border: none;
+    .fc-h-event{
+        border: 0 !important;
+    }
+}
+
+ .fc-theme-standard{
+    td,th{
+        border-color: var(--#{$prefix}border-color) !important;
+    }
+    thead{ 
+        tr th{
+            border-left: 0;
+            border-right: 0;
+        }
+    }
+    .fc-scrollgrid{
+        border: 0;
+    }
+
+    tr:last-child td{
+        border-bottom: 0;
+    }
+    td:first-child {
+        border-left: 0;
+    }
+    td:last-child {
+        border-right: 0;
+    }
+}
+
+[data-bs-theme="dark"]{
+    .fc-theme-standard{
+        td,th{
+            border-color: var(--#{$prefix}border-color) !important;
+        }
+    }
+}

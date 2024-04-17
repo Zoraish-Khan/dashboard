@@ -1,0 +1,250 @@
+
+@mixin flexPropCenter {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+@mixin  flexPropStart {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;    
+    -ms-flex-line-pack: start;    
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start
+}
+@mixin inlineFlexCenter {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    @include flexPropCenter;
+}
+@mixin FlexCenterAll {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    @include flexPropCenter;
+}
+@mixin FlexCenterBetween {    
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    justify-content: space-between !important;
+    @include FlexCenterAll;    
+}
+@mixin flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+@mixin flexEnd {
+    @include flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+// position
+
+@mixin position-all-0 {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+@mixin inset-0 {
+    position: absolute;
+    @include position-all-0;
+}
+@mixin inset-0-n {
+    top:-1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    position: absolute;
+}
+@mixin fixed-inset-0 {
+    position: fixed;
+    @include position-all-0;
+}
+@mixin  fixed-lr-0 {
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+// while loop for font size
+$f-size: 1;
+
+@while $f-size <= 200 {
+
+    .fs-#{$f-size}{
+        font-size: 1px * $f-size !important;
+    }
+
+    $f-size : $f-size + 1;
+}
+
+// dropdown slide animation
+@mixin animDuration($i) {
+    -webkit-animation-duration: $i;
+    -moz-animation-duration: $i;
+    -o-animation-duration: $i;
+    animation-duration: $i;
+}
+@mixin  dropdownAnim {
+    -webkit-animation-name: dropdownSlide;
+    animation-name: dropdownSlide;
+}
+@mixin anim-default {
+    -webkit-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+}
+// for dropdown animation
+@-webkit-keyframes dropdownSlide {
+    100% {
+        margin-top: -1px
+    }
+
+    0% {
+        margin-top: 8px
+    }
+}
+
+@keyframes dropdownSlide {
+    100% {
+        margin-top: -1px
+    }
+
+    0% {
+        margin-top: 8px
+    }
+}
+
+@-webkit-keyframes dropdownSlideDown {
+    100% {
+        margin-bottom: 0
+    }
+
+    0% {
+        margin-bottom: 8px
+    }
+}
+
+@keyframes dropdownSlideDown {
+    100% {
+        margin-bottom: 0
+    }
+
+    0% {
+        margin-bottom: 8px
+    }
+}
+// boxshadow
+$sahdow:rgba(14, 23, 34, 0.12) !default;
+@mixin boxshadow-custom($x, $y, $blur, $color) {
+    -webkit-box-shadow: $x $y $blur $color ;
+    -moz-box-shadow: $x $y $blur $color ;
+    box-shadow: $x $y $blur $color ;
+}
+@mixin boxshadow-default {
+    -webkit-box-shadow: 0 0 5px rgba(15, 34, 58, .15);
+    -moz-box-shadow: 0 0 5px rgba(15, 34, 58, .15);
+        box-shadow: 0 0 5px rgba(15, 34, 58, .15);
+}
+@mixin boxshadow-sm {
+    border: 0;
+    -webkit-box-shadow: 0 1px 2px rgba(15, 34, 58, .15);
+    -moz-box-shadow: 0 1px 2px rgba(15, 34, 58, .15);
+    box-shadow: 0 1px 2px rgba(15, 34, 58, .15);     
+}
+@mixin boxshadow-md {
+    border: 0;
+    -webkit-box-shadow: 0 2px 4px rgba(15, 34, 58, .15);
+    -moz-box-shadow: 0 2px 4px rgba(15, 34, 58, .15);
+    box-shadow: 0 2px 4px rgba(15, 34, 58, .15);     
+}
+
+// user select none
+
+@mixin user-select-none {
+    pointer-events: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+@mixin h-w-100 {
+    height: 100%;
+    width: 100%;
+}
+@mixin min-h-w-100 {
+    min-height: 100%;
+    min-width: 100%;
+}
+@mixin max-h-w-100 {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+@mixin transformCenterY {
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+}
+@mixin transformCenterX {
+    transform: translateX(-50%);
+    -webkit-tranleftrm: translateX(-50%);
+    -ms-transform: translefteX(-50%);
+    left: 50%;
+    position: absolute;
+}
+@mixin transformCenter {
+    transform: translate(-50%, -50%);
+    -webkit-tranleftrm: translate(-50%, -50%);
+    -ms-transform: translefte(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+}
+// ellipsis
+@mixin ellipsis {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+}
+
+@mixin img-inset-0 {
+    @include inset-0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+@mixin img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+@mixin translateX($x) {
+    @include transform(translateX($x));
+}
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}

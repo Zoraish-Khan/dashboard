@@ -1,0 +1,786 @@
+<div class="navbar-menu">
+    <!-- LOGO -->
+    <div class="navbar-brand-wrap">
+        <!-- Dark Logo-->
+        <a href="/" class="logo logo-dark">
+            <span class="logo-sm">
+                <img src="/img/logo-dark-sm.png" alt="logo dark sm">
+            </span>
+            <span class="logo-lg">
+                <img src="/img/logo-dark-lg.png" alt="logo dark lg">
+            </span>
+        </a>
+        <!-- logo light -->
+        <a href="/" class="logo logo-light">
+            <span class="logo-sm">
+                <img src="/img/logo-light-sm.png" alt="logo light sm">
+            </span>
+            <span class="logo-lg">
+                <img src="/img/logo-light-lg.png" alt="logo light lg">
+            </span>
+        </a>
+    </div>
+
+    <div id="scrollbarMenu">
+        <div class="container-fluid">
+            {{!-- <div id="two-column-menu"></div> --}}
+            <ul class="navbar-nav" id="navbar-nav" >
+                <li class="menu-title"><span>Menu</span></li>
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#axMenuSidebarDashboards" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="axMenuSidebarDashboards">
+                        <i class="bi-speedometer"></i> <span>Dashboards</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="axMenuSidebarDashboards">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="/" class="nav-link"> Ecommerce </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/index-crm" class="nav-link"> CRM </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/index-crypto" class="nav-link"> Crypto </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/index-project" class="nav-link"> Projects </a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a href="/index-social" class="nav-link"> Social Media </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- end Dashboard Menu -->
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#axMenuSidebarApps" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="axMenuSidebarApps">
+                        <i class="bi-app-indicator"></i> <span>Apps</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="axMenuSidebarApps">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="/calendar" class="nav-link"> Calendar </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/chat" class="nav-link"> Chat </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/mailbox" class="nav-link"> Mailbox </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#axMenuSidebarEcommerce" class="nav-link" data-bs-toggle="collapse" role="button"
+                                    aria-expanded="false" aria-controls="axMenuSidebarEcommerce">
+                                    Ecommerce
+                                </a>
+                                <div class="collapse menu-dropdown" id="axMenuSidebarEcommerce">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="/products" class="nav-link"> Products </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/product-details" class="nav-link"> Product Details
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="/orders" class="nav-link">
+                                                Orders </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/customers" class="nav-link"> Customers </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/cart" class="nav-link"> Shopping Cart </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/checkout" class="nav-link"> Checkout </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/sellers" class="nav-link">
+                                                Sellers </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#axMenuSidebarJob" class="nav-link" data-bs-toggle="collapse" role="button"
+                                    aria-expanded="false" aria-controls="axMenuSidebarJob">
+                                    Job <span class="badge bg-danger me-3">New</span>
+                                </a>
+                                <div class="collapse menu-dropdown" id="axMenuSidebarJob">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="/job-grid" class="nav-link"> Job Grid </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/job-list" class="nav-link"> Job List </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/job-detail" class="nav-link"> Job Detail </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/job-post" class="nav-link"> Job Post </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#axMenuSidebarProjects" class="nav-link" data-bs-toggle="collapse" role="button"
+                                    aria-expanded="false" aria-controls="axMenuSidebarProjects">
+                                    Projects
+                                </a>
+                                <div class="collapse menu-dropdown" id="axMenuSidebarProjects">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="/project-list" class="nav-link"> List
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/project-overview" class="nav-link"> Overview </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/project-create" class="nav-link"> Create Project </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#axMenuSidebarTask" class="nav-link" data-bs-toggle="collapse" role="button"
+                                    aria-expanded="false" aria-controls="axMenuSidebarTask">
+                                    Task 
+                                </a>
+                                <div class="collapse menu-dropdown" id="axMenuSidebarTask">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="/kanban-board" class="nav-link"> Kanban Task Board </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/kanban-list" class="nav-link"> Kanban Task List </a>
+                                        </li>
+                                       <li class="nav-item">
+                                            <a href="/kanban-detail" class="nav-link"> Kanban Task Detail </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- end Dashboard Menu -->
+
+                <li class="menu-title"><i class="bi-reception-0"></i> <span>Pages</span></li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#axMenuSidebarAuth" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="axMenuSidebarAuth">
+                        <i class="bi-person-square"></i> <span>Authentication</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="axMenuSidebarAuth">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="#axMenuSidebarSignIn" class="nav-link" data-bs-toggle="collapse" role="button"
+                                    aria-expanded="false" aria-controls="axMenuSidebarSignIn"> Sign In
+                                </a>
+                                <div class="collapse menu-dropdown" id="axMenuSidebarSignIn">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="/signin-basic" class="nav-link"> Basic
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/signin-full-size" class="nav-link"> Cover
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#axMenuSidebarSignUp" class="nav-link" data-bs-toggle="collapse" role="button"
+                                    aria-expanded="false" aria-controls="axMenuSidebarSignUp"> Sign Up
+                                </a>
+                                <div class="collapse menu-dropdown" id="axMenuSidebarSignUp">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="/signup-basic" class="nav-link"> Basic
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/signup-full-size" class="nav-link"> Cover
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#axMenuSidebarResetPass" class="nav-link" data-bs-toggle="collapse" role="button"
+                                    aria-expanded="false" aria-controls="axMenuSidebarResetPass">
+                                    Password Reset
+                                </a>
+                                <div class="collapse menu-dropdown" id="axMenuSidebarResetPass">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="/pass-reset-basic" class="nav-link">
+                                                Basic </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/pass-reset-full-size" class="nav-link">
+                                                Cover </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#axMenuSidebarchangePass" class="nav-link" data-bs-toggle="collapse" role="button"
+                                    aria-expanded="false" aria-controls="axMenuSidebarchangePass">
+                                    Password Create
+                                </a>
+                                <div class="collapse menu-dropdown" id="axMenuSidebarchangePass">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="/pass-create-basic" class="nav-link">
+                                                Basic </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/pass-create-full-size" class="nav-link">
+                                                Cover </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#axMenuSidebarLogout" class="nav-link" data-bs-toggle="collapse" role="button"
+                                    aria-expanded="false" aria-controls="axMenuSidebarLogout"> Logout
+                                </a>
+                                <div class="collapse menu-dropdown" id="axMenuSidebarLogout">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="/logout-basic" class="nav-link"> Basic
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/logout-full-size" class="nav-link"> Cover
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#axMenuSidebarErrors" class="nav-link" data-bs-toggle="collapse" role="button"
+                                    aria-expanded="false" aria-controls="axMenuSidebarErrors"> Errors
+                                </a>
+                                <div class="collapse menu-dropdown" id="axMenuSidebarErrors">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="/error-404" class="nav-link"> 404
+                                                Page </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/error-500" class="nav-link"> 500 Page</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/offline" class="nav-link"> Offline Page </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#axMenuSidebarPages" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="axMenuSidebarPages">
+                        <i class="bi-file-earmark"></i> <span>Pages</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="axMenuSidebarPages">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="/starter-page" class="nav-link"> Starter </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#axMenuSidebarBlog" class="nav-link" data-bs-toggle="collapse" role="button"
+                                    aria-expanded="false" aria-controls="axMenuSidebarBlog"> Blog
+                                    <span class="badge small bg-danger me-3">New</span>
+                                </a>
+                                <div class="collapse menu-dropdown" id="axMenuSidebarBlog">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="/blog" class="nav-link">Blog
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/blog-detail" class="nav-link">Blog Detail
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#axMenuSidebarInvoice" class="nav-link" data-bs-toggle="collapse" role="button"
+                                    aria-expanded="false" aria-controls="axMenuSidebarInvoice"> Invoice
+                                    <span class="badge small bg-danger me-3">New</span>
+                                </a>
+                                <div class="collapse menu-dropdown" id="axMenuSidebarInvoice">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="/invoice-list" class="nav-link"> Invoice List
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/invoice-detail" class="nav-link">
+                                                Invoice Detail </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#axMenuSidebarProfile" class="nav-link" data-bs-toggle="collapse" role="button"
+                                    aria-expanded="false" aria-controls="axMenuSidebarProfile"> Profile
+                                </a>
+                                <div class="collapse menu-dropdown" id="axMenuSidebarProfile">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="/profile" class="nav-link">
+                                                Profile </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/profile-setting" class="nav-link"> Profile Settings
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/team" class="nav-link"> Team </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/timeline" class="nav-link"> Timeline </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/faq" class="nav-link"> FAQs </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/pricing" class="nav-link"> Pricing </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/gallery" class="nav-link"> Gallery </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/maintenance" class="nav-link"> Maintenance
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/coming-soon" class="nav-link"> Coming Soon
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/tree" class="nav-link"> Tree </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/search-result" class="nav-link"> Search
+                                    Results </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" target="_blank" href="/index-landing">
+                        <i class="bi-play-fill"></i> <span>Landing</span>
+                    </a>
+                </li>
+
+                <li class="menu-title"><i class="bi-reception-0"></i> <span>Components</span></li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#axMenuSidebarUI" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="axMenuSidebarUI">
+                        <i class="bi-bezier"></i> <span>Base UI</span>
+                    </a>
+                    <div class="collapse menu-dropdown mega-dropdown-menu" id="axMenuSidebarUI">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="/alerts" class="nav-link">Alerts</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/accordions" class="nav-link">Accordion & Collapse</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/badges" class="nav-link">Badges</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/buttons" class="nav-link">Buttons</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/cards" class="nav-link">Cards</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/dropdown" class="nav-link">Dropdowns</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/images" class="nav-link">Images</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <ul class="nav nav-sm flex-column">
+                                    
+                                    <li class="nav-item">
+                                        <a href="/tabs" class="nav-link">Tabs</a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a href="/modals" class="nav-link">Modals</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/navbars" class="nav-link">Navbars</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/offcanvas" class="nav-link">Offcanvas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="placeholder" class="nav-link">Placeholders</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/progress" class="nav-link">Progress</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/notification" class="nav-link">Notifications</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="/media-object" class="nav-link">Media
+                                            object</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/embed-video" class="nav-link">Embed
+                                            Video</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/typography" class="nav-link">Typography</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/list" class="nav-link">Lists</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/general" class="nav-link">General</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/ribbons" class="nav-link">Ribbons</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/utilities" class="nav-link">Utilities</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#axMenuSidebarAdvanceUI" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="axMenuSidebarAdvanceUI">
+                        <i class="bi-layers"></i> <span>Advance UI</span>
+
+                    </a>
+                    <div class="collapse menu-dropdown" id="axMenuSidebarAdvanceUI">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="/sweet-alerts" class="nav-link">Sweet
+                                    Alerts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/animation" class="nav-link">Animation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/swipers" class="nav-link">Swiper slider</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/scrollspy" class="nav-link">Scrollspy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="/widgets">
+                        <i class="bi-bookmark-star"></i> <span>Widgets</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#axMenuSidebarForms" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="axMenuSidebarForms">
+                        <i class="bi-card-checklist"></i> <span>Forms</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="axMenuSidebarForms">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="/form-elements" class="nav-link">Basic
+                                    Elements</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/form-select" class="nav-link"> Form Select </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="checkbox-radios" class="nav-link">Checkboxs & Radios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/input-mask" class="nav-link">Input Masks</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/form-advanced" class="nav-link">Advanced</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/javascript: void(0)" class="nav-link"> Range
+                                    Slider </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/form-validation" class="nav-link">Validation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/form-wizard" class="nav-link">Wizard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/editors" class="nav-link">Editors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/file-upload" class="nav-link">File
+                                    Uploads</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/form-layout" class="nav-link">Form Layouts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#axMenuSidebarTables" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="axMenuSidebarTables">
+                        <i class="bi-grid-3x3"></i> <span>Tables</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="axMenuSidebarTables">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="/table-basic" class="nav-link">Basic Tables</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/table-grid" class="nav-link">Grid Js</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/table-list-js" class="nav-link">List Js</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#axMenuSidebarCharts" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="axMenuSidebarCharts">
+                        <i class="bi-pie-chart"></i> <span>Charts</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="axMenuSidebarCharts">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="#axMenuSidebarApexcharts" class="nav-link" data-bs-toggle="collapse" role="button"
+                                    aria-expanded="false" aria-controls="axMenuSidebarApexcharts">
+                                    Apexcharts
+                                </a>
+                                <div class="collapse menu-dropdown" id="axMenuSidebarApexcharts">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="/apex-line-chart" class="nav-link"> Line
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/apex-area-chart" class="nav-link"> Area
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/apex-column-chart" class="nav-link">
+                                                Column </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/apex-bar-chart" class="nav-link"> Bar </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/apex-mixed-chart" class="nav-link"> Mixed </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/apex-timeline-chart" class="nav-link"> Timeline </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/apex-candlestick-chart" class="nav-link"> Candlestick
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/apex-boxplot-chart" class="nav-link"> Boxplot </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/apex-bubble-chart" class="nav-link">
+                                                Bubble </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/apex-scatter-chart" class="nav-link">
+                                                Scatter </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/apex-heatmap-chart" class="nav-link">
+                                                Heatmap </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/apex-treemap-chart" class="nav-link">
+                                                Treemap </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/apex-pie-chart" class="nav-link"> Pie </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/apex-radial-chart" class="nav-link"> Radialbar </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/apex-radar-chart" class="nav-link"> Radar
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/apex-polar-chart" class="nav-link">
+                                                Polar Area </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/chartjs" class="nav-link"> Chartjs </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#axMenuSidebarAmCharts" class="nav-link" data-bs-toggle="collapse" role="button"
+                                    aria-expanded="false" aria-controls="axMenuSidebarAmCharts">
+                                    Am Charts
+                                </a>
+                                <div class="collapse menu-dropdown" id="axMenuSidebarAmCharts">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="/amchart-column-bars" class="nav-link">
+                                                Column & bars 
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/amchart-line-area" class="nav-link">
+                                                Line & Area 
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/amchart-pie-donut" class="nav-link">
+                                                Pie & Donut 
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/amchart-gauges" class="nav-link">
+                                                Gauges 
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="/amchart-map" class="nav-link">
+                                                Maps 
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#axMenuSidebarMaps" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="axMenuSidebarMaps">
+                        <i class="bi-geo-alt"></i> <span>Maps</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="axMenuSidebarMaps">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="/googlemap" class="nav-link">
+                                    Google
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/vectormap" class="nav-link">
+                                    Vector
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/leaflet" class="nav-link">
+                                    Leaflet
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#axMenuSidebarMultilevel" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="axMenuSidebarMultilevel">
+                        <i class="bi-share"></i> <span>Multi Level</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="axMenuSidebarMultilevel">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> Level 1.1 </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#axMenuSidebarAccount" class="nav-link" data-bs-toggle="collapse" role="button"
+                                    aria-expanded="false" aria-controls="axMenuSidebarAccount"> Level
+                                    1.2
+                                </a>
+                                <div class="collapse menu-dropdown" id="axMenuSidebarAccount">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link"> Level 2.1 </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#axMenuSidebarCrm" class="nav-link" data-bs-toggle="collapse"
+                                                role="button" aria-expanded="false" aria-controls="axMenuSidebarCrm">
+                                                Level 2.2
+                                            </a>
+                                            <div class="collapse menu-dropdown" id="axMenuSidebarCrm">
+                                                <ul class="nav nav-sm flex-column">
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link"> Level 3.1
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#" class="nav-link"> Level 3.2
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <!-- axMenuSidebar -->
+    </div>
+</div>
+<div class="overlay-menu-v"></div>

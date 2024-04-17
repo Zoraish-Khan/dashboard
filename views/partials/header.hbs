@@ -1,0 +1,527 @@
+<header class="header-main">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="bootstrap" viewBox="0 0 512 408" fill="currentcolor">
+            <path
+                d="M106.342 0c-29.214 0-50.827 25.58-49.86 53.32.927 26.647-.278 61.165-8.966 89.31C38.802 170.862 24.07 188.707 0 191v26c24.069 2.293 38.802 20.138 47.516 48.37 8.688 28.145 9.893 62.663 8.965 89.311C55.515 382.42 77.128 408 106.342 408h299.353c29.214 0 50.827-25.58 49.861-53.319-.928-26.648.277-61.166 8.964-89.311 8.715-28.232 23.411-46.077 47.48-48.37v-26c-24.069-2.293-38.765-20.138-47.48-48.37-8.687-28.145-9.892-62.663-8.964-89.31C456.522 25.58 434.909 0 405.695 0H106.342zm236.559 251.102c0 38.197-28.501 61.355-75.798 61.355h-87.202a2 2 0 01-2-2v-213a2 2 0 012-2h86.74c39.439 0 65.322 21.354 65.322 54.138 0 23.008-17.409 43.61-39.594 47.219v1.203c30.196 3.309 50.532 24.212 50.532 53.085zm-84.58-128.125h-45.91v64.814h38.669c29.888 0 46.373-12.03 46.373-33.535 0-20.151-14.174-31.279-39.132-31.279zm-45.91 90.53v71.431h47.605c31.12 0 47.605-12.482 47.605-35.941 0-23.46-16.947-35.49-49.608-35.49h-45.602z" />
+        </symbol>
+        <symbol id="check2" viewBox="0 0 16 16" fill="currentcolor">
+            <path
+                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16" fill="currentcolor">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16" fill="currentcolor">
+            <path
+                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+            <path
+                d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16" fill="currentcolor">
+            <path
+                d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+        </symbol>
+        <symbol id="blue-fill" viewBox="0 0 16 16" fill="currentcolor">
+            <circle cx="8" cy="8" r="8" />
+        </symbol>
+        <symbol id="sea-fill" viewBox="0 0 16 16" fill="currentcolor">
+            <circle cx="8" cy="8" r="8" />
+        </symbol>
+        <symbol id="check2" viewBox="0 0 16 16" fill="currentcolor">
+            <path
+                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+        </symbol>
+    </svg>
+    <div class="box-layout-width">
+    <div class="header-menu">
+        <div class="d-flex align-items-center">
+            <!-- LOGO -->
+            <div class="navbar-brand-wrap logo-horizontal">
+                <!-- Dark Logo-->
+                <a href="/" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img src="/img/logo-dark-sm.png" alt="logo dark sm">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="/img/logo-dark-lg.png" alt="logo dark lg">
+                    </span>
+                </a>
+                <!-- logo light -->
+                <a href="/" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="/img/logo-light-sm.png" alt="logo light sm">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="/img/logo-light-lg.png" alt="logo light lg">
+                    </span>
+                </a>
+            </div>
+
+            <!-- App Search-->
+            <div class="d-md-block me-3">
+                <div id="hamburgerIcon" class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <form class="header-search d-none d-md-block">
+                <div class="position-relative search-container">
+                    <input type="text" id="search-box"  class="form-control" placeholder="Search..." />
+                    <span class="bi-search ax-icon-wgt fs-15"></span>
+                    <span class="bi-x-circle ax-icon-wgt d-none"></span>
+                    {{!-- <div id="recent-searches" class="recent-searches">
+                        <h2>Recent Searches</h2>
+                        <!-- Recent searches will be populated here -->
+                        <button id="view-all" class="view-all-btn">View All Results</button>
+                    </div> --}}
+                    
+                </div>
+            </form>
+        </div>
+        <!-- header right menu item-->
+        <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center dropdown color-modes">
+                <button class="btn btn-icon btn-topbar btn-hidden-primary rounded-circle text-decoration-none d-flex align-items-center"
+                    id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
+                    data-bs-display="static">
+                    <svg class="bi my-1 theme-icon-active">
+                        <use href="#circle-half"></use>
+                    </svg>
+                    <span id="bd-theme-text"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme"
+                    style="--bs-dropdown-min-width: 8rem;">
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center"
+                            data-bs-theme-value="light" onclick="handleAttributes('data-bs-theme','light')">
+                            <svg class="bi me-2 opacity-50 theme-icon">
+                                <use href="#sun-fill"></use>
+                            </svg>
+                            Light
+                            <svg class="bi ms-auto d-none">
+                                <use href="#check2"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center"
+                            data-bs-theme-value="dark" onclick="handleAttributes('data-bs-theme','dark')">
+                            <svg class="bi me-2 opacity-50 theme-icon">
+                                <use href="#moon-stars-fill"></use>
+                            </svg>
+                            Dark
+                            <svg class="bi ms-auto d-none">
+                                <use href="#check2"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center"
+                            data-bs-theme-value="blue" onclick="handleAttributes('data-bs-theme','blue')">
+                            <svg class="bi me-2 opacity-50 theme-icon blue-svg">
+                                <use href="#blue-fill"></use>
+                            </svg>
+                            Blue
+                            <svg class="bi ms-auto d-none">
+                                <use href="#check2"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="sea" onclick="handleAttributes('data-bs-theme','sea')">
+                            <svg class="bi me-2 opacity-50 theme-icon sea-svg">
+                                <use href="#sea-fill"></use>
+                            </svg>
+                            Sea
+                            <svg class="bi ms-auto d-none">
+                                <use href="#check2"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center active"
+                            data-bs-theme-value="auto" onclick="handleAttributes('data-bs-theme','auto')">
+                            <svg class="bi me-2 opacity-50 theme-icon">
+                                <use href="#circle-half"></use>
+                            </svg>
+                            Auto
+                            <svg class="bi ms-auto d-none">
+                                <use href="#check2"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="dropdown d-md-none header-dropdown header-item">
+                <button type="button" class="btn btn-icon btn-topbar btn-hidden-primary rounded-circle" id=""
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="bi-search fs-22"></i>
+                </button>
+            </div>
+            <div class="dropdown header-dropdown ms-1 header-item">
+                <button type="button" class="btn btn-icon btn-topbar btn-hidden-primary rounded-circle"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class='bi-columns-gap fs-'></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-lg card-shadow p-0 dropdown-menu-end">
+                    <div class="p-3 border-top-0 border-start-0 border-end-0 border-dashed border">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h6 class="m-0 fw-semibold fs-15"> Web Apps </h6>
+                            </div>
+                            <div class="col-auto">
+                                <a href="#!" class="btn btn-sm btn-rgba-info"> View All Apps
+                                    <i class="bi bi-arrow-right-short align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-2">
+                        <div class="row g-0">
+                            <div class="col">
+                                <a class="dropdown-item-icon" href="#!">
+                                    <img src="/img/github.png" alt="Github">
+                                    <span class="text-truncate">GitHub</span>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item-icon" href="#!">
+                                    <img src="/img/binance.png" alt="Binance">
+                                    <span class="text-truncate">Binance</span>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item-icon" href="#!">
+                                    <img src="/img/dribble.png" alt="Dribbble">
+                                    <span class="text-truncate">Dribbble</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row g-0">
+                            <div class="col">
+                                <a class="dropdown-item-icon" href="#!">
+                                    <img src="/img/dropbox.png" alt="dropbox">
+                                    <span class="text-truncate">Dropbox</span>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item-icon" href="#!">
+                                    <img src="/img/pinterest.png" alt="Pinterest">
+                                    <span class="text-truncate">Pinterest</span>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item-icon" href="#!">
+                                    <img src="/img/slack.png" alt="slack">
+                                    <span class="text-truncate">Slack</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown header-dropdown ms-1 header-item">
+                <button type="button" class="btn btn-icon btn-topbar btn-hidden-primary rounded-circle"
+                    id="header-cart-dropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class='bi-bag fs-20'></i>
+                    <span
+                        class="position-absolute topbar-badge cartitem-badge fs-10 translate-middle badge rounded-pill bg-info">5</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-xl dropdown-menu-end p-0 dropdown-menu-cart"
+                    aria-labelledby="header-cart-dropdown">
+                    <div class="p-3 border-top-0 border-start-0 border-end-0 border-dashed border">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h6 class="m-0 fs-16 fw-semibold"> My Cart</h6>
+                            </div>
+                            <div class="col-auto">
+                                <span class="badge bg-rgba-warning fs-13"><span class="cartitem-badge">4</span>
+                                    items
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-simplebar style="max-height: 260px;">
+                        <div class="p-2">
+                            <div class="d-block dropdown-item dropdown-cart-item text-wrap alert px-3 py-2">
+                                <div class="d-flex align-items-center">
+                                    <img src="/img/iphone-13-01.jpg" class="me-3 rounded-circle avatar-sm" alt="user-pic">
+                                    <div class="flex-grow-1">
+                                        <h6 class="mt-0 mb-1 fs-14">
+                                            <a href="javascript:void(0)" class="text-reset">iphone 13 pro</a>
+                                        </h6>
+                                        <p class="mb-0 fs-12 text-muted">
+                                            Quantity: <span>1 x $1050</span>
+                                        </p>
+                                    </div>
+                                    <div class="px-2">
+                                        <h5 class="m-0 fw-normal">$<span class="cart-item-price">999</span></h5>
+                                    </div>
+                                    <div class="ps-2">
+                                        <button type="button"
+                                            class="btn btn-icon btn-sm btn-rgba-primary remove-item-btn"data-bs-dismiss="alert" aria-label="Close">
+                                            <i class="bi-x fs-16"></i>
+                                            </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-block dropdown-item dropdown-cart-item text-wrap alert px-3 py-2">
+                                <div class="d-flex align-items-center">
+                                    <img src="/img/iphone-13-02.jpg" class="me-3 rounded-circle avatar-sm" alt="dog">
+                                    <div class="flex-grow-1">
+                                        <h6 class="mt-0 mb-1 fs-14">
+                                            <a href="javascript:void(0)" class="text-reset">iphone 12</a>
+                                        </h6>
+                                        <p class="mb-0 fs-12 text-muted">
+                                            Quantity: <span>1 x $800</span>
+                                        </p>
+                                    </div>
+                                    <div class="px-2">
+                                        <h5 class="m-0 fw-normal">$<span class="cart-item-price">750</span></h5>
+                                    </div>
+                                    <div class="ps-2">
+                                        <button type="button"
+                                            class="btn btn-icon btn-sm btn-rgba-primary remove-item-btn" data-bs-dismiss="alert" aria-label="Close"><i
+                                                class="bi-x fs-16"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-block dropdown-item dropdown-cart-item text-wrap alert px-3 py-2">
+                                <div class="d-flex align-items-center">
+                                    <img src="/img/iphone-13-03.jpg" class="me-3 rounded-circle avatar-sm" alt="Dog">
+                                    <div class="flex-grow-1">
+                                        <h6 class="mt-0 mb-1 fs-14">
+                                            <a href="javascript:void(0)" class="text-reset">
+                                                iphone 14 pro</a>
+                                        </h6>
+                                        <p class="mb-0 fs-12 text-muted">
+                                            Quantity: <span>1 x $1100</span>
+                                        </p>
+                                    </div>
+                                    <div class="px-2">
+                                        <h5 class="m-0 fw-normal">$<span class="cart-item-price">1050</span></h5>
+                                    </div>
+                                    <div class="ps-2">
+                                        <button type="button"
+                                            class="btn btn-icon btn-sm btn-rgba-primary remove-item-btn" data-bs-dismiss="alert" aria-label="Close"><i
+                                                class="bi-x fs-16"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-block dropdown-item dropdown-cart-item text-wrap alert px-3 py-2">
+                                <div class="d-flex align-items-center">
+                                    <img src="/img/apple-watch.jpg" class="me-3 rounded-circle avatar-sm" alt="user-pic">
+                                    <div class="flex-grow-1">
+                                        <h6 class="mt-0 mb-1 fs-14">
+                                            <a href="javascript:void(0)" class="text-reset">Apple Watch 8</a>
+                                        </h6>
+                                        <p class="mb-0 fs-12 text-muted">
+                                            Quantity: <span>2 x $395</span>
+                                        </p>
+                                    </div>
+                                    <div class="px-2">
+                                        <h5 class="m-0 fw-normal">$<span class="cart-item-price">379</span></h5>
+                                    </div>
+                                    <div class="ps-2">
+                                        <button type="button"
+                                            class="btn btn-icon btn-sm btn-rgba-primary remove-item-btn" data-bs-dismiss="alert" aria-label="Close"><i
+                                                class="bi-x fs-16"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3 border-bottom-0 border-start-0 border-end-0 border-dashed border"
+                        id="checkout-elem">
+                        <div class="d-flex justify-content-between align-items-center pb-3">
+                            <h5 class="m-0 text-muted">Total:</h5>
+                            <div class="px-2">
+                                <h5 class="m-0" id="cart-item-total">$3178.0</h5>
+                            </div>
+                        </div>
+
+                        <a href="checkout" class="btn btn-success text-center w-100">
+                            Checkout
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-item d-none d-sm-flex ms-1 ">
+                <button type="button" id="fullscreen-btn" class="btn btn-icon btn-topbar btn-hidden-primary rounded-circle"
+                    data-toggle="fullscreen">
+                    <i class='bi-fullscreen '></i>
+                </button>
+            </div>
+
+           
+
+            <div class="dropdown header-dropdown ms-1 header-item">
+                <button type="button" class="btn btn-icon btn-topbar btn-hidden-primary rounded-circle"
+                    id="topbar-header-notification-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class='bi-bell fs-20'></i>
+                    <span
+                        class="position-absolute topbar-badge fs-10 translate-middle badge rounded-pill bg-danger">3<span
+                            class="visually-hidden">unread messages</span></span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                    aria-labelledby="topbar-header-notification-dropdown">
+
+                    <div class="dropdown-head bg-primary bg-pattern rounded-top">
+                        <div class="p-3">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <h6 class="m-0 fs-16 fw-semibold text-white"> Notifications </h6>
+                                </div>
+                                <div class="col-auto dropdown-tabs">
+                                    <span class="badge fs-13"> 4 New</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="px-2 pt-2">
+                            <!-- nav tab here -->
+                        </div>
+
+                    </div>
+                    <div id="notificationScroll" class="">
+                        <a href="javascript:void(0);" class="dropdown-item notify-item activ">
+                            <div class="notify-icon flex-shrink-0 me-2">
+                                <img src="/img/user-1.jpg" class="img-fluid avatar-xs rounded-circle" alt="" />
+                            </div>
+                            <div class="flex-grow-1 flex-wrap">
+                                <p class="notify-details mb-0">Sarah Poul</p>
+                                <p class="text-muted small">
+                                    Hi, How are you? Whats going on?
+                                </p>
+                            </div>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <div class="avatar-xs notify-box bg-primary me-2">
+                                <i class="bi-chat-left-dots"></i>
+                            </div>
+                            <p class="notify-details mb-0">Shami Akbar commented on Admin
+                                <small class="text-muted d-block">1 min ago</small>
+                            </p>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <div class="avatar-xs flex-shrink-0 me-2">
+                                <img src="/img/user-2.jpg" class="img-fluid rounded-circle" alt="" />
+                            </div>
+                            <div class="flex-grow-1">
+                                <p class="notify-details mb-0">Kyle Mayers</p>
+                                <p class="text-muted mb-0 small user-msg">
+                                    Wow ! this is awesome design
+                                </p>
+                            </div>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <div class="avatar-xs notify-box bg-warning me-2">
+                                <i class="bi bi-person-plus-fill"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <p class="notify-details">New user registered. </p>
+                                <p class="text-muted small">2 hours ago</p>
+                            </div>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <div class="avatar-xs notify-box bg-secondary me-2">
+                                <i class="bi bi-chat-left-dots"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <p class="notify-details">Manan Vohra commented on Admin</p>
+                                <p class="small mb-0"> 6 days ago</p>
+                            </div>
+                        </a>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <div class="avatar-xs notify-box bg-info me-2">
+                                <i class="bi-heart"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <p class="notify-details">carlos brathwaite liked
+                                    <b>Admin</b>
+                                </p>
+                                <p class="text-muted small">11 days ago</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- All-->
+                    <a href="javascript:void(0);" class="dropdown-item text-center text-primary notify-item notify-all">
+                        View all
+                        <i class="fe-arrow-right"></i>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <div class="dropdown ms-sm-3 header-item topbar-user">
+                <button type="button" class="btn" id="header-user-dropdown" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="d-flex align-items-center">
+                        <img class="rounded-circle header-profile-user" src="/img/image-john.jpg" alt="Header Avatar">
+                        <span class="text-start ms-xl-2">
+                            <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">John Doe</span>
+                            <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Founder</span>
+                        </span>
+                    </span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end">
+                    <!-- item-->
+                    <h6 class="dropdown-header">Welcome John!</h6>
+                    <a class="dropdown-item" href="profile">
+                        <i class="bi-person-circle text-muted fs-16 align-middle me-1"></i>
+                        <span class="align-middle">Profile</span>
+                    </a>
+                    <a class="dropdown-item" href="mailbox">
+                        <i class="bi-envelope text-muted fs-16 align-middle me-1"></i>
+                        <span class="align-middle">Messages</span>
+                    </a>
+                    <a class="dropdown-item" href="kanban-list">
+                        <i class="bi-calendar-check text-muted fs-16 align-middle me-1"></i>
+                        <span class="align-middle">Taskboard</span>
+                    </a>
+                    <a class="dropdown-item" href="faq">
+                        <i class="bi-life-preserver text-muted fs-16 align-middle me-1"></i>
+                        <span class="align-middle">Help</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="index-crypto">
+                        <i class="bi-wallet text-muted fs-16 align-middle me-1"></i>
+                        <span class="align-middle">Balance : <b>$6032.67</b></span>
+                    </a>
+                    <a class="dropdown-item" href="profile-setting">
+                        <span class="badge bg-rgba-success text-success mt-1 float-end">New</span>
+                        <i class="bi-gear text-muted fs-16 align-middle me-1"></i>
+                        <span class="align-middle">Settings</span>
+                    </a>
+                    <a class="dropdown-item" href="signin-basic">
+                        <i class="bi-box-arrow-right text-muted fs-16 align-middle me-1"></i>
+                        <span class="align-middle">Logout</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</header>

@@ -1,0 +1,27 @@
+
+
+.btn-clear {
+    position: absolute;
+    z-index: 100;
+    top: 18px;
+    right: 14px;
+    text-transform: uppercase;
+    background-color: #BBB;
+    line-height: 1;
+    font-size: 12px;
+    border-radius: 3px;
+    color: #fff;
+    padding: 10px 12px;
+    font-weight: bold;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+    cursor: pointer;
+
+    &.hidden-right {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+        -ms-transform: translateX(10px);
+        opacity: 0;
+    }
+}
+

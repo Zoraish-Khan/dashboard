@@ -1,0 +1,19 @@
+{
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "liveSassCompile.settings.formats": [
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/public/css"
+        }
+    ],
+    "liveSassCompile.settings.includeItems": [
+    
+    
+    ],
+    "workbench.startupEditor": "none",
+    "git.autofetch": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    //"workbench.colorTheme": "Visual Studio Dark"
+}

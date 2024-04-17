@@ -1,0 +1,164 @@
+.table{
+    color: var(--#{$prefix}color-default);
+
+    .table-light {
+        //color: $body-color;
+        //border-color: $table-border-color;
+        background-color: var(--#{$variable-prefix}light);
+    }
+}
+
+// grid js
+.gridjs-table{
+    width: 100%;
+}
+// .table-card{
+//     margin: -1rem -1rem;
+// }
+th.gridjs-th{
+    padding: $table-cell-padding-y $table-cell-padding-x;
+}
+td.gridjs-td{
+    padding: $table-cell-padding-y $table-cell-padding-x;
+}
+
+@each $color,
+$value in $theme-colors {
+    .border-#{$color} {
+        &.table {
+            > thead {
+                border-color: $value !important;
+            }
+        }
+    }
+    .table-#{$color} {
+        &.table {
+            > thead {
+                border-bottom-color:lighten($value, 10%) !important;
+            }
+        }
+    }
+}
+
+
+
+[data-layout-mode="light"]{
+    .table{
+        //border-color: var(--#{$prefix}border-dark);
+        >thead {
+            //border-color: $table-border;
+            th{
+                color: $black;
+            }
+        }
+        td{
+            color: rgba($black,70%);
+            a.customer-name,.customer-contact a{
+                color: rgba($bg-dark,40%);
+            }
+        }
+        >:not(:first-child) {
+            border-top-width: $table-border-width;
+        }
+    }
+    .table-light{
+        background-color: var(--#{$variable-prefix}light);
+        //color: var(--#{$variable-prefix}body-color);
+        // thead{
+        //     border-color: $table-border;
+        // }
+       // border-color: $table-border;
+        th{
+            color: var(--#{$variable-prefix}body-color);
+        }
+        th, td{
+            
+            background-color: var(--#{$variable-prefix}light);
+        }
+        @each $color,$value in $theme-colors {
+            
+            .table-#{$color} {
+                
+                    th{
+                        background-color:lighten($value, 10%) ;
+                        color: inherit;
+                    }
+                   
+                
+            }
+        }
+    }
+    .table-dark{
+        //background-color: var(--#{$variable-prefix}light);
+        color: var(--#{$variable-prefix}body-color);
+        thead{
+           
+            th{
+                color: var(--#{$variable-prefix}light);
+            }
+        }
+        
+        td{
+            
+            color: rgba($white,70%);
+        }
+        @each $color,$value in $theme-colors {
+            
+            .table-#{$color} {
+                
+                    th{
+                        background-color:lighten($value, 10%) ;
+                        color: inherit;
+                    }
+                   
+                
+            }
+        }
+    }
+
+    .gridjs-table{
+        th.gridjs-th{
+            background-color: rgba($white,10%) !important;
+            border-color: $border-color;
+            color: $black;
+
+            .gridjs-sort-neutral,.gridjs-sort-desc,.gridjs-sort-asc{
+                filter: invert(1) !important;
+            }
+        }
+        // @each $color,$value in $theme-colors {
+                
+        //         th.gridjs-th{
+        //             background-color:rgba($value, 20%) !important;
+        //             color: $white;
+        //         }
+        // }
+        
+        .gridjs-tbody{
+            background-color: var(--#{$variable-prefix}transparent);
+            td.gridjs-td {
+                background-color: var(--#{$variable-prefix}transparent);
+                border-color: $border-color;
+                color: rgba($black,70%) !important;
+                .text-body{
+                    color: rgba($white,70%) !important;
+                }
+            }
+        }
+    }
+    .gridjs-footer{
+        background-color: transparent;
+        .gridjs-pagination{
+            color: rgba($white,50%);
+            .gridjs-pages button{
+                background-color: transparent;
+                //color: inherit;
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+        }
+       
+    }
+    
+}

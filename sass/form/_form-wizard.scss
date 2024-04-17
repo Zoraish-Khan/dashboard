@@ -1,0 +1,73 @@
+// @import "../../node_modules/bootstrap/scss/variables";
+// @import "../../node_modules/bootstrap/scss/utilities";
+// @import "../variables-custom";
+.simple-wizard-nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+.simple-wizard-list-item{
+    @extend .fs-22;
+    
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+    
+        .list-item{
+            width: 100%;
+            position: relative;
+
+            &::after{
+                content: "";
+                position: absolute;
+                width: 75%;
+                height: 2px;
+                background-color: var(--#{$prefix}border-color);
+                left: 62%;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+        }
+        &:last-child .list-item::after{
+            display: none
+        }
+}
+.simple-step-icon{
+    @extend .avatar-sm;
+    border-radius: 50%;
+    border-width: 1px;
+    border: 1px solid var(--#{$prefix}primary);
+    color: var(--#{$prefix}primary);
+    background-color: var(--#{$prefix}light-subtle) ;
+    @include inlineFlexCenter;
+}
+.simple-wizard-tab{
+    display: none;
+    
+}
+// Basic wizard scss
+///////////////////////////////////////////////////////////// {
+
+
+.basic-wizard{
+    .nav-tabs{
+        gap: 1px;
+        border: 0;
+    }
+    .nav-item{
+        .nav-link{
+            height: 100%;
+            display: inline-flex;
+            //background-color:inherit;
+            border-radius: 0;
+            border: 0;
+            justify-content: center;
+            background-color: var(--#{$prefix}bg-light);
+            &.active{
+                border-bottom-color: inherit;
+                background-color: var(--#{$prefix}primary);
+                color: var(--#{$prefix}white);
+            }
+        }
+    }
+}

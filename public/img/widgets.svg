@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+    <g>
+        <linearGradient id="a" x1="66.659" x2="443.183" y1="445.796" y2="69.272" gradientTransform="matrix(1 0 0 -1 0 514.61)" gradientUnits="userSpaceOnUse">
+            <stop stop-opacity="1" stop-color="#0bcff4" offset="0"></stop>
+            <stop stop-opacity="1" stop-color="#4745d2" offset="1"></stop>
+        </linearGradient>
+        <path fill="url(#a)" d="M512 193.6c0-2.1-.1-4.2-.2-6.3v-.8c-.6-10.8-2.3-21.5-5.4-31.9h-.4c-17.1-54.1-67.2-90.8-123.9-90.8H167.2l-.5-.7c-3.9-6-10.7-9.7-17.9-9.7h-8.5C62.8 53.3 0 116.1 0 193.6v124.8c0 77.5 62.8 140.3 140.3 140.3h231.4c77.5 0 140.3-62.8 140.3-140.3z" data-original="url(#a)" class=""></path>
+        <path fill="#ffffff" d="M225.2 154.6 184 91.5h189.3c43.6-.1 83.6 24.3 103.3 63.1z" data-original="#ffffff" class=""></path>
+        <g fill="#fff">
+            <path d="M172.1 192h50.5c14.4 0 26.1 11.7 26.1 26.1v50.7c0 14.4-11.7 26.1-26.1 26.1h-50.5c-14.4 0-26.1-11.7-26.1-26.1v-50.7c0-14.4 11.7-26.1 26.1-26.1zM289.4 192h50.5c14.4 0 26.1 11.7 26.1 26.1v50.7c0 14.4-11.7 26.1-26.1 26.1h-50.5c-14.4 0-26.1-11.7-26.1-26.1v-50.7c0-14.4 11.7-26.1 26.1-26.1zM172.1 309.2h50.5c14.4 0 26.1 11.7 26.1 26.1V386c0 14.4-11.7 26.1-26.1 26.1h-50.5c-14.4 0-26.1-11.7-26.1-26.1v-50.7c0-14.4 11.7-26.1 26.1-26.1zM289.4 309.2h50.5c14.4 0 26.1 11.7 26.1 26.1V386c0 14.4-11.7 26.1-26.1 26.1h-50.5c-14.4 0-26.1-11.7-26.1-26.1v-50.7c0-14.4 11.7-26.1 26.1-26.1z" fill="#ffffff" data-original="#ffffff" class=""></path>
+        </g>
+    </g>
+</svg>

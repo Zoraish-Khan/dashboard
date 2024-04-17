@@ -1,0 +1,220 @@
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-wrap d-sm-flex align-items-center justify-content-between">
+            <h4 class="mb-sm-0">Form Select</h4>
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Advanced UI</a></li>
+                    <li class="breadcrumb-item active">Form Select</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</div><!-- row end -->
+<div class="row">
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header bg-transparent">
+                <h5 class="card-title mb-0">Default Select</h5>
+            </div>
+            <div class="card-body">
+                <p>Use <code>select</code> attribute</p>
+                <div class="mb-4">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <select class="form-select rounded-5" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <select class="form-select" aria-label="Disabled select example" disabled>
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div><!-- end col-->
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-header bg-transparent">
+                <h5 class="card-title mb-0">Menu Select</h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <select class="form-select" multiple aria-label="multiple select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <select class="form-select" size="3" aria-label="size 3 select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div><!-- end col-->
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header bg-transparent">
+                <h5 class="card-title mb-0">Sizing</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="mb-3">
+                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="mb-3">
+                            <select class="form-select mb-3" aria-label=" example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="mb-3">
+                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div><!-- end col-->
+</div><!-- end row -->
+<div class="row">
+    <div class="col-lx-12">
+        <div class="card">
+            <div class="card-header bg-transparent">
+                <h5 class="mb-0">Single select input</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label class="mb-2" id="choices-single-default-" for="choices-single-default">Default</label>
+                        <select class="form-control" data-trigger name="choices-single-default" id="choices-single-"
+                            placeholder="This is a search placeholder">
+                            <option value="">This is a placeholder</option>
+                            <option value="Choice 1">Choice 1</option>
+                            <option value="Choice 2">Choice 2</option>
+                            <option value="Choice 3">Choice 3</option>
+                        </select>
+                    </div><!-- end col -->
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label class="mb-2" for="choices-single-groups">Option groups</label>
+                            <select class="form-control" data-trigger name="choices-single-groups"
+                                id="choices-single-groups">
+                                <option value="">Choose a city</option>
+                                <optgroup label="UK">
+                                    <option value="London">London</option>
+                                    <option value="Manchester">Manchester</option>
+                                    <option value="Liverpool">Liverpool</option>
+                                </optgroup>
+                                <optgroup label="FR">
+                                    <option value="Paris">Paris</option>
+                                    <option value="Lyon">Lyon</option>
+                                    <option value="Marseille">Marseille</option>
+                                </optgroup>
+                                <optgroup label="DE" disabled>
+                                    <option value="Hamburg">Hamburg</option>
+                                    <option value="Munich">Munich</option>
+                                    <option value="Berlin">Berlin</option>
+                                </optgroup>
+                                <optgroup label="US">
+                                    <option value="New York">New York</option>
+                                    <option value="Washington" disabled>Washington</option>
+                                    <option value="Michigan">Michigan</option>
+                                </optgroup>
+                                <optgroup label="SP">
+                                    <option value="Madrid">Madrid</option>
+                                    <option value="Barcelona">Barcelona</option>
+                                    <option value="Malaga">Malaga</option>
+                                </optgroup>
+                                <optgroup label="CA">
+                                    <option value="Montreal">Montreal</option>
+                                    <option value="Toronto">Toronto</option>
+                                    <option value="Vancouver">Vancouver</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div><!-- end col -->
+                    <div class="col-lg-6">
+                        <div class="mb-2">
+                            <label class="mb-2" for="choices-single-no-search">Options added via config with no
+                                search</label>
+                            <select class="form-control" name="choices-single-no-search" id="choices-single-no-search">
+                                <option value="Zero">Zero</option>
+
+                            </select>
+                        </div>
+                    </div><!-- end col -->
+                    <hr class="my-4">
+                    <h5>Text inputs</h5>
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label class="mb-2" for="choices-text-remove-button">Limited to 5 values with remove
+                                button</label>
+                            <input class="form-control" id="choices-text-remove-button" type="text"
+                                value="preset-1,preset-2" placeholder="Enter something" />
+                        </div>
+
+                    </div><!-- end col -->
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label class="mb-2" for="choices-text-unique-values">Unique values only, no pasting</label>
+                            <input class="form-control" id="choices-text-unique-values" type="text"
+                                value="preset-1, preset-2" placeholder="This is a placeholder" class="custom class" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label for="choices-text-disabled">Disabled</label>
+                            <input class="form-control" id="choices-text-disabled" type="text"
+                                value="josh@joshuajohnson.co.uk, joe@bloggs.co.uk"
+                                placeholder="This is a placeholder" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- end col -->
+
+
+</div>

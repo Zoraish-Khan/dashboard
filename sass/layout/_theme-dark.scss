@@ -1,0 +1,53 @@
+
+
+[data-bs-theme="dark"]{
+
+    $base-bg:   $dark;
+
+    --bs-body-bg: #191d23 !important;
+    --bs-heading-color: #{lighten(#adb5bd,7%)} !important;
+    --#{$prefix}border-color: #444a51 !important;
+    --#{$prefix}base-bg: #{$dark} !important;
+    
+    
+
+    .bg-light{
+        background-color: var(--#{$prefix}tertiary-bg) !important;
+    }
+    
+    .card, .dropdown-menu, .offcanvas, .tl-content{
+        --#{$prefix}card-bg: #{lighten($base-bg,1.5%)} !important;
+        background-color: var(--#{$prefix}card-bg) !important;
+    } 
+    .card-bg{
+        --#{$prefix}card-bg: #{$base-bg};
+        background-color: var(--#{$prefix}card-bg);
+    }
+    .list-group{
+        --#{$prefix}list-group-bg: #{$card-bg} !important;
+        background-color: var(--#{$prefix}list-group-bg);
+    }
+    .list-group-item{
+        background-color: var(--#{$prefix}card-bg);
+    }
+    .table{
+        --#{$prefix}table-bg: #{lighten($base-bg,1%) !important};
+        background-color: var(--#{$prefix}base-bg);
+        
+
+        &-light{
+            --#{$prefix}table-bg: #{lighten($base-bg,5%)};
+            --#{$prefix}table-color: #{$table-color};
+            --#{$prefix}table-border-color: #{rgba($border-color,30%)};
+            
+        }
+    } 
+    
+    .text-dark{
+        color: var(--#{$prefix}heading-color) !important;
+    }
+    .base-bg{
+        --#{$prefix}base-bg: #{$base-bg};
+        background-color: var(--#{$prefix}card-bg);
+    }
+}

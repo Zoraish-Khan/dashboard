@@ -1,0 +1,63 @@
+
+[data-bs-theme="blue"]{
+   
+    
+   // --#{$prefix}primary: #{$warning};
+    $base-bg:  rgb(35, 55, 121);
+    $body-bg:  rgb(58, 77, 138);
+
+    --bs-body-bg: #{$body-bg} !important;
+    --bs-heading-color: #{lighten(#adb5bd,7%)} !important;
+    --bs-light-bg-subtle:#{darken($body-bg,4%)} !important;
+    --#{$prefix}border-color: #354991 !important;
+    --#{$prefix}base-bg: #{$base-bg} !important;
+    --#{$prefix}body-color: #a2abad !important;
+    --#{$prefix}secondary-color:rgb(120 133 148) !important;
+    
+
+    .card,.offcanvas,.tl-content{
+        --#{$prefix}card-bg: #{lighten($base-bg, 0)} !important;
+        background-color: var(--#{$prefix}card-bg);
+    } 
+    .card-bg{
+        --#{$prefix}card-bg: #{$base-bg};
+        background-color: var(--#{$prefix}card-bg);
+    }
+    .header-main{
+        background-color: lighten($base-bg,2%);
+    }
+    .navbar-menu{
+        --#{$prefix}card-bg: #{lighten($base-bg,0%)} ;
+    }
+    .list-group{
+        --#{$prefix}list-group-bg: #{$card-bg} !important;
+        background-color: var(--#{$prefix}list-group-bg);
+    }
+    .list-group-item{
+        background-color: var(--#{$prefix}card-bg);
+    }
+    .table{
+        --#{$prefix}table-bg: #{lighten($base-bg,1%) !important};
+        background-color: var(--#{$prefix}base-bg);
+        
+
+        &-light{
+            --#{$prefix}table-bg: #{lighten($base-bg,5%)};
+            --#{$prefix}table-color: #{$table-color};
+            --#{$prefix}table-border-color: #{rgba($border-color,30%)};
+            
+        }
+        
+    } 
+    
+    .text-dark{
+        color: var(--#{$prefix}heading-color) !important;
+    }
+    .base-bg{
+        --#{$prefix}base-bg: #{$base-bg};
+        background-color: var(--#{$prefix}card-bg);
+    }
+    .logo-dark{
+        display: none;
+    }
+}
